@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Instagram Bio Link Tool | Yu-Ching Lin</title>
+	<link rel="shortcut icon" href="../img/logo/favicon.ico" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+		integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> -->
+	<link
+		href="https://fonts.googleapis.com/css?family=Patua+One|Source+Sans+Pro:400,600|Montserrat:500|Oregano&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+		integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+	<link rel='stylesheet' href='../css/style.css' type='text/css' />
+	<link rel='stylesheet' href='../css/slick-theme.css' type='text/css' />
+	<link rel='stylesheet' href='../css/slick.css' type='text/css' />
+	<link rel="stylesheet" href="../css/portfolio.css" type='text/css' />
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<script src="../js/pace.js"></script>
+
+	<script>
+		ScrollReveal({
+			distance: '35px',
+			duration: '1000',
+			easing: 'ease',
+			mobile: 'true',
+			viewFactor: 0.33,
+		});
+	</script>
+
+</head>
+
+<body>
+
+	<!-- nav bar -->
+	<header class="load-hidden">
+		<div class="container">
+
+			<div class="row align-items-center">
+				<div class="col-4" style="text-align:left">
+					<a href="../" class="logo">
+						<img src="../img/logo/logo.png" alt="">
+						<img src="../img/logo/name.png" alt="">
+					</a>
+				</div>
+				<div class="col-8 link" style="text-align:right">
+					<a href="../" class="underline">WORKS</a>
+					<a href="../about" style="margin-right: 0;" class="underline">ABOUT</a>
+				</div>
+			</div>
+
+		</div>
+
+	</header>
+
+	<div class="navbar">
+		<div class="container">
+
+			<div class="row align-items-center">
+				<div class="col-4 p-0" style="text-align:left">
+					<a href="../" class="logo">
+						<img src="../img/logo/logo.png" alt="">
+						<img src="../img/logo/name.png" alt="">
+					</a>
+				</div>
+				<div class="col-8 link p-0" style="text-align:right">
+					<a href="../" class="underline">WORKS</a>
+					<a href="../about" style="margin-right: 0;" class="underline">ABOUT</a>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+
+
+
+	<section id="port">
+
+
+
+
+		<div class="topic" style="background-color: #F7E4FC">
+
+			<div class="container">
+				<h1>Instagram Biography Link Tool
+				</h1>
+				<div class="webintro">
+					<p>Add multiple links and a message board to your Instagram biography.</p>
+
+				</div>
+				<img src="../img/sm/md_amigowriting.png" alt="">
+			</div>
+		</div>
+
+		<div class="container">
+
+
+			<div class="seperate"> ·&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;·</div>
+
+			<div class="list">
+				<h4>Overview</h4>
+
+				<p>My friend runs an Instagram business profile, Amigo Writing. She often shares hand-drawn
+					pictures with motivating quotes or books on Facebook, Medium, and Instagram.
+					However, Instagram only allows one external link in the biography, so my friend asked me to design
+					and develop a page with multiple links.
+
+				</p>
+
+				<p>I think we need to differ from existing services such as Linktree, Shorby, etc., so I proposed adding
+					a public message board where her fans can leave messages and recommend books or quotes they enjoyed.
+
+				</p>
+
+			</div>
+
+			<div class="list point">
+
+				<!-- <p><b>Company:</b> Work with my friend</p> -->
+				<p><b>Role:</b>Front-end Development, Back-end Development, UI Design
+				</p>
+				<p><b>Time:</b> 2018/10</p>
+				<p><b>URL:</b> <a target="_blank"
+						href="https://ancient-sands-20448.herokuapp.com/?utm_source=instamigo&utm_medium=link&utm_campaign=amigo-links">Amigo
+						Writing</a> (mobile recommended)</p>
+			</div>
+
+
+
+
+
+
+
+			<div class="seperate"> ·&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;·</div>
+
+
+
+
+			<div class="list">
+				<h4>Front-end Development</h4>
+				<p>When users submit their messages to the message board, they can immediately see them on the webpage.
+					They will not be aware that the page is refreshing since the message board is a single page
+					application (SPA). This means that only part of the page which is required to refresh will update.
+					As a result, it shortens the users’ loading time. I utilize Vanilla JavaScript to accomplish this.
+
+				</p>
+			</div>
+
+			<div class="list">
+
+				<p>In a traditional web application when users click on a button, the whole page will refresh on
+					request, which may cause users to wait for the page to reload. However, in a single page application
+					(SPA) when users click on a button, only the affected part of the page will refresh.
+				</p>
+			</div>
+
+			<div class="list-img">
+				<img src="../img/portfolio/amigowriting/SPA.png" alt="">
+				<div class="caption">Single Page Application vs. Traditional Web Application</div>
+			</div>
+
+			<div class="seperate"> ·&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;·</div>
+
+			<div class="list">
+				<h4>Back-end Development</h4>
+				<p>I use Node.js as the back-end to handle the user requests and retrieve data from servers, and I use
+					Firebase as the database for data storage. Moreover, I deploy it to Heroku service, which is free. I
+					have applied what I have learned in the NTU Information System Training Program, and it’s my first
+					time accomplishing full-stack work. I felt a sense of pride in achieving this work!
+
+				</p>
+			</div>
+
+			<div class="list-img">
+				<img src="../img/portfolio/amigowriting/Firebase.png" alt="">
+				<div class="caption">Amigo Writing's Firebase</div>
+			</div>
+
+			<div class="seperate"> ·&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;·</div>
+
+
+			<div class="list">
+				<h4>UI Design</h4>
+				<p>In coordination with Amigo Writing’s profile picture, I use red, pink, and purple to design this
+					web-page.</p>
+			</div>
+
+
+			<div class="list-img">
+				<img src="../img/portfolio/amigowriting/amigowriting.png" alt="" style="max-width:300px">
+				<div class="caption">Amigo Writing's IG Bio Link</div>
+			</div>
+
+
+
+
+		</div>
+		</div>
+		</div>
+	</section>
+
+
+
+	<section id="others">
+
+		<div class="container">
+
+			<div class="word col-12 my-4">
+				<h5>More Projects</h5>
+			</div>
+
+
+			<div class="port row">
+
+
+
+
+				<div class="col-lg-4 col-md-6 col-12 portfolio-item code">
+					<a href="./forest">
+						<div class="intro" style="background-color: #F3FCE4">
+							<div class="desc">
+								<h5>Content Management System</h5>
+								<small>code & design</small>
+							</div>
+							<img src="../img/sm/sm_forest.png" alt="">
+						</div>
+					</a>
+				</div>
+
+
+				<div class="col-lg-4 col-md-6 col-12 portfolio-item design">
+					<a href="./3sdrive">
+						<div class="intro" style="background-color: #E4F5FC">
+							<div class="desc">
+								<h5>Landing Page</h5>
+								<small>design</small>
+							</div>
+							<img src="../img/sm/sm_3sdrive.png" alt="">
+						</div>
+					</a>
+				</div>
+
+
+				<div class="col-lg-4 col-md-6 col-12 portfolio-item design">
+					<a href="./personalwebsite">
+						<div class="intro" style="background-color: #FCF7E4; ">
+							<div class="desc">
+								<h5>Portfolio Website</h5>
+								<small>design & code</small>
+							</div>
+							<img src="../img/sm/sm_portfolio.png" alt="">
+						</div>
+					</a>
+				</div>
+
+				<div class="col-lg-4 col-md-6 col-12 portfolio-item design code">
+					<a href="./cloud">
+						<div class="intro" style="background-color: #FCE4EA">
+							<div class="desc">
+								<h5>IoT Device Management</h5>
+								<small>design & code</small>
+							</div>
+							<img src="../img/sm/sm_ruggon.png" alt="">
+						</div>
+					</a>
+				</div>
+
+				<div class="col-lg-4 col-md-6 col-12 portfolio-item design">
+					<a href="./1828WLJ">
+						<div class="intro" style="background-color: #E4EBFC">
+							<div class="desc">
+								<h5>Tea Shop's Application</h5>
+								<small>design</small>
+							</div>
+							<img src="../img/sm/sm_1828.png" alt="">
+							<!-- <img src="img/logo/sm_1828.png" alt="" style="margin-bottom: 0;"> -->
+						</div>
+					</a>
+				</div>
+
+
+				<!-- <div class="col-lg-4 col-md-6 col-12 portfolio-item code">
+					<a href="./amigowriting">
+						<div class="intro" style="background-color: #F7E4FC">
+							<div class="desc">
+								<h5>Instagram Biography Link Tool</h5>
+								<small><span class="code-dot">code</span> <span class="design-dot">design</span>
+								</small>
+							</div>
+							<img src="../img/sm/sm_amigo.png" alt="">
+						</div>
+					</a>
+				</div> -->
+
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<!-- footer -->
+	<section id="footer">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-lg-4 col-sm-12 text-lg-right">
+					<a target="_blank" href="https://www.linkedin.com/in/yuyuchinglin/">
+						<i class="fab fa-linkedin-in"></i>
+					</a>
+					<a target="_blank" href="https://medium.com/@yuyuchinglin">
+						<i class="fab fa-medium-m"></i>
+					</a>
+					<a target="_blank" href="https://www.instagram.com/yuyuchingg/">
+						<i class="fab fa-instagram"></i>
+					</a>
+
+					<a target="_blank" href="https://codepen.io/yuchinglin/">
+						<i class="fab fa-codepen"></i>
+					</a>
+					<a target="_blank" href="https://github.com/yuyuchinglin">
+						<i class="fab fa-github"></i>
+					</a>
+				</div>
+				<div class="col-lg-4 col-sm-12">
+					<a href="mailto:yuyuchinglin@gmail.com"><b>yuyuchinglin@gmail.com</b></a>
+				</div>
+
+				<div class="col-lg-4 col-sm-12 text-lg-left">
+					<span>COPYRIGHT © YUCHING 2017-2020</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+	<script type='text/javascript' src='../js/jquery-11.0.min.js'></script>
+	<script type='text/javascript' src='../js/slick.min.js'></script>
+	<script type='text/javascript' src='../js/portfolio.js'></script>
+	<!-- <script type='text/javascript' src='../js/unitegallery.min.js'></script> -->
+	<!-- <script type='text/javascript' src='../js/ug-theme-tiles.js'></script> -->
+	<!-- <script src="../js/popper.min.js"></script> -->
+	<script src="../js/bootstrap.min.js"></script>
+	<!-- <script src="../js/SmoothScroll.js"></script> -->
+	<script src="../js/main.js"></script>
+
+	<script>
+
+		ScrollReveal().reveal('header, .topic',
+			{
+				origin: 'top',
+			});
+
+
+		ScrollReveal().reveal('.seperate, .list, .list-img',
+			{
+				origin: 'bottom',
+			});
+
+
+	</script>
+
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115360200-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-115360200-1');
+	</script>
+
+
+
+	<!-- start Mixpanel -->
+	<script type="text/javascript">(function (e, a) {
+			if (!a.__SV) {
+				var b = window; try { var c, l, i, j = b.location, g = j.hash; c = function (a, b) { return (l = a.match(RegExp(b + "=([^&]*)"))) ? l[1] : null }; g && c(g, "state") && (i = JSON.parse(decodeURIComponent(c(g, "state"))), "mpeditor" === i.action && (b.sessionStorage.setItem("_mpcehash", g), history.replaceState(i.desiredHash || "", e.title, j.pathname + j.search))) } catch (m) { } var k, h; window.mixpanel = a; a._i = []; a.init = function (b, c, f) {
+					function e(b, a) {
+						var c = a.split("."); 2 == c.length && (b = b[c[0]], a = c[1]); b[a] = function () {
+							b.push([a].concat(Array.prototype.slice.call(arguments,
+								0)))
+						}
+					} var d = a; "undefined" !== typeof f ? d = a[f] = [] : f = "mixpanel"; d.people = d.people || []; d.toString = function (b) { var a = "mixpanel"; "mixpanel" !== f && (a += "." + f); b || (a += " (stub)"); return a }; d.people.toString = function () { return d.toString(1) + ".people (stub)" }; k = "disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+					for (h = 0; h < k.length; h++)e(d, k[h]); a._i.push([b, c, f])
+				}; a.__SV = 1.2; b = e.createElement("script"); b.type = "text/javascript"; b.async = !0; b.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === e.location.protocol && "//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js"; c = e.getElementsByTagName("script")[0]; c.parentNode.insertBefore(b, c)
+			}
+		})(document, window.mixpanel || []);
+		mixpanel.init("4a6a775cccb977118be3fc9e1c01df76");</script><!-- end Mixpanel -->
+
+	<script>mixpanel.track("pageview amigowriting");</script>
+
+</body>
+
+</html>

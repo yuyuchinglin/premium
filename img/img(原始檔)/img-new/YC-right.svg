@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1051px" height="531px" viewBox="0 0 1051 531" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 8</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-244.000000, -1325.000000)">
+            <g id="Group-8" transform="translate(244.000000, 1325.000000)">
+                <polygon id="Triangle" fill="#9E6B57" transform="translate(779.500000, 265.500000) rotate(180.000000) translate(-779.500000, -265.500000) " points="779.5 0 1051 531 508 531"></polygon>
+                <text id="Y" font-family="BanglaMN, Bangla MN" font-size="144" font-weight="normal" fill="#E98059">
+                    <tspan x="687" y="222">Y</tspan>
+                </text>
+                <text id="C" font-family="BanglaMN, Bangla MN" font-size="144" font-weight="normal" fill="#E98059">
+                    <tspan x="750" y="249">C</tspan>
+                </text>
+                <text id="Y" font-family="BanglaMN, Bangla MN" font-size="144" font-weight="normal" fill="#FBE091">
+                    <tspan x="683" y="218">Y</tspan>
+                </text>
+                <text id="C" font-family="BanglaMN, Bangla MN" font-size="144" font-weight="normal" fill="#FBE091">
+                    <tspan x="746" y="245">C</tspan>
+                </text>
+                <g id="Group" transform="translate(0.000000, 1.000000)">
+                    <polygon id="Triangle" fill="#E98059" points="36 0 72 70 0 70"></polygon>
+                    <polygon id="Triangle" fill="#FBE091" transform="translate(82.000000, 35.000000) rotate(180.000000) translate(-82.000000, -35.000000) " points="82 0 118 70 46 70"></polygon>
+                    <polygon id="Triangle" fill="#9E6B57" points="128 0 164 70 92 70"></polygon>
+                    <polygon id="Triangle" fill="#E98059" transform="translate(174.000000, 35.000000) rotate(180.000000) translate(-174.000000, -35.000000) " points="174 0 210 70 138 70"></polygon>
+                    <polygon id="Triangle" fill="#FBE091" points="220 0 256 70 184 70"></polygon>
+                    <polygon id="Triangle" fill="#9E6B57" transform="translate(267.000000, 35.000000) rotate(180.000000) translate(-267.000000, -35.000000) " points="267 0 303 70 231 70"></polygon>
+                    <polygon id="Triangle" fill="#E98059" points="312 0 348 70 276 70"></polygon>
+                    <polygon id="Triangle" fill="#FBE091" transform="translate(358.000000, 35.000000) rotate(180.000000) translate(-358.000000, -35.000000) " points="358 0 394 70 322 70"></polygon>
+                    <polygon id="Triangle" fill="#9E6B57" points="404 0 440 70 368 70"></polygon>
+                    <polygon id="Triangle" fill="#E98059" transform="translate(450.000000, 35.000000) rotate(180.000000) translate(-450.000000, -35.000000) " points="450 0 486 70 414 70"></polygon>
+                    <polygon id="Triangle" fill="#FBE091" points="496 0 532 70 460 70"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GIRL</title>
+</head>
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+		list-style:none;
+		background-color: #222222;
+		font-family: "微軟正黑體";
+	}
+
+	.header {
+			background:url(seraph_logo.png) center center no-repeat #222;
+			background-size: contain;
+
+	}
+
+	@media (min-width:992px) {
+		.container {
+			height: 100vh;
+			width: 100vw;
+			background-color: #222222;
+			overflow:hidden;
+		}
+		.header {
+			height:10vh;
+			width: 20vw;
+		}
+		.box {
+			width: 100vw;	
+			height:90vh;
+			background-color: #0ff;
+			position:relative;
+		}
+
+		
+
+
+		.box1, .box2, .box3, .box4 {
+			width: 50%;
+			height: 50%;
+			float:left;
+			position:relative;
+		}
+		.clear {
+			clear:both;
+			background-color: #0ff;
+		}
+		.box1 {background-color: #913547;}
+		.box2 {background-color: #595857;}
+		.box3 {background-color: #595857;}
+		.box4 {background-color: #913547;}
+
+		/*.box div:hover {
+			background-color: #e0c54a;
+		}*/
+		
+		.box>a>div>div {
+			width: 94%;
+			height: 90%;
+			background-color: #a10;
+			position:absolute;
+		}
+
+		.box1_sm{
+			right:0;
+			bottom:0;
+			background: url(girlpart1.jpg) left center;
+			background-size:cover;
+			position:relative;
+		}
+
+		.box2_sm{
+			left:0;
+			bottom:0;
+			background: url(girlpart2.jpg) right center;
+			background-size:cover;
+		}
+
+
+		.box3_sm{
+			right:0;
+			top:0;
+			background: url(girlpart3.jpg) left center;
+			background-size:cover;
+		}
+
+		.box4_sm{
+			left:0;
+			top:0;
+			background: url(girlpart4.jpg) right center;
+			background-size:cover;
+		}
+
+
+
+		.circle	{
+			/*vertical-align:middle;*/
+			width: 30vw;
+			height: 30vw;
+			border-radius:50%;
+			position:absolute;
+			margin:auto;
+			left: 0;	
+			top: 0;	
+			right: 0;	
+			bottom: 0;	
+			background: url(girlpartgirl.png) center center #913547;
+			-webkit-background-size: cover;
+			background-size: cover;
+			z-index:10;
+		}
+
+
+		.circle_sm {
+			display:none;
+		}
+
+		.box4b {
+			display:none;
+		}
+
+
+		a .box1_word{
+			position:absolute;
+			width:100%;
+			height: 100%;
+			background:url(girlpart1_word.png) 40% 50% no-repeat;
+			opacity:0;
+			transition:opacity .6s,background  .6s;
+		}
+
+		a:hover .box1_word{
+			opacity:0.8;
+			background-color:rgba(22,22,22,0.9);
+		}
+
+		a .box2_word{
+			position:absolute;
+			width:100%;
+			height: 100%;
+			background: url(girlpart2_word.png) 60% 50% no-repeat;
+			
+			opacity:0;
+			transition:opacity .6s,background  .6s;
+		}
+
+		a:hover .box2_word{
+			opacity:0.8;
+			background-color:rgba(240,240,240,0.8);
+		}
+
+		a .box3_word{
+			position:absolute;
+			width:100%;
+			height: 100%;
+			background:url(girlpart3_word.png) 40% 50% no-repeat;
+			opacity:0;
+			transition:opacity 0.6s,background 0.6s;
+		}
+
+		a:hover .box3_word{
+			opacity:0.8;
+			background-color:rgba(240,240,240,0.8);
+		}
+
+		a .box4_word{
+			position:absolute;
+			width:100%;
+			height: 100%;
+			background: url(girlpart4_word.png) 60% 50% no-repeat;
+			opacity:0;
+			transition:opacity .6s,background  .6s;
+		}
+
+		a:hover .box4_word{
+			opacity:0.8;
+			background-color:rgba(22,22,22,0.9);
+		}
+
+
+		.circle_word {
+			position:absolute;
+			right:16%;
+			width: 40%;	
+			height: 100%;	
+			background: url(girlpartgirl_word.png) right center no-repeat;
+			-webkit-background-size: 	contain;
+			background-size: 	contain;
+		}
+
+		
+
+
+	}
+
+	@media (max-width: 991px) {
+
+		.container {
+		height: auto;
+		width: 100vw;
+		background-color: #a10;
+		overflow:hidden;
+		}
+
+		.header {
+			height:75px;
+			width: 100vw;
+		}
+
+		.box {
+			width: 100vw;	
+			height:auto;
+			background-color: #0ff;
+		
+		}
+
+		.box2, .box3, .box4b, .box1 {
+			width: 100%;
+			height: 30vw;
+			float:left;
+			position:relative;
+		}
+
+		.clear {
+			clear:both;
+		}
+
+		.box1 {	background-color: #3b3937;}	
+		.box2 {background-color: #f7f4ed;}
+		.box3 {background-color: #eeeae1 ;}
+		.box4b {background-color: #3b3937;}
+
+		
+		.box2_sm, .box3_sm, .box4b_sm, .box1_sm {
+			width: 100%;
+			height: 100%;
+			position:absolute;
+		}
+
+		.box1_sm{
+			background: url(girlpart1_sm.jpg) left center no-repeat;
+			-webkit-background-size: contain;
+			background-size:contain;
+		}
+
+		.box1_word {
+			position:absolute;
+			right:16%;
+			width: 40%;	
+			height: 100%;	
+			background: url(girlpart1_word.png) right center no-repeat;
+			-webkit-background-size: 	contain;
+			background-size: 	contain;
+		}
+
+		.box2_sm{
+			background: url(girlpart2_sm.jpg) right center no-repeat;
+			-webkit-background-size: contain;
+			background-size: contain;
+		}
+
+		.box2_word {
+			position:absolute;
+			left:12%;
+			width: 40%;	
+			height: 100%;	
+			background: url(girlpart2_word.png) left center no-repeat;
+			-webkit-background-size: 	contain;
+			background-size: 	contain;
+		}
+
+		.box4b_sm{
+			background: url(girlpart4_sm.jpg) left center no-repeat;
+			-webkit-background-size: contain;
+			background-size: contain;
+		}
+
+		.box4b_word {
+			position:absolute;
+			right:16%;
+			width: 40%;	
+			height: 100%;	
+			background: url(girlpart4_word.png) right center no-repeat;
+			-webkit-background-size: 	contain;
+			background-size: 	contain;
+		}
+
+
+
+		.box3_sm{
+			background: url(girlpart3_sm.jpg) right center no-repeat;
+			-webkit-background-size: contain;
+			background-size: contain;
+		}
+
+		.box3_word {
+			position:absolute;
+			left:12%;
+			width: 40%;	
+			height: 100%;	
+			background: url(girlpart3_word.png) left center no-repeat;
+			-webkit-background-size: 	contain;
+			background-size: 	contain;
+		}
+
+
+
+		.circle	{
+			width: 100%;
+			height: 60vw;`
+			background:url(girlpartgirl.png) center center;
+			background-color: #913547;
+			z-index:50;
+			float:left;
+			position:relative;
+			border-radius: 0;
+		}
+
+
+		.circle_sm {
+			width: 58vw;
+			height: 59vw;
+			background:url(girlpartgirl.png) center center;
+			-webkit-background-size: cover;
+			background-size: cover;
+			position:absolute;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+			margin:0 auto;
+		}
+
+		.circle_word {
+			position:absolute;
+			right:16%;
+			width: 40%;	
+			height: 100%;	
+			background: url(girlpartgirl_word.png) right center no-repeat;
+			-webkit-background-size: 	contain;
+			background-size: 	contain;
+		}
+
+	
+		}
+	}
+
+</style>
+<body>
+	<div class="container">
+		<div class="header"></div>
+		<div class="box">
+			<a href="#"><div class="circle">
+			<div class="circle_sm">
+			<div class="circle_word"></div>
+			</div>
+			</div></a>
+			<a href="#"><div class="box1">
+				<div class="box1_sm">
+				<div class="box1_word"></div>
+				</div>
+			</div></a>
+			<a href="#"><div class="box2">
+				<div class="box2_sm">
+				<div class="box2_word"></div>
+				</div>
+			</div></a>
+			<a href="#"><div class="box4b">
+				<div class="box4b_sm">
+				<div class="box4b_word"></div>
+				</div>
+			</div></a>
+			<a href="#"><div class="box3">
+				<div class="box3_sm">
+				<div class="box3_word"></div></div>
+			</div></a>
+			<a href="#"><div class="box4">
+				<div class="box4_sm">
+				<div class="box4_word"></div></div>
+			</div></a>
+		
+			<div class="clear"></div>
+			
+		</div>
+		
+	</div>
+</body>
+</html>

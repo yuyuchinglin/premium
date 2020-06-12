@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="532px" height="70px" viewBox="0 0 532 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-244.000000, -1326.000000)">
+            <g id="Group-3" transform="translate(0.000000, 1326.000000)">
+                <g id="Group" transform="translate(244.000000, 0.000000)">
+                    <polygon id="Triangle" fill="#E98059" points="36 0 72 70 0 70"></polygon>
+                    <polygon id="Triangle" fill="#FBE091" transform="translate(82.000000, 35.000000) rotate(180.000000) translate(-82.000000, -35.000000) " points="82 0 118 70 46 70"></polygon>
+                    <polygon id="Triangle" fill="#9E6B57" points="128 0 164 70 92 70"></polygon>
+                    <polygon id="Triangle" fill="#E98059" transform="translate(174.000000, 35.000000) rotate(180.000000) translate(-174.000000, -35.000000) " points="174 0 210 70 138 70"></polygon>
+                    <polygon id="Triangle" fill="#FBE091" points="220 0 256 70 184 70"></polygon>
+                    <polygon id="Triangle" fill="#9E6B57" transform="translate(267.000000, 35.000000) rotate(180.000000) translate(-267.000000, -35.000000) " points="267 0 303 70 231 70"></polygon>
+                    <polygon id="Triangle" fill="#E98059" points="312 0 348 70 276 70"></polygon>
+                    <polygon id="Triangle" fill="#FBE091" transform="translate(358.000000, 35.000000) rotate(180.000000) translate(-358.000000, -35.000000) " points="358 0 394 70 322 70"></polygon>
+                    <polygon id="Triangle" fill="#9E6B57" points="404 0 440 70 368 70"></polygon>
+                    <polygon id="Triangle" fill="#E98059" transform="translate(450.000000, 35.000000) rotate(180.000000) translate(-450.000000, -35.000000) " points="450 0 486 70 414 70"></polygon>
+                    <polygon id="Triangle" fill="#FBE091" points="496 0 532 70 460 70"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
