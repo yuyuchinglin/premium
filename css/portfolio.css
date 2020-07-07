@@ -120,19 +120,29 @@ body {
 }
 
 .list h4 {
-    margin:25px 0 15px 0 !important;
+    margin:25px 0 12px 0 !important;
     color:#252525;
     font-weight: 400;
-    font-size: 1.53em;
+    font-size: 1.56em;
     font-family: 'Patua One','Roboto';
+
+}
+
+.level-2 .list h4 {
+    margin:25px 0 12px 0 !important;
+    color:#252525;
+    font-weight: 600;
+    font-size: 1.27em;
+    font-family: 'Patua One','Roboto';
+    font-family: Montserrat, "Source Sans Pro", sans-serif;
 }
 
 .list h3 {
-    margin:50px 0 35px 0 !important;
+    margin:50px 0 40px 0 !important;
     color:#252525;
     /* color:darkblue; */
     font-weight: 400;
-    font-size: 1.95em;
+    font-size: 1.9em;
     font-family: 'Patua One','Roboto';
 }
 
@@ -427,6 +437,12 @@ body {
         margin:10px 0 !important;
         font-size: 1.3em;
         line-height: 1.3em;
+    }
+
+    .level-2 .list h4 {
+        margin:10px 0 5px 0 !important;
+        font-size: 1.2em;
+        line-height: 1.2em;
     }
 
     .list h3 {
