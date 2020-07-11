@@ -123,19 +123,18 @@ body {
     margin:25px 0 12px 0 !important;
     color:#252525;
     font-weight: 400;
-    font-size: 1.56em;
+    font-size: 1.5em;
     font-family: 'Patua One','Roboto';
 
 }
 
 .level-2 .list h4 {
-    margin:25px 0 12px 0 !important;
-    color:#252525;
+    margin:25px 0 5px 0 !important;
+    color:#111;
     font-weight: 600;
-    font-size: 1.2em;
-    font-family: 'Patua One','Roboto';
-    font-family: Montserrat, "Source Sans Pro", sans-serif;
-    line-height: 1.2em;
+    font-size: 1.3em;
+    font-family: "Source Sans Pro", sans-serif;
+    line-height: 1.3em;
 }
 
 .list h3 {
@@ -477,6 +476,7 @@ body {
 .list .point {
     /* font-size: 18px;  */
     font-family:'Source Sans Pro', 'Calibri','Roboto';
+    color: #252525;
     }
 
 
