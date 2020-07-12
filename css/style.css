@@ -104,11 +104,11 @@
   }
 
   #welcome {
-    margin-top: 95px;
+    padding-top: 25px;
     /* padding: 5px 0px 1%; */
-    min-height: 73vh;
+    min-height: 76vh;
     width: 100%;
-    line-height: 73vh;
+    line-height: 76vh;
     background: url(../img/logo/bg.png) top left repeat;
     
   }
@@ -1162,6 +1162,11 @@ html.sr .load-hidden {
     margin: 50px auto;
   }
 
+  #welcome {
+    margin-top: 0;
+    padding-top:70px;
+  }
+
   #welcomepic {
     margin: 90px auto 0px;
   }
@@ -1262,8 +1267,8 @@ html.sr .load-hidden {
 
   #welcome {
     /* height: 600px; */
-    min-height: 40vh;
-    line-height: 40vh;
+    min-height: 30vh;
+    line-height: 30vh;
   }
 
   #welcome img {
