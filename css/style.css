@@ -76,8 +76,8 @@
 
 
   #welcome img { 
-    max-width: 340px;
-    filter: grayscale(0.1); 
+    /* max-width: 340px; */
+    filter: grayscale(0.3); 
     }
 
 
@@ -104,17 +104,16 @@
   }
 
   #welcome {
-    margin-top: 65px;
-    padding: 140px 32px 1%;
-    min-height: 80vh;
+    margin-top: 95px;
+    /* padding: 5px 0px 1%; */
+    min-height: 73vh;
     width: 100%;
-  }
-
-  #welcome .index-intro {
-    /* padding-top: 50px; */
-    max-width: 500px;
+    line-height: 73vh;
+    background: url(../img/logo/bg.png) top left repeat;
     
   }
+
+
 
 
 
@@ -149,12 +148,16 @@
 
 
    #welcome img{
-    display: block;
-    width:100%; 
+    display: inline-block;
+    width:550px; 
+    margin: 0 auto;
+    vertical-align : middle;
+    padding-bottom: 12px;
   } 
 
   #welcome .row {
     position:relative;
+
   }
 
   #welcome .intro-box {
@@ -804,7 +807,7 @@ header .link a.active:hover, .navbar .link a.active:hover {
 
   .portfolio-item:hover .intro {
     /* box-shadow: 0 1px 6px rgba(0,0,0,.15); */
-    box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.05), 0 4px 8px 3px rgba(60, 64, 67, 0.15);
+    /* box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.05), 0 4px 8px 3px rgba(60, 64, 67, 0.15); */
   }
   
 
@@ -916,7 +919,7 @@ html.sr .load-hidden {
 
   #welcome {
     margin-bottom: 0;
-    padding-top:13% !important;
+    /* padding-top:13% !important; */
 }
 
   #welcome .intro-box {
@@ -1002,8 +1005,9 @@ html.sr .load-hidden {
 @media (max-width: 1250px) {
 
   #welcome {
-    padding:11.5% 32px 2.5%;
-    min-height: 0;
+    /* padding:11.5% 32px 2.5%; */
+    min-height: 50vw;
+    line-height: 50vw;
   } 
 
   #welcome h1 {
@@ -1019,7 +1023,7 @@ html.sr .load-hidden {
   }
 
   #welcome img {
-    max-width: 300px;
+    /* max-width: 300px; */
   }
 
  }
@@ -1073,7 +1077,7 @@ html.sr .load-hidden {
   }
 
   #welcome {
-    padding-top: 20px !important;
+    /* padding-top: 20px !important; */
   }
 
   #welcome .index-intro {
@@ -1088,8 +1092,10 @@ html.sr .load-hidden {
 
   #welcome img {
     /* margin: 0 auto; */
-    padding-top: 20px;
-    max-width: 240px !important;
+    /* padding-top: 20px; */
+    /* width: 90px; */
+    max-width: 500px !important;
+ 
   }
 
   #welcome h1 {
@@ -1240,7 +1246,7 @@ html.sr .load-hidden {
 @media (max-width: 560px) { 
   section#welcomepic {
     /* height: 60vh; */
-    margin-top: 40px !important;
+    /* margin-top: 40px !important; */
     margin-bottom: 0px !important;
     background-size: cover;
   }
@@ -1254,9 +1260,16 @@ html.sr .load-hidden {
     font-size: 20px;
   }
 
+  #welcome {
+    /* height: 600px; */
+    min-height: 40vh;
+    line-height: 40vh;
+  }
+
   #welcome img {
-    margin: 10px auto 0;
-    max-width: 300px !important;
+    /* margin: 10px auto 0; */
+    /* max-width: 400px !important; */
+   width: 80%;
 
   }
 }
