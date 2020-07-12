@@ -25,7 +25,7 @@
   }
 
   #welcomepic {
-    margin-top: 70px;
+    /* margin-top: 70px; */
   }
 
   .navbar-brand {
@@ -48,9 +48,9 @@
 /* welcome */
 
   .welcomepic {
-    /* margin-top: 60px; */
+    margin-top: 95px;
     text-align: center;
-    padding-top: 40px !important;
+    /* padding-top: 40px !important; */
   }
 
   #welcomepic h1{
@@ -105,11 +105,12 @@
   }
 
   #welcome {
+    
     /* padding-top: 25px; */
     /* padding: 5px 0px 1%; */
-    min-height: 82vh;
+    min-height: 73vh;
     width: 100%;
-    line-height: 82vh;
+    line-height: 73vh;
     background: url(../img/logo/bg.png) top left repeat;
     
   }
@@ -157,41 +158,6 @@
 
   } 
 
-  #welcome .row {
-    position:relative;
-
-  }
-
-  #welcome .intro-box {
-    min-width: 410px;
-    max-width: 470px ;
-    color:#fff;
-    font-size: 20px;
-  }
-
-  #welcome .intro-box>img {
-    width:100%;
-  }
-
-  #welcome .intro-box>img,  #welcome .intro-box>div {
-    display: inline-block;
-  }
-
-  #welcome .intro-box>div {
-    padding:25px 32px 8px;
-    background-color: #9E6B57;
-  
-  }
-
-  #welcome .intro-box h1 {
-    margin-left: 27%;
-    font-size:38px;
-    font-family: 'Oregano';
-  }
-
-  #welcome .intro-box {
-    margin-left: -40%;
-  }
 
 
 /* about */
@@ -1008,8 +974,8 @@ html.sr .load-hidden {
 
   #welcome {
     /* padding:11.5% 32px 2.5%; */
-    min-height: 50vw;
-    line-height: 50vw;
+    min-height: 45vw;
+    line-height: 45vw;
   } 
 
   #welcome h1 {
@@ -1025,6 +991,8 @@ html.sr .load-hidden {
   }
 
   #welcome img {
+    width:480px;
+    padding-bottom: 15px;
     /* max-width: 300px; */
   }
 
@@ -1085,7 +1053,13 @@ html.sr .load-hidden {
 
   #welcome .container {
     margin: 0;
-    padding: 65px 0;
+    /* padding: 20px 0 40px; */
+    
+  }
+
+  #welcome {
+    min-height: 38vh;
+    line-height: 38vh;
   }
 
 
@@ -1093,7 +1067,8 @@ html.sr .load-hidden {
     /* margin: 0 auto; */
     /* padding-top: 20px; */
     /* width: 90px; */
-  
+    width:400px;
+    padding-bottom: 10px;
     max-width: 500px !important;
  
   }
@@ -1163,8 +1138,8 @@ html.sr .load-hidden {
   }
 
   #welcome {
-    margin-top: 0;
-    padding-top:70px;
+    margin-top: 85px;
+    /* padding-top:70px; */
   }
 
   #welcomepic {
@@ -1271,10 +1246,17 @@ html.sr .load-hidden {
     line-height: 30vh;
   }
 
+  #welcome .container {
+    margin: 0;
+    padding: 30px 0 30px;
+    
+  }
+
   #welcome img {
     /* margin: 10px auto 0; */
     /* max-width: 400px !important; */
-   width: 75%;
+   width: 78%;
+   padding-bottom: 0;
 
   }
 }
