@@ -48,8 +48,9 @@
 /* welcome */
 
   .welcomepic {
-    margin-top: 60px;
+    /* margin-top: 60px; */
     text-align: center;
+    padding-top: 40px !important;
   }
 
   #welcomepic h1{
@@ -104,11 +105,11 @@
   }
 
   #welcome {
-    padding-top: 25px;
+    /* padding-top: 25px; */
     /* padding: 5px 0px 1%; */
-    min-height: 76vh;
+    min-height: 82vh;
     width: 100%;
-    line-height: 76vh;
+    line-height: 82vh;
     background: url(../img/logo/bg.png) top left repeat;
     
   }
@@ -152,7 +153,8 @@
     width:550px; 
     margin: 0 auto;
     vertical-align : middle;
-    padding-bottom: 12px;
+    /* padding-bottom: 12px; */
+
   } 
 
   #welcome .row {
@@ -1076,9 +1078,6 @@ html.sr .load-hidden {
     font-size: 16px;
   }
 
-  #welcome {
-    /* padding-top: 20px !important; */
-  }
 
   #welcome .index-intro {
     padding-top: 25px;
@@ -1086,7 +1085,7 @@ html.sr .load-hidden {
 
   #welcome .container {
     margin: 0;
-    padding: 2%;
+    padding: 65px 0;
   }
 
 
@@ -1094,6 +1093,7 @@ html.sr .load-hidden {
     /* margin: 0 auto; */
     /* padding-top: 20px; */
     /* width: 90px; */
+  
     max-width: 500px !important;
  
   }
@@ -1109,7 +1109,7 @@ html.sr .load-hidden {
 
   #welcome img { 
     max-width: 240px;
-    filter: grayscale(0.1); 
+    filter: grayscale(0.3); 
     }
 
   .about-topic {
@@ -1168,7 +1168,7 @@ html.sr .load-hidden {
   }
 
   #welcomepic {
-    margin: 90px auto 0px;
+    margin: 0px auto 0px;
   }
 
   #about {
@@ -1274,7 +1274,7 @@ html.sr .load-hidden {
   #welcome img {
     /* margin: 10px auto 0; */
     /* max-width: 400px !important; */
-   width: 80%;
+   width: 75%;
 
   }
 }
