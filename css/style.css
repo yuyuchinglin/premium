@@ -48,7 +48,7 @@
 /* welcome */
 
   .welcomepic {
-    margin-top: 95px;
+    margin-top: 100px;
     text-align: center;
     /* padding-top: 40px !important; */
   }
@@ -1060,6 +1060,8 @@ html.sr .load-hidden {
   #welcome {
     min-height: 38vh;
     line-height: 38vh;
+    height: 380px;
+    line-height: 380px;
   }
 
 
@@ -1067,7 +1069,7 @@ html.sr .load-hidden {
     /* margin: 0 auto; */
     /* padding-top: 20px; */
     /* width: 90px; */
-    width:400px;
+    width:380px;
     padding-bottom: 10px;
     max-width: 500px !important;
  
@@ -1075,10 +1077,6 @@ html.sr .load-hidden {
 
   #welcome h1 {
     font-size: 24px;
-  }
-
-  #welcome p,   #welcome a  {
-    /* display: none; */
   }
 
 
@@ -1242,20 +1240,24 @@ html.sr .load-hidden {
 
   #welcome {
     /* height: 600px; */
-    min-height: 30vh;
-    line-height: 30vh;
+    /* min-height: 30vh; */
+    /* line-height: 30vh; */
+    height:45vh;
+    line-height: 45vh;
+    min-height: 0;
   }
 
   #welcome .container {
     margin: 0;
-    padding: 30px 0 30px;
+    /* padding: 30px 0 30px; */
     
   }
 
   #welcome img {
     /* margin: 10px auto 0; */
     /* max-width: 400px !important; */
-   width: 78%;
+   
+   width: 80%;
    padding-bottom: 0;
 
   }
