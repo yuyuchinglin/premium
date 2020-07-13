@@ -441,7 +441,7 @@ body {
 
     .level-2 .list h4 {
         margin:10px 0 5px 0 !important;
-        font-size: 1em;
+        font-size: 1.15em;
         line-height: 1.4em;
     }
 
@@ -474,9 +474,9 @@ body {
 
 
 .list .point {
+    color: #252525;
     /* font-size: 18px;  */
     font-family:'Source Sans Pro', 'Calibri','Roboto';
-    color: #252525;
     }
 
 
