@@ -25,6 +25,10 @@
   }
 
   #welcomepic {
+    margin: 40px auto 80px;
+  }
+
+  #welcomepic {
     /* margin-top: 70px; */
   }
 
@@ -51,6 +55,11 @@
     margin-top: 100px;
     text-align: center;
     /* padding-top: 40px !important; */
+  }
+  
+  #welcomepic .welcomepic {
+    margin-top: 70px;
+    text-align: center;
   }
 
   #welcomepic h1{
