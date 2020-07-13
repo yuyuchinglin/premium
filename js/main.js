@@ -1,21 +1,21 @@
-function main() {
+function main () {
 
 
 	// lazyload
-	$(function () {
-		$(".lazyload").lazyload({
-			effect: "fadeIn"
-		});
-	});
+	// $(function () {
+	// 	$(".lazyload").lazyload({
+	// 		effect: "fadeIn"
+	// 	});
+	// });
 
 	// moments
-	jQuery(document).ready(function () {
+	// jQuery(document).ready(function () {
 
-		jQuery("#gallery").unitegallery({
-			tile_enable_icons: false,
-			tiles_type: "justified"
-		});
-	});
+	// 	jQuery("#gallery").unitegallery({
+	// 		tile_enable_icons: false,
+	// 		tiles_type: "justified"
+	// 	});
+	// });
 
 
 	// page scroll
@@ -54,21 +54,21 @@ function main() {
 
 
 		//easychart + waypoints
-		$('.chart').waypoint(function () {
-			$(this).easyPieChart({
-				scaleColor: false,
-				lineWidth: 10,
-				// lineCap: 'round',
-				lineCap: 'butt',
-				barColor: '#c4a046',
-				trackColor: '#ddd',
-				size: 150,
-				animate: 2000
-			});
-		}, {
-			triggerOnce: true,
-			offset: 'bottom-in-view'
-		});
+		// $('.chart').waypoint(function () {
+		// 	$(this).easyPieChart({
+		// 		scaleColor: false,
+		// 		lineWidth: 10,
+		// 		// lineCap: 'round',
+		// 		lineCap: 'butt',
+		// 		barColor: '#c4a046',
+		// 		trackColor: '#ddd',
+		// 		size: 150,
+		// 		animate: 2000
+		// 	});
+		// }, {
+		// 	triggerOnce: true,
+		// 	offset: 'bottom-in-view'
+		// });
 
 	});
 
