@@ -105,7 +105,6 @@
   }
 
   #welcome {
-    
     /* padding-top: 25px; */
     /* padding: 5px 0px 1%; */
     /* min-height: 400px; */
@@ -151,11 +150,9 @@
 
 
    #welcome img{
-    display: inline-block;
-    width:550px; 
-    margin: 0 auto;
-    padding: 55px 0 60px;
-    vertical-align : middle;
+    display: inline-block; margin: 0 auto;
+    padding: 60px 0 65px;
+    width:600px;  vertical-align : middle;
     /* padding-bottom: 12px; */
 
   } 
@@ -1068,12 +1065,12 @@ html.sr .load-hidden {
 
 
   #welcome img {
+    /* padding-bottom: 10px; */
+    max-width: 500px !important;
     /* margin: 0 auto; */
     /* padding-top: 20px; */
     /* width: 90px; */
     width:380px;
-    /* padding-bottom: 10px; */
-    max-width: 500px !important;
  
   }
 
@@ -1258,8 +1255,7 @@ html.sr .load-hidden {
   #welcome img {
     /* margin: 10px auto 0; */
     /* max-width: 400px !important; */
-   
-   width: 80%;
+   width: 92%;
    /* padding-bottom: 0; */
 
   }
