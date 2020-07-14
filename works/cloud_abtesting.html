@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<META NAME="ROBOTS" CONTENT="NOINDEX,NOFOLLOW">
-	<title>IoT Device Management | Yu-Ching Lin</title>
+	<title>A/B Testing: Geo-fence | Yu-Ching Lin</title>
 	<link rel="shortcut icon" href="../img/logo/favicon.ico" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
 		integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -93,7 +93,7 @@
 		<div class="topic" style="background-color: #FCE4EA">
 
 			<div class="container">
-				<h1>IoT Device Management</h1>
+				<h1>A/B Testing: Geo-fence</h1>
 				<div class="webintro">
 					<p>Users can remotely organize, update, and monitor their devices at scale.</p>
 
@@ -128,16 +128,38 @@
 					The purpose of this experiment is to verify the following: (1) that Design B performs better in map preview
 					than Design A, (2) that Design A and Design B have the same level of performance in checking devices and
 					editing information, (3) and that Design B has greater overall usability than Design A.
-
 				</p>
+			</div>
 
+			<div class="list-img d-none d-md-block">
+
+
+				<img src="../img/portfolio/abtesting/5-0-1_Geo-fencing_v2.png" alt="" class="mr-3"
+					style="display: inline-block; width:43%; box-shadow: 0 0 8px rgba(0,0,0,.2);">
+
+				<img src="../img/portfolio/abtesting/5-0-1_Geo-fencing.png" alt=""
+					style="display: inline-block; width:43%; box-shadow: 0 0 8px rgba(0,0,0,.2);">
+
+
+				<div class="caption mt-2">Design A and Design B</div>
 
 			</div>
 
-			<div class="list-img">
-				<img src="../img/portfolio/iot/AB-testing.png" alt="" style="min-width:92%">
-				<div class="caption">A/B testing of geo-fencing</div>
+
+			<div class="list-img d-md-none">
+
+
+				<img src="../img/portfolio/abtesting/5-0-1_Geo-fencing_v2.png" alt="" class="mb-3"
+					style="box-shadow: 0 0 8px rgba(0,0,0,.2);">
+
+				<img src="../img/portfolio/abtesting/5-0-1_Geo-fencing.png" alt="" style="box-shadow: 0 0 8px rgba(0,0,0,.2);">
+
+
+				<div class="caption mt-2">Design A and Design B</div>
+
 			</div>
+
+
 
 			<div class="seperate"> ·&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;·</div>
 
@@ -155,8 +177,10 @@
 
 			</div>
 
+
+
 			<div class="list">
-				<b>Materials</b>
+				<h4>Materials</h4>
 				<p>
 					(1) <a href="https://lihi.io/">lihi.io</a>
 					<br>
@@ -166,7 +190,131 @@
 					(2) <a href="https://lihi.io/">Maze</a>
 					<br>
 					The Maze is an online user testing platform that provides actionable insights for prototypes, bringing
-					confidence to the design process.
+					confidence to the design process.<br>
+					(3) <a href="https://www.usability.gov/how-to-and-tools/methods/system-usability-scale.html">System Usability
+						Scale (SUS)</a>
+					<br>
+					The System Usability Scale (SUS) is a reliable way to measure usability. It consists of a 10 item
+					questionnaire using a Likert scale. However, due to a limitation of Maze’s design, we limited our
+					questionnaire to 5 items. The 5 items are presented below.
+					<br>
+					Q1: I think I would like to use this system. <br>
+					Q2*: I need to learn a lot of things before I could get going with the system. <br>
+					Q3*: I thought there was too much inconsistency in this system. <br>
+					Q4: I would imagine that people learn to use this system very quickly. <br>
+					Q5: I felt very confident using this system.<br>
+
+					*Q2 and Q3 need reverse scoring since research instrument developers have purposefully written a group of
+					items with some items in a different direction than others.
+				</p>
+			</div>
+
+			<div class="list">
+
+				<h4>Procedures</h4>
+				<p>Each participant received a lihi.io URL which randomly assigned them into the Design A or Design B
+					questionnaire. Each questionnaire has two sections. In the first section, each participant is expected to
+					complete a series of tasks using the interface prototype. In the second section, each participant completes a
+					Likert scale for 5 items regarding the system usability. The answers for this Likert scale ranged from
+					“Strongly Agree” to “Strongly Disagree.”</p>
+			</div>
+
+			<div class="list-img">
+				<img src="../img/portfolio/abtesting/procedure.png" alt="">
+				<div class="caption"> Geo-fence experiment @ Maze Design</div>
+			</div>
+
+			<div class="seperate"> ·&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;·</div>
+
+
+			<div class="list">
+				<h3>Results</h3>
+				<h4>(1) Preview Map</h4>
+				<p>In the map preview experiment, the participants’ reactions to Geo-fence's index page and previewing one
+					specific place's map were recorded. Design B performed much better regarding success rate, average time, and
+					misclick rate. The results are presented below.</p>
+			</div>
+
+			<div class="list-img">
+				<img src="../img/portfolio/abtesting/AB-testing.png" alt="" style="min-width:92%">
+				<div class="caption mt-2">Design A and Design B's click heat map</div>
+			</div>
+
+			<div class="seperate"></div>
+
+			<div class="list">
+				<h4>(2) Check Devices</h4>
+				<p>In the device checking experiment, the participants were asked to navigate Geo-fence's index page to check
+					one specific location's devices. They were asked to answer if a specific device belonged to one specific
+					location to determine if they could perceive the appropriate information. According to the results, Design B
+					performed better regarding the success rate and the average time to completion. However, Design A had a better
+					performance in the misclick and correct rate.</p>
+			</div>
+
+			<div class="seperate"></div>
+
+
+			<div class="list">
+				<h4>(3) Edit Information</h4>
+				<p>In the information editing experiment, the participants’ reactions to Geo-fence's index page and editing one
+					specific place's information were recorded. Design A produced a far better result than Design B in success
+					rate, average time, and misclick rate. The results are presented below.</p>
+			</div>
+
+			<div class="seperate"></div>
+
+			<div class="list">
+				<h4>(4) Overall Usability Testing</h4>
+				<p>The testing consisted of 5 questions derived from the System Usability Scale. In this questionnaire, Q2 and
+					Q3 are reverse questions, so I converted them into a new number according to the System Usability Scale. The
+					results are presented in the following table.</p>
+			</div>
+
+
+			<div class="list">
+				<p>According to the results, participants determined that Design B had better overall usability, specifically
+					regarding Q1, Q2, Q4, and Q5. Conversely, Design A only reported better performance for Q3. However, no
+					significant difference in statistics exists between these two designs due to the small participant pool.</p>
+
+				<p>In Design A, the SUS score is 42.2 while Design B’s SUS score is 48.5. The two scores are lower than the
+					average SUS score, which is 68. The reasoning behind the low scoring is due to participants reporting a lack
+					of knowledge, familiarity, and confidence when using the system.</p>
+			</div>
+
+			<div class="seperate"> ·&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;·</div>
+
+
+			<div class="list">
+				<h3>Conclusion</h3>
+				<h4>(1) Design B is better</h4>
+				<p>Though this is a pilot study with a small number of participants, Design B performed better overall than
+					Design A. Design B solves the map previewing issue and gives participants a better impression of the system.
+					However, Design B still has room for improvement. First, the presentation of devices in Design B is not clear
+					enough, so it has a lower correct rate in recognizing one specific device. Second, when participants were
+					editing information, the “more” icon is not visible enough, so it performed worse regarding editing
+					information.</p>
+			</div>
+
+			<div class="list">
+				<h4>(2) Participants lack confidence when using the system</h4>
+				<p>In the System Usability Scale, the system received a less than average score because participants felt they
+					needed background knowledge in order to use the system and lacked confidence when using it. Therefore, I
+					recommend that we utilize text, a video, or a workshop to introduce the product to first-time system users.
+					Additionally, it would be useful to provide a “help” service to aid users when they don't know what to do.</p>
+			</div>
+
+			<div class="seperate"> ·&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;·</div>
+
+
+			<div class="list">
+				<h3>Reference</h3>
+
+				<p>
+					Design A: <a href="https://projects.invisionapp.com/share/FWX5YJDHX6Y#/screens/416499192">Prototype</a>, <a
+						href="https://maze.design/r/7c89cafyk9ut14px#mission-1-screen-2">Report</a>
+					<br>
+					Design B: <a href="https://projects.invisionapp.com/share/FWX5YJDHX6Y#/screens/416493942">Prototype</a>, <a
+						href="https://maze.design/r/7c89cafyk9ut0oqv">Report</a>
 				</p>
 
 
