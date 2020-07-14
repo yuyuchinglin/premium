@@ -14,7 +14,7 @@ body {
 }
 
 #port .row {
-    width:inherit;
+    margin: 0 auto;
 }
 
 .navbar-brand {
