@@ -40,6 +40,11 @@ body {
     
 }
 
+.list-img.pic-2 {
+    margin: 0 auto;
+    width: 85% !important;
+}
+
 
 #port {
     margin: 0 auto;
@@ -138,11 +143,11 @@ body {
 }
 
 .list h3 {
-    margin:50px 0 40px 0 !important;
+    margin:50px 0 25px 0 !important;
     color:#252525;
     /* color:darkblue; */
     font-weight: 400;
-    font-size: 1.7em;
+    font-size: 1.8em;
     font-family: 'Patua One','Roboto';
 }
 
@@ -210,6 +215,12 @@ body {
     .list b {
         font-family:'Source Sans Pro','Montserrat',  sans-serif;
     }
+
+    .list-img.pic-2 {
+        /* margin: 0 auto; */
+        width: 100% !important;
+    }
+    
     
     #port {width: 100%;}
     #port .topic img {width: 100%;}
@@ -485,14 +496,22 @@ body {
 
 
 
+    .list-table {
+        margin:25px auto 40px;
+    }
+
+
+
     table {
-        color: #333;
-        margin: 10px auto 40px;
+        margin: 0px auto;
+        color: black;
     }
 
     table td {
         padding: 5px 15px;
         border: 1px solid #ddd;
+        white-space:nowrap;
+        font-size: 1rem;
 
     }
 
