@@ -754,6 +754,7 @@ header .link a.active:hover, .navbar .link a.active:hover {
 
   .portfolio-item {
     padding:8px 10px;
+    /* max-height: 362px; */
   }
 
 
