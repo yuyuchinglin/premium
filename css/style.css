@@ -7,7 +7,7 @@
     color:#111;
   }
 
-  header .row {
+  header .row, .navbar .row {
     margin: 0 auto;
   }
 
