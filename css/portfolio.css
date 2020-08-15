@@ -126,7 +126,7 @@ body {
 
 .list h4 {
     margin:25px 0 12px 0 !important;
-    color:#252525;
+    color:#111;
     font-weight: 400;
     font-size: 1.5em;
     font-family: 'Patua One','Roboto';
@@ -137,9 +137,9 @@ body {
     margin:25px 0 5px 0 !important;
     color:#252525;
     font-weight: 600;
-    font-size: 1.3em;
+    font-size: 1.25em;
     font-family: "Source Sans Pro", sans-serif;
-    line-height: 1.3em;
+    line-height: 1.25em;
 }
 
 .list h3 {
@@ -149,6 +149,11 @@ body {
     font-weight: 400;
     font-size: 1.8em;
     font-family: 'Patua One','Roboto';
+}
+
+.level-2 .list h3:before {
+    /* content: "✶  "; */
+    /* color: #9E6B57; */
 }
 
 .list .dots {
@@ -199,6 +204,67 @@ body {
 
 
 
+
+.Quick-navigation {
+    position: fixed;
+    bottom:40px;
+    left:20px;
+    width: 240px;
+    z-index: 100;
+    text-align: left;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+
+.Quick-navigation a {
+    display: inline;
+    text-decoration: none !important;
+    color: #888;
+}
+
+.Quick-navigation a:before {
+    content:"- ";
+}
+
+.Quick-navigation a.current {
+    color:#9E6B57;
+    font-weight: 600;
+}
+
+.Scroll-to-top {
+    position: fixed;
+    bottom:30px;
+    right:30px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 0px;
+    box-shadow: 0 0 8px rgba(0,0,0,.2);
+    color: #555;
+    cursor:pointer;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.3s;
+}
+
+.Scroll-to-top.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+  
+
+.Scroll-to-top:focus {
+    outline: none;
+}
+
+.Scroll-to-top:hover {
+    color: #9E6B57;
+}
+
+
+
 @media screen and (min-width: 901px) { 
     #port .topic img {
     max-height: 430px;
@@ -211,6 +277,10 @@ body {
 
 
 @media screen and (max-width: 900px) {
+
+    .Quick-navigation {
+        display: none;
+    }
 
     .list b {
         font-family:'Source Sans Pro','Montserrat',  sans-serif;
