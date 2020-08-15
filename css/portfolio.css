@@ -135,7 +135,7 @@ body {
 
 .level-2 .list h4 {
     margin:25px 0 5px 0 !important;
-    color:#111;
+    color:#252525;
     font-weight: 600;
     font-size: 1.3em;
     font-family: "Source Sans Pro", sans-serif;
@@ -163,9 +163,9 @@ body {
 
 .list b {
     /* margin-top: 10px; */
-    color: #000;
+    color: #252525;
     font-weight: 700;
-    font-family:'Montserrat', 'Source Sans Pro', sans-serif;
+    /* font-family:'Montserrat', 'Source Sans Pro', sans-serif; */
 }
 
 .list.point p {
@@ -296,7 +296,7 @@ body {
 
 
 .list p, .list b{
-    font-size: 18px;
+    font-size: 20px !important;
 }
 
 
@@ -312,7 +312,8 @@ body {
     font-variant: normal;
     /* text-align: justify; */
     line-height: 1.65;
-
+    font-size: 1.05 rem !important;
+}
 }
 
 .list b, .caption b{
@@ -378,7 +379,7 @@ body {
 
 
   #port p {
-      margin:5px 0 30px 0;
+      margin:8px 0 30px 0;
   }
 
   #port .list.point p {
