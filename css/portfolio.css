@@ -50,7 +50,7 @@ body {
     margin: 0 auto;
     padding-bottom: 40px;
     width: 100vw;
-    color:#fff;
+    /* color:#fff; */
     text-align: center;
 
 }
@@ -60,6 +60,27 @@ body {
     padding-top: 130px;
     padding-bottom: 50px;
     background-color: #FBE091;
+}
+
+
+.research-table {
+    max-width: 100%;
+    margin-top: 5px;
+    color:#4b4b4b;
+}
+
+.research-table tr td {
+    padding: 10px 15px;
+    border:0px
+}
+
+.research-table tr td:first-child{
+    font-size: 36px;
+    text-align: center;
+}
+
+.research-table tr td:nth-child(2){
+    white-space: normal !important;
 }
 
 
