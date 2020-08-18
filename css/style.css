@@ -31,9 +31,9 @@
     margin: 40px auto 80px;
   }
 
-  #welcomepic {
+  /* #welcomepic { */
     /* margin-top: 70px; */
-  }
+  /* } */
 
   .navbar-brand {
     padding: 20px 0;
@@ -785,10 +785,10 @@ header .link a.active:hover, .navbar .link a.active:hover {
   transition: box-shadow .3s ease-out,background-size .3s ease-out;
   }
 
-  .portfolio-item:hover .intro {
+  /* .portfolio-item:hover .intro { */
     /* box-shadow: 0 1px 6px rgba(0,0,0,.15); */
     /* box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.05), 0 4px 8px 3px rgba(60, 64, 67, 0.15); */
-  }
+  /* } */
   
 
   
@@ -984,11 +984,11 @@ html.sr .load-hidden {
 
 @media (max-width: 1250px) {
 
-  #welcome {
+  /* #welcome { */
     /* padding:11.5% 32px 2.5%; */
     /* min-height: 45vw; */
     /* line-height: 45vw; */
-  } 
+  /* }  */
 
   #welcome h1 {
     font-size: 30px;
@@ -1069,12 +1069,12 @@ html.sr .load-hidden {
     
   }
 
-  #welcome {
+  /* #welcome { */
     /* min-height: 38vh; */
     /* line-height: 38vh; */
     /* height: 380px; */
     /* line-height: 380px; */
-  }
+  /* } */
 
 
   #welcome img {
@@ -1250,14 +1250,14 @@ html.sr .load-hidden {
     font-size: 20px;
   }
 
-  #welcome {
+  /* #welcome { */
     /* height: 600px; */
     /* min-height: 30vh; */
     /* line-height: 30vh; */
     /* height:45vh; */
     /* line-height: 45vh; */
     /* min-height: 0; */
-  }
+  /* } */
 
   #welcome .container {
     margin: 0;
