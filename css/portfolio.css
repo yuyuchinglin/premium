@@ -67,11 +67,13 @@ body {
     max-width: 100%;
     margin-top: 5px;
     color:#4b4b4b;
+    
 }
 
 .research-table tr td {
     padding: 10px 15px;
-    border:0px
+    border:0px;
+    font-size: 18px;
 }
 
 .research-table tr td:first-child{
@@ -172,10 +174,10 @@ body {
     font-family: 'Patua One','Roboto';
 }
 
-.level-2 .list h3:before {
+/* .level-2 .list h3:before { */
     /* content: "✶  "; */
     /* color: #9E6B57; */
-}
+/* } */
 
 .list .dots {
     margin-right: 14px !important;
@@ -334,9 +336,9 @@ body {
         height: 250px;
         /* margin-top: 120px; */
     }
-    #port {
+    /* #port { */
         /* margin-top: -240px; */
-    }
+    /* } */
     /* header img {
         height: 40px;
     }
