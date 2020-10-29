@@ -5,6 +5,7 @@
 
   body {
     color:#111;
+    font-size: 1.2rem;
   }
 
   header .row, .navbar .row {
@@ -186,7 +187,6 @@
     display: table-cell;   padding-top: 10px;
     vertical-align: middle;
     text-align: center;
-    font-size: 18px;
     line-height: 23px;   
     }
 
@@ -226,7 +226,7 @@
 
 
   #about p, #about a, .word p{
-    font-size: 18px;
+    /* font-size: 18px; */
     line-height: 1.75em;
   }
 
@@ -257,7 +257,7 @@
 
   .sm-section {
     margin-top: 40px;
-    font-size: 18px;
+    /* font-size: 18px; */
   }
 
 
@@ -995,7 +995,7 @@ html.sr .load-hidden {
   }
 
   #welcome p{
-    font-size: 20px;
+    font-size: 18px;
   }
 
   #welcome .index-intro {
@@ -1122,7 +1122,7 @@ html.sr .load-hidden {
     padding: 0 15px 0 0;
     text-align: center;
     /* line-height: 20px; */
-    font-size: 18px !important;
+    font-size: 20px !important;
     line-height: 26px;
   }
 
