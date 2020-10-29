@@ -23,7 +23,7 @@
     width: 100%;
   }
 
-  #welcomepic, #about, #moments, #skills, #portfolio, #contact {
+  #welcomepic, #about, .articles, #moments, #skills, #portfolio, #contact {
     margin: 90px auto 80px;
   }
 
