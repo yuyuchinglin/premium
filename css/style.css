@@ -19,12 +19,12 @@
     color: #fff;
   }
 
-  nav, #welcomepic, #about, #moments, #skills, #portfolio, #contact, #footer {
+  nav, #welcomepic, #about, #moments, #skills, #portfolio, #article, #contact, #footer {
     overflow: hidden;
     width: 100%;
   }
 
-  #welcomepic, #about, .articles, .moments, #skills, #portfolio, #contact {
+  #welcomepic, #about, .articles, .moments, #skills, #portfolio, #article, #contact {
     margin: 120px auto 100px;
   }
 
@@ -907,6 +907,8 @@ html.sr .load-hidden {
 }
 
 @media (max-width: 960px){
+
+  #
   .articles-item h5 b{  
     font-size:22px;
     line-height: 28px;
@@ -915,6 +917,10 @@ html.sr .load-hidden {
   .articles-item p {
    font-size: 18px;
    line-height: 24px;
+  }
+
+  .articles-item {
+    padding: 0 22px;
   }
 }
 
@@ -1075,8 +1081,13 @@ html.sr .load-hidden {
    padding:0 ;
  }
 
- #portfolio {
+ #portfolio{
    margin: 40px auto 80px;
+ }
+
+ #article {
+   margin: 40px auto 80px auto;
+   padding: 0 15px; 
  }
 } 
 
