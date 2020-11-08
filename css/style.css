@@ -890,15 +890,15 @@ html.sr .load-hidden {
 }
 
 .articles-item p {
-  color:#888 !important;
- 
+  color:rgba(0,0,0,.54) !important;
+  font-weight: 300;
 }
 
-.articles-item h5 {
-  color:#121212 !important;
-  font-weight: 600;
-  font-size:28px;
-  font-family: 'Patua One','Roboto';
+.articles-item h5 b{
+  color:rgba(0,0,0,0.84) !important;
+  font-weight: 700;
+  font-size:26px;
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   line-height: 34px;
 }
 
@@ -906,11 +906,22 @@ html.sr .load-hidden {
   height:180px
 }
 
+@media (max-width: 960px){
+  .articles-item h5 b{  
+    font-size:22px;
+    line-height: 28px;
+  }
+
+  .articles-item p {
+   font-size: 18px;
+   line-height: 24px;
+  }
+}
+
 @media (min-width: 960px){
   .articles-item.col-lg-6 .pic {
     height:260px !important;
   }
-  
 }
 
 .name {
