@@ -389,11 +389,6 @@ body {
 }
 
 
-.list p, .list b{
-    /* font-size: 18px !important; */
-}
-
-
 .list p {
     color:rgba(0,0,0,.76);
     /* --x-height-multiplier: 0.375; */
