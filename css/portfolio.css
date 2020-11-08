@@ -67,7 +67,7 @@ body {
 .research-table {
     max-width: 100%;
     margin-top: 5px;
-    color:#4b4b4b;
+    color: rgba(0,0,0,.76);;
     
 }
 
@@ -395,7 +395,7 @@ body {
 
 
 .list p {
-    color:#4b4b4b;
+    color:rgba(0,0,0,.76);
     /* --x-height-multiplier: 0.375; */
     /* --baseline-multiplier: 0.5; */
     word-break: break-word;
