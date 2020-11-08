@@ -302,7 +302,7 @@
   border-top: 1px solid rgba(256,256,256,0.15);
   background:rgb(248,248,248);
   color:#252525;
-  font-size: 18px;
+  /* font-size: 18px; */
 }
 
 #footer .row {
@@ -540,7 +540,7 @@ header .link a, .navbar .link a{
   padding: 0;
   color:#252525;
   font-weight: 500;
-  font-size: 18px;
+  /* font-size: 18px; */
   line-height: 35px;
 }
 
@@ -881,6 +881,46 @@ html.sr .load-hidden {
   padding:50px 0 80px;
   border-top: 1px solid #eee;
 }
+
+
+.articles-item {
+  padding: 0 35px;
+  text-decoration: none !important;
+ 
+}
+
+.articles-item p {
+  color:#888 !important;
+ 
+}
+
+.articles-item h5 {
+  color:#121212 !important;
+  font-weight: 600;
+  font-size:28px;
+  font-family: 'Patua One','Roboto';
+  line-height: 34px;
+}
+
+.articles-item .pic {
+  height:180px
+}
+
+@media (min-width: 960px){
+  .articles-item.col-lg-6 .pic {
+    height:260px !important;
+  }
+  
+}
+
+.name {
+  margin-top: 8px;
+  font-weight: 400;
+  font-size:24px;
+  font-family: 'Patua One','Roboto';
+}
+
+
 
 
 
