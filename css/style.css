@@ -540,7 +540,7 @@ header .link a, .navbar .link a{
   padding: 0;
   color:#252525;
   font-weight: 500;
-  /* font-size: 18px; */
+  font-size: 18px;
   line-height: 35px;
 }
 
