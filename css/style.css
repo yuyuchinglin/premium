@@ -882,11 +882,28 @@ html.sr .load-hidden {
   border-top: 1px solid #eee;
 }
 
+p.title {
+  display: block;
+  margin-top: 20px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  color:rgba(0,0,0,.64);
+  font-size: 24px;
+}
+
 
 .articles-item {
-  padding: 0 35px;
+  margin-bottom: 30px;
+  padding: 0 10px !important;
   text-decoration: none !important;
- 
+}
+
+.articles-item .card-body {
+  padding:8px 0 15px 0px;
+}
+
+.articles-item .card-body .card-text, .articles-item .card-body .card-title {
+  margin:5px;
 }
 
 .articles-item p {
@@ -903,7 +920,13 @@ html.sr .load-hidden {
 }
 
 .articles-item .pic {
-  height:180px
+  /* min-width: 370px; */
+  /* width:100%; */
+  height:180px;
+}
+
+.articles-item .card {
+  border: none;
 }
 
 @media (max-width: 960px){
