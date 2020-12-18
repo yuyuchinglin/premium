@@ -72,14 +72,13 @@
 
 	<section id="article">
 
-		<div class="container mt-5 mt-lg-0">
+		<div class="container mt-5">
 
-			<div class="mt-2 mb-5 d-none d-lg-flex" style="display: flex;align-items: center;">
+			<div class="mt-4 mb-5 d-none d-lg-flex" style="display: flex;align-items: center;">
 
 
 
-				<img src="/img/portfolio/articles/medium_photo.jpeg" width="150px" alt="" class="ml-1"
-					style="display: inline-block;">
+				<img src="/img/portfolio/articles/medium_photo.jpeg" width="150px" alt="" style="display: inline-block;">
 
 				<div class="ml-4" style="display: inline-block;">
 
@@ -96,52 +95,15 @@
 
 			</div>
 
-
-			<p class="title">English Articles</p>
-
-
-
-			<div class="row my-0 my-lg-3 mt-lg-4" id="en_articles">
-				<!-- <a target="_blank"
-					href="https://uxplanet.org/how-to-make-company-core-values-more-than-just-a-slogan-62783433dc05"
-					class="col-12 col-md-6 col-lg-6 d-flex justify-content-start articles-item mb-3 py-3">
-					<div class="row">
-						<div class="col col-12 pic"
-							style="background: url('/img/portfolio/articles/2020_value.jpeg') center center grey; background-size: cover"
-							alt="">
-						</div>
-						<div class="col col-12 mt-2 mt-lg-3 p-0 h-100">
-							<h5 class="mb-2"><b>How to Make Company Core Values More Than Just a Slogan?</b></h5>
-							<p class="my-2">This article will apply persuasive technology concepts to analyze the common pitfalls of
-								corporate core values and propose solutions.
-							</p>
-							<small class="text-muted">Nov 7, 2020 @ UX Planet</small>
-						</div>
-					</div>
-				</a>
+			<!-- <br> -->
+			<p class="row title mb-3">English Articles</p>
 
 
-				<a target="_blank"
-					href="https://uxdesign.cc/the-appropriate-use-of-visual-effects-in-advertisements-and-websites-50827833155d"
-					class="col-12 col-md-6 col-lg-6 d-flex justify-content-start articles-item mb-3 py-3">
-					<div class="row">
-						<div class="col col-12 pic"
-							style="background: url(/img/portfolio/articles/2020_cool.jpeg) center center grey; background-size: cover"
-							alt="">
-						</div>
-						<div class="col col-12 mt-2 mt-lg-3 p-0 h-100">
-							<h5 class="mb-2"><b>The Appropriate Use of Visual Effects in Ads and Websites</b></h5>
-							<p class="my-2">This article will highlight two eye-tracking studies that discuss some limitations of
-								visual communication.
-							</p>
-							<small class="text-muted">Oct 2, 2020 @ UX Collective</small>
-						</div>
-					</div>
-				</a> -->
-			</div>
 
+			<div class="row my-0 my-lg-3" id="en_articles"></div>
 
-			<p class="title">Chineses Articles / 中文文章</p>
+			<!-- <br> -->
+			<p class="row title mb-3">Chineses Articles / 中文文章</p>
 
 			<div class="row my-0 my-lg-3" id="cn_articles">
 				<!-- <a target="_blank"
@@ -224,17 +186,6 @@
 	<!-- filter: isotope-->
 	<script>
 
-		ScrollReveal().reveal('header',
-			{
-				origin: 'top',
-			});
-
-
-		ScrollReveal().reveal('#welcome, #article',
-			{
-				origin: 'bottom',
-			});
-
 		const requestURL = './articles.json';
 		var request = new XMLHttpRequest();
 		request.open('GET', requestURL);
@@ -253,10 +204,25 @@
 			for (var i = 0; i < cn_articles.length; i++) {
 				var txt = "<a target='_blank' class ='articles-item col-12 col-md-6 col-lg-4' href=" + cn_articles[i].link + "> <div class='card' style='width:100%'><div class='pic' style='background: url(/img/portfolio/articles/" + cn_articles[i].img + ") center center grey; background-size: cover'></div><div class='card-body'><h5 class='card-title'><b>" + cn_articles[i].title + "</b></h5><p class='card-text'>" + cn_articles[i].subtitle + "</p><small class='text-muted'>" + cn_articles[i].date + " " + cn_articles[i].publication + "</small></div></div></a>";
 				document.getElementById("cn_articles").innerHTML += txt;
+
+
 			}
 		}
 
 
+
+
+
+		ScrollReveal().reveal('header',
+			{
+				origin: 'top',
+			});
+
+
+		ScrollReveal().reveal('#article, #en_article, #cn_article, .title',
+			{
+				origin: 'bottom',
+			});
 
 
 
