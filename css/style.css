@@ -816,6 +816,10 @@ header .link a.active:hover, .navbar .link a.active:hover {
 
   /* about moments */
 
+  .moments .container-fluid {
+    max-width:  950px;
+  }
+
 
   .ig-photo {
     display: inline-block;
@@ -1094,6 +1098,13 @@ p.title {
 
 
 @media screen and (max-width: 950px){
+
+
+  .moments .container-fluid {
+    /* max-width:  640px; */
+  }
+
+
   .ig-photo {
    margin:0;
    width:30vw;
