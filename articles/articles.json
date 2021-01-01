@@ -1,6 +1,15 @@
 {
   "en_articles": [
     {
+      "title": "My Minimalist Approach to Combat Consumerism",
+      "subtitle": "The secret to achieving financial goals and ideal space",
+      "date": "Dec 21, 2020",
+      "publication": "@ Be Yourself",
+      "category": "Personal growth",
+      "img": "2020_minimalism.jpeg",
+      "link": "https://byrslf.co/a-minimalist-approach-to-combat-consumerism-3782ce07cd66"
+    },
+    {
       "title": "How to Make Company Core Values More Than Just a Slogan?",
       "subtitle": "This article will apply persuasive technology concepts to analyze the common pitfalls of corporate core values and propose solutions.",
       "date": "Nov 7, 2020",
@@ -15,11 +24,20 @@
       "date": "Oct 2, 2020",
       "publication": "@ UX Collective",
       "category": "User experience",
-      "img": "2020_cool.jpeg",
+      "img": "2020_cool.jpg",
       "link": "https://uxdesign.cc/the-appropriate-use-of-visual-effects-in-advertisements-and-websites-50827833155d"
     }
   ],
   "cn_articles": [
+    {
+      "title": "那些新鮮人不懂的職場事",
+      "subtitle": "介紹自己出社會後才懂的那些職場事，包含金字塔人才結構、面試心態、軟技能的重要性，以及生活重心的調整等。",
+      "date": "Jan 1, 2021",
+      "publication": "",
+      "category": "Personal growth",
+      "img": "2020_rookie.jpeg",
+      "link": "hhttps://yuyuchinglin.medium.com/%E9%82%A3%E4%BA%9B%E6%96%B0%E9%AE%AE%E4%BA%BA%E4%B8%8D%E6%87%82%E7%9A%84%E8%81%B7%E5%A0%B4%E4%BA%8B-e6419ab8ae10"
+    },
     {
       "title": "對抗消費主義的極簡生活",
       "subtitle": "實現財務目標及理想空間的秘訣",
@@ -40,11 +58,11 @@
     },
     {
       "title": "網站特效越酷炫越好？視覺傳達的限制？",
-      "subtitle": "此篇文章將介紹兩個眼動研究，討論視覺傳達的限制。",
+      "subtitle": "介紹兩個眼動研究，並討論視覺傳達的限制。",
       "date": "Sep 25, 2020",
       "publication": "@ AAPD — As A Product Designer",
       "category": "User experience",
-      "img": "2020_cool.jpeg",
+      "img": "2020_cool.jpg",
       "link": "https://medium.com/as-a-product-designer/%E7%B6%B2%E7%AB%99%E8%BF%B7%E6%80%9D-%E7%B6%B2%E7%AB%99%E7%89%B9%E6%95%88%E8%B6%8A%E9%85%B7%E7%82%AB%E8%B6%8A%E5%A5%BD-%E8%A6%96%E8%A6%BA%E5%82%B3%E9%81%94%E7%9A%84%E9%99%90%E5%88%B6-b984b882dbc3"
     },
     {

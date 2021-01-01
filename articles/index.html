@@ -22,6 +22,30 @@
 	<script src="/js/pace.js"></script>
 	<script src="https://unpkg.com/scrollreveal"></script>
 
+	<script>
+		const requestURL = './articles.json';
+		var request = new XMLHttpRequest();
+		request.open('GET', requestURL);
+		request.responseType = 'json';
+		request.send();
+		request.onload = function () {
+
+			var en_articles = request.response.en_articles;
+			var cn_articles = request.response.cn_articles;
+
+			for (var i = 0; i < en_articles.length; i++) {
+				var txt = "<a target='_blank' class ='articles-item col-12 col-md-6 col-lg-4' href=" + en_articles[i].link + "> <div class='card' style='width:100%'><div class='pic' style='background: url(/img/portfolio/articles/" + en_articles[i].img + ") center center grey; background-size: cover'></div><div class='card-body'><h5 class='card-title'><b>" + en_articles[i].title + "</b></h5><p class='card-text'>" + en_articles[i].subtitle + "</p><small class='text-muted'>" + en_articles[i].date + " " + en_articles[i].publication + "</small></div></div></a>";
+				document.getElementById("en_articles").innerHTML += txt;
+			}
+
+			for (var i = 0; i < cn_articles.length; i++) {
+				var txt = "<a target='_blank' class ='articles-item col-12 col-md-6 col-lg-4' href=" + cn_articles[i].link + "> <div class='card' style='width:100%'><div class='pic' style='background: url(/img/portfolio/articles/" + cn_articles[i].img + ") center center grey; background-size: cover'></div><div class='card-body'><h5 class='card-title'><b>" + cn_articles[i].title + "</b></h5><p class='card-text'>" + cn_articles[i].subtitle + "</p><small class='text-muted'>" + cn_articles[i].date + " " + cn_articles[i].publication + "</small></div></div></a>";
+				document.getElementById("cn_articles").innerHTML += txt;
+
+			}
+		}
+	</script>
+
 
 	<script>
 		ScrollReveal({
@@ -174,7 +198,7 @@
 				</div>
 
 				<div class="col-lg-4 col-sm-12 text-lg-left p-0">
-					<span>COPYRIGHT © YUCHING 2017-2020</span>
+					<span>COPYRIGHT © YUCHING 2017-2021</span>
 				</div>
 			</div>
 		</div>
@@ -190,33 +214,6 @@
 	<!-- filter: isotope-->
 	<script>
 
-		const requestURL = './articles.json';
-		var request = new XMLHttpRequest();
-		request.open('GET', requestURL);
-		request.responseType = 'json';
-		request.send();
-		request.onload = function () {
-
-			var en_articles = request.response.en_articles;
-			var cn_articles = request.response.cn_articles;
-
-			for (var i = 0; i < en_articles.length; i++) {
-				var txt = "<a target='_blank' class ='articles-item col-12 col-md-6 col-lg-6' href=" + en_articles[i].link + "> <div class='card' style='width:100%'><div class='pic' style='background: url(/img/portfolio/articles/" + en_articles[i].img + ") center center grey; background-size: cover'></div><div class='card-body'><h5 class='card-title'><b>" + en_articles[i].title + "</b></h5><p class='card-text'>" + en_articles[i].subtitle + "</p><small class='text-muted'>" + en_articles[i].date + " " + en_articles[i].publication + "</small></div></div></a>";
-				document.getElementById("en_articles").innerHTML += txt;
-			}
-
-			for (var i = 0; i < cn_articles.length; i++) {
-				var txt = "<a target='_blank' class ='articles-item col-12 col-md-6 col-lg-4' href=" + cn_articles[i].link + "> <div class='card' style='width:100%'><div class='pic' style='background: url(/img/portfolio/articles/" + cn_articles[i].img + ") center center grey; background-size: cover'></div><div class='card-body'><h5 class='card-title'><b>" + cn_articles[i].title + "</b></h5><p class='card-text'>" + cn_articles[i].subtitle + "</p><small class='text-muted'>" + cn_articles[i].date + " " + cn_articles[i].publication + "</small></div></div></a>";
-				document.getElementById("cn_articles").innerHTML += txt;
-
-
-			}
-		}
-
-
-
-
-
 		ScrollReveal().reveal('header',
 			{
 				origin: 'top',
@@ -227,13 +224,6 @@
 			{
 				origin: 'bottom',
 			});
-
-
-
-
-
-
-
 
 
 	</script>

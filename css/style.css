@@ -888,7 +888,7 @@ html.sr .load-hidden {
 
 p.title {
   display: block;
-  margin: 20px -2px 0 -2px;
+  margin: 30px -2px 26px -2px !important;
   padding-bottom: 6px;
   border-bottom: 1px solid rgba(0,0,0,.1);
   color:rgba(0,0,0,.64);
