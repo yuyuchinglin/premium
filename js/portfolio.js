@@ -30,7 +30,7 @@ else {
   //////////////////////
   // Utils
   //////////////////////
-  function throttle(fn, delay, scope) {
+  function throttle (fn, delay, scope) {
     // Default delay
     delay = delay || 250;
     var last, defer;
@@ -51,7 +51,7 @@ else {
     }
   }
 
-  function extend(destination, source) {
+  function extend (destination, source) {
     for (var k in source) {
       if (source.hasOwnProperty(k)) {
         destination[k] = source[k];

@@ -34,12 +34,12 @@
 			var cn_articles = request.response.cn_articles;
 
 			for (var i = 0; i < en_articles.length; i++) {
-				var txt = "<a target='_blank' class ='articles-item col-12 col-md-6 col-lg-4' href=" + en_articles[i].link + "> <div class='card' style='width:100%'><div class='pic' style='background: url(/img/portfolio/articles/" + en_articles[i].img + ") center center grey; background-size: cover'></div><div class='card-body'><h5 class='card-title'><b>" + en_articles[i].title + "</b></h5><p class='card-text'>" + en_articles[i].subtitle + "</p><small class='text-muted'>" + en_articles[i].date + " " + en_articles[i].publication + "</small></div></div></a>";
+				var txt = "<a target='_blank' class ='articles-item col-12 col-md-6 col-lg-4' href=" + en_articles[i].link + "> <div class='card' style='width:100%'><div class='pic' style='background: url(/articles/articles/" + en_articles[i].img + ") center center grey; background-size: cover'></div><div class='card-body'><h5 class='card-title'><b>" + en_articles[i].title + "</b></h5><p class='card-text'>" + en_articles[i].subtitle + "</p><small class='text-muted'>" + en_articles[i].date + " " + en_articles[i].publication + "</small></div></div></a>";
 				document.getElementById("en_articles").innerHTML += txt;
 			}
 
 			for (var i = 0; i < cn_articles.length; i++) {
-				var txt = "<a target='_blank' class ='articles-item col-12 col-md-6 col-lg-4' href=" + cn_articles[i].link + "> <div class='card' style='width:100%'><div class='pic' style='background: url(/img/portfolio/articles/" + cn_articles[i].img + ") center center grey; background-size: cover'></div><div class='card-body'><h5 class='card-title'><b>" + cn_articles[i].title + "</b></h5><p class='card-text'>" + cn_articles[i].subtitle + "</p><small class='text-muted'>" + cn_articles[i].date + " " + cn_articles[i].publication + "</small></div></div></a>";
+				var txt = "<a target='_blank' class ='articles-item col-12 col-md-6 col-lg-4' href=" + cn_articles[i].link + "> <div class='card' style='width:100%'><div class='pic' style='background: url(/articles/articles/" + cn_articles[i].img + ") center center grey; background-size: cover'></div><div class='card-body'><h5 class='card-title'><b>" + cn_articles[i].title + "</b></h5><p class='card-text'>" + cn_articles[i].subtitle + "</p><small class='text-muted'>" + cn_articles[i].date + " " + cn_articles[i].publication + "</small></div></div></a>";
 				document.getElementById("cn_articles").innerHTML += txt;
 
 			}
@@ -102,7 +102,7 @@
 
 
 
-				<img src="/img/portfolio/articles/medium_photo.jpeg" width="150px" alt="" style="display: inline-block;">
+				<img src="/articles/articles/medium_photo.jpeg" width="150px" alt="" style="display: inline-block;">
 
 				<div class="ml-4" style="display: inline-block;">
 
@@ -173,7 +173,7 @@
 
 			<div class="row">
 				<div class="col-lg-4 col-sm-12 text-lg-right p-0">
-					<a target="_blank" href="https://yuyuchinglin.medium.com/">
+					<a target="_blank" href="https://www.linkedin.com/in/yuyuchinglin/">
 						<i class="fab fa-linkedin"></i>
 					</a>
 					<a target="_blank" href="https://medium.com/@yuyuchinglin">
