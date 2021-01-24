@@ -1129,6 +1129,19 @@ p.title {
   .articles-item {
     padding: 0 22px;
   }
+
+  .bsncard .front {
+    display:none;
+  }
+
+  .bsncard .back {
+    transform: rotateY( 0deg );
+  }
+
+  #contact:hover .bsncard,
+  #contact.hover .bsncard{
+    transform: rotateY( 0deg );
+  }
 }
 
 @media (min-width: 960px){
@@ -1306,7 +1319,7 @@ p.title {
 @media (max-width: 768px) {
 
   body {
-    font-size: 1.2rem;
+    font-size: 1.12rem;
   }
 
   .pace {
@@ -1511,14 +1524,6 @@ p.title {
   }
 
 
-  .bsncard .front {
-    display:none;
-  }
-
-  .bsncard .back {
-    transform: rotateY( 0deg );
-  }
-
   .bsncard .bsn-intro {
     bottom: 15px;
     left: 20px;
@@ -1526,13 +1531,10 @@ p.title {
 
   .bsncard .bsn-logo {
     top: 20px;
-    right: 25px;
+     right: 25px;
   }
   
-  #contact:hover .bsncard,
-  #contact.hover .bsncard{
-    transform: rotateY( 0deg );
-  }
+
 }
 
 
