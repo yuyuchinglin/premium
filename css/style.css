@@ -1110,6 +1110,10 @@ p.title {
 
 @media (max-width: 960px){
 
+  body {
+    font-size: 1.12rem;
+  }
+
   .container.container-sm-large {
     padding: 0 15px;
     max-width:100% !important;
@@ -1322,9 +1326,7 @@ p.title {
 
 @media (max-width: 768px) {
 
-  body {
-    font-size: 1.12rem;
-  }
+
 
   .pace {
     display: none;
