@@ -5,7 +5,7 @@
 
   body {
     color:#111;
-    font-size: 1.25rem;
+    font-size: 1.25em;
   }
 
   header .row, .navbar .row {
@@ -1108,6 +1108,38 @@ p.title {
   border: none;
 }
 
+#article .article-box .article-intro {
+  padding:35px 40px 30px;
+}
+
+#article .article-box {
+  background: #efefef;
+}
+
+
+#article .articles-img img{
+  height: auto;
+}
+
+#article .articles-img {
+  padding: 0;
+}
+
+#article .article-box img {
+  height: 100%;
+}
+
+.form-control:focus {
+  border-color: #9E6B57;
+  box-shadow: 0 0 0 0.2rem rgb(158 107 87 / 25%) !important;
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgb(158 107 87 / 25%) !important;
+}
+}
+
+
 @media (max-width: 960px){
 
   body {
@@ -1154,7 +1186,7 @@ p.title {
 
 @media (min-width: 960px){
   .articles-item.col-lg-6 .pic {
-    height:260px !important;
+    height:245px !important;
   }
 }
 
