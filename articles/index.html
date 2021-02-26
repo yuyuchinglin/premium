@@ -13,8 +13,7 @@
 
 	<link rel="shortcut icon" href="/img/logo/favicon.ico" />
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
-		integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
 	<link rel='stylesheet' href='/css/style.css' type='text/css' />
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Patua+One:400" rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
@@ -98,26 +97,43 @@
 
 		<div class="container mt-5">
 
-			<div class="pt-1 pt-sm-4 pt-lg-1 d-none d-md-flex pb-3" style="display: flex;align-items: center;">
+			<div class="article-box d-none d-sm-flex" style="display: flex;align-items: center;">
+
+				<div class="articles-img d-none d-lg-block">
+					<img src="/articles/articles/medium_photo.jpeg" alt="">
+				</div>
 
 
 
-				<img src="/articles/articles/medium_photo.jpeg" width="150px" alt="" style="display: inline-block;">
 
-				<div class="ml-4" style="display: inline-block;">
+				<div class="article-intro">
 
-					<small class="text-muted" style="letter-spacing:.5px">ABOUT</small><br>
+					<!-- <small class="text-muted" style="letter-spacing:.5px">ABOUT</small><br> -->
 
 					<h5 class="name d-inline-block">Yu-Ching Lin</h5> <a target="_blank"
 						href="https://yuyuchinglin.medium.com/">@Medium</a>
 					<br>
 					<span style="color:#555">
-						I am a UX thinker and practitioner.<br>
-						I provide insights on strategies, user experience, and personal growth.
+						A UX thinker and practitioner.
+						I like to apply my psychology knowledge to provide insights on strategies, user experience, and personal
+						growth. <b>
+							Subscribe for my new articles here. :) </b>
 					</span>
 
+					<form id="google-form" class="contact100-form validate-form">
+						<div class="form-row">
+							<div class="col-8 col-sm-9 my-2">
+								<input type="email" class="form-control mt-2" id="email" aria-describedby="emailHelp"
+									placeholder="Your Email Address">
+							</div>
 
+							<div class="col-4 col-sm-3 my-2">
+								<button type="submit" class="btn mt-2 btn-primary"
+									style="background-color:#9E6B57; border:0; letter-spacing: .5px; font-weight: 500;">SUBSCRIBE</button>
+							</div>
 
+						</div>
+					</form>
 
 				</div>
 
@@ -128,12 +144,12 @@
 
 
 
-			<div class="row my-0 my-lg-3" id="en_articles"></div>
+			<div class="row my-0 my-lg-3" id="en_articles" style="margin-left: -11px; margin-right:-11px"></div>
 
 			<!-- <br> -->
 			<p class="row title mb-3">Chinese Articles / 中文文章</p>
 
-			<div class="row my-0 my-lg-3" id="cn_articles">
+			<div class="row my-0 my-lg-3" id="cn_articles" style="margin-left: -11px; margin-right:-11px">
 				<a target="_blank"
 					href="https://medium.com/as-a-product-designer/%E7%B6%B2%E7%AB%99%E8%BF%B7%E6%80%9D-%E7%B6%B2%E7%AB%99%E7%89%B9%E6%95%88%E8%B6%8A%E9%85%B7%E7%82%AB%E8%B6%8A%E5%A5%BD-%E8%A6%96%E8%A6%BA%E5%82%B3%E9%81%94%E7%9A%84%E9%99%90%E5%88%B6-b984b882dbc3"
 					class="articles-item col-12 col-md-6 col-lg-6">
@@ -225,6 +241,7 @@
 
 	<!-- js開始 -->
 	<script type='text/javascript' src='js/jquery-11.0.min.js'></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<!-- <script src="js/isotope.js"></script>  -->
 	<!-- filter: isotope-->
 	<script>
@@ -265,7 +282,6 @@
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
-
 		gtag('config', 'UA-115360200-1');
 	</script>
 
@@ -289,15 +305,37 @@
 
 	<script>
 		window.addEventListener("load", function (event) {
-			var a = document.querySelectorAll('.port a');
+			var a = document.querySelectorAll('#article a');
 			a.forEach(function (item) {
 				item.addEventListener("click", function () {
-					var desc = item.querySelector('h5').innerText;
-					//alert(desc);
-					mixpanel.track(desc);
+					var desc = item.querySelector('.card-title').innerText;
+					// alert(desc);
+					mixpanel.track("click " + desc);
 				})
 			})
 		})
+	</script>
+
+	<script>
+		$('#google-form').submit(function (e) {
+			e.preventDefault();
+			if ($('#email').val()) {
+				$.ajax({
+					url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSd_bLaa23ycM4xi6D2AstnXXgcHzQVMjdM5E_1rq-bA-im2ww/formResponse",
+					crossDomain: true,
+					data: {
+						"entry.1000806426": $('#email').val(),
+					},
+					type: "POST",
+					dataType: "JSONP",
+					complete: function () {
+						$('#email').val('')
+						alert('Thanks for your subscribing! :)')
+						// window.location.replace("/article/article.html");
+					}
+				});
+			}
+		});
 	</script>
 
 
