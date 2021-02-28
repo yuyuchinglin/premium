@@ -67,7 +67,7 @@ body {
 .research-table {
     max-width: 100%;
     margin-top: 5px;
-    color: rgba(0,0,0,.76);;
+    color: rgba(0,0,0,.76);
     
 }
 
@@ -286,6 +286,77 @@ body {
 .Scroll-to-top:hover {
     color: #9E6B57;
 }
+
+
+.project {
+    /* height: 450px; */
+    width: 100vw;
+    background-color: rgb(83 107 87 / 60%) !important;
+    margin:100px 0;
+    padding:100px 0;
+}
+
+.project .square {
+    /* height: 280px; */
+    width: 280px;
+    border:white 4px solid;
+    margin:0 auto;
+    font-size: 36px;
+    text-align: left;
+    color: white;
+    padding:20px;
+
+}
+
+.list small.sm-topic {
+    color:rgb(83,107,87);
+    font-weight: 800;
+    letter-spacing: .5px;
+    margin: 25px 0 5px 0 !important;
+}
+
+.list p.highlight {
+    font-size: 30px;
+    line-height: 1.5;
+    font-family: Montserrat, sans-serif;
+    font-weight: 200;
+    color: #555;
+    margin: 8px 0 !important;
+}
+
+#port .list p.quotes {
+    font-style: italic;
+    margin: 8px 0;
+}
+
+#port p.goal {
+    font-family: Montserrat, sans-serif;
+    font-size: 22px;
+    margin:16px 0;
+}
+
+#port p.goal span {
+    color:rgb(83,107,87);
+    display: inline-block;
+    width: 35px;
+    font-family: Montserrat, sans-serif;
+    font-size: 22px;
+   
+}
+
+#port .hypothesis {
+padding: 12px 5px 15px;
+margin:18px 0;
+box-shadow: 0 0 8px rgba(0,0,0,.2); 
+/* font-weight: 600; */
+}
+
+#port .hypothesis div:first-child {
+max-width: 40px;
+height: 100%;
+font-family: Montserrat, sans-serif;
+color:rgb(83,107,87);
+    }
 
 
 
