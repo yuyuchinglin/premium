@@ -716,7 +716,7 @@ header .link a.active:hover, .navbar .link a.active:hover {
 
 .underline {
   position: relative;
-  font-size: 18px;
+  /* font-size: 18px; */
 } 
 
 .underline:hover,
@@ -1283,6 +1283,11 @@ p.title {
     margin: 0 auto 40px;
   }
 
+
+#contact .bsncard{
+  transform: rotateY( 180deg );
+}
+
   .footprint{
     display: none;
     margin: 20px auto 0;
@@ -1364,6 +1369,9 @@ p.title {
 
 @media (max-width: 768px) {
 
+  body {
+    font-size: 18px;
+  }
 
 
   .pace {
