@@ -33,7 +33,7 @@
 			var cn_articles = request.response.cn_articles;
 
 			for (var i = 0; i < en_articles.length; i++) {
-				var txt = "<a target='_blank' class ='articles-item col-12 col-md-6 col-lg-4' href=" + en_articles[i].link + "> <div class='card' style='width:100%'><div class='pic' style='background: url(/articles/articles/" + en_articles[i].img + ") center center grey; background-size: cover'></div><div class='card-body'><h5 class='card-title'><b>" + en_articles[i].title + "</b></h5><p class='card-text'>" + en_articles[i].subtitle + "</p><small class='text-muted'>" + en_articles[i].date + " " + en_articles[i].publication + "</small></div></div></a>";
+				var txt = "<a target='_blank' class ='articles-item col-12 col-md-6 col-lg-6' href=" + en_articles[i].link + "> <div class='card' style='width:100%'><div class='pic' style='background: url(/articles/articles/" + en_articles[i].img + ") center center grey; background-size: cover'></div><div class='card-body'><h5 class='card-title'><b>" + en_articles[i].title + "</b></h5><p class='card-text'>" + en_articles[i].subtitle + "</p><small class='text-muted'>" + en_articles[i].date + " " + en_articles[i].publication + "</small></div></div></a>";
 				document.getElementById("en_articles").innerHTML += txt;
 			}
 
@@ -150,7 +150,7 @@
 			<p class="row title mb-3">Chinese Articles / 中文文章</p>
 
 			<div class="row my-0 my-lg-3" id="cn_articles" style="margin-left: -11px; margin-right:-11px">
-				<a target="_blank"
+				<!-- <a target="_blank"
 					href="https://medium.com/as-a-product-designer/%E7%B6%B2%E7%AB%99%E8%BF%B7%E6%80%9D-%E7%B6%B2%E7%AB%99%E7%89%B9%E6%95%88%E8%B6%8A%E9%85%B7%E7%82%AB%E8%B6%8A%E5%A5%BD-%E8%A6%96%E8%A6%BA%E5%82%B3%E9%81%94%E7%9A%84%E9%99%90%E5%88%B6-b984b882dbc3"
 					class="articles-item col-12 col-md-6 col-lg-6">
 					<div class="card" style="width:100%">
@@ -180,7 +180,7 @@
 							<small class="text-muted">Dec 10, 2020</small>
 						</div>
 					</div>
-				</a>
+				</a> -->
 
 
 			</div>
