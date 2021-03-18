@@ -205,12 +205,17 @@
 
 
 
-  .bg-section h4{color:#37352f;
-    font-size:36px; line-height: 1.15em;
+  #about .bg-section h4 b{
+    color:#37352f;
+    font-size:30px;
+    line-height: 1.15em;
+    font-family: 'Patua One','Roboto';
+    font-weight: 400;
   }
 
   .bg-section .sub-name{
-    font-weight: 500; font-size:24px;
+    font-weight: 500; 
+    font-size:24px;
   }
 
   .word {
@@ -230,7 +235,7 @@
 
   #about p, #about a, .word p{
     /* font-size: 18px; */
-    line-height: 1.8em;
+    line-height: 1.75em;
   }
 
 
@@ -711,6 +716,7 @@ header .link a.active:hover, .navbar .link a.active:hover {
 
 .underline {
   position: relative;
+  font-size: 18px;
 } 
 
 .underline:hover,
@@ -1384,11 +1390,12 @@ p.title {
     margin: 30px auto 50px;
   }
 
-  #about .bg-section h4 {
+  #about .bg-section h4 b{
     margin-bottom: 0;
     font-size: 28px;
     line-height: 42px;
   }
+
 
   #about .bg-section .sub-name{
     margin-top:20px;
