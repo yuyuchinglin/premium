@@ -239,17 +239,29 @@
   }
 
 
-  .CV {
-    margin-right: 5px;
-    margin-bottom: 10px;
-    padding: 5px 20px;
+  .CV, .footprint {
+    margin-right: 5px !important;
+    margin-bottom: 10px !important;
+    padding: 5px 20px;  
     border: 1px solid #9E6B57;
     color: #9E6B57;
     text-decoration: none;
     cursor: pointer;
   }
 
-  .CV:hover{
+  .CV {
+ 
+  }
+
+  .footprint {
+    width: 250px;
+    text-align: center !important;
+    border: 1px solid #ddd;
+    /* color: #555; */
+
+  }
+
+  .CV:hover, .footprint:hover{
     background-color: #9E6B57;
     color: #fff;
     text-decoration: none;
@@ -1396,6 +1408,7 @@ p.title {
 
   #welcomepic, #about, .books, .moments, #contact {
     margin: 30px auto 50px;
+    /* padding: auto 15px !important; */
   }
 
   #about .bg-section h4 b{
@@ -1593,10 +1606,13 @@ p.title {
 
 @media (max-width: 560px) { 
   section#welcomepic {
-    /* height: 60vh; */
-    /* margin-top: 40px !important; */
     margin-bottom: 0px !important;
-    background-size: cover;
+
+  }
+
+  #welcomepic, #about, #contact {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   #welcome h1, #welcome .index-intro p:nth-child(2) {
@@ -1647,7 +1663,7 @@ p.title {
 
   .bsncard {
     margin: 0px auto 15px;
-    width: 340px;
+    width: 330px;
     height: 230px;
     text-align: center;
    }
@@ -1656,14 +1672,19 @@ p.title {
      margin:80 auto;
    }
   
-   .bsn-intro p a {
-     /* font-size: 13px; */
-   }
-  
    .ig-photo {
      width:29vw;
      height: 29vw;
    }
+
+
+   p.title {
+     font-size: 20px;
+   }
+
+  .articles-item h5 b {
+    font-style: 24px;
+  }
   
   }
 
