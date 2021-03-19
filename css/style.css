@@ -19,7 +19,7 @@
     color: #fff;
   }
 
-  nav, #welcomepic, #about, #moments, #skills, #portfolio, #article, #contact, #footer {
+  nav, #welcomepic, #about, #moments, .books, #skills, #portfolio, #article, #contact, #footer {
     overflow: hidden;
     width: 100%;
   }
@@ -1683,8 +1683,12 @@ p.title {
     height: 32px !important;
   }
 
-  #about p, #about span {
-    line-height: 1.5em;
+  #about p, #about span, #about div {
+    line-height: 30px;
+  }
+
+  #about span {
+    line-height: 22px;
   }
 
 
