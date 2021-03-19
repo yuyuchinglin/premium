@@ -1664,7 +1664,7 @@ p.title {
 
   .bsncard {
     margin: 0px auto 15px;
-    width: 335px;
+    width: 340px;
     height: 230px;
     text-align: center;
    }
@@ -1681,6 +1681,10 @@ p.title {
 
   #about .about-desc .bg-section h4 {
     height: 32px !important;
+  }
+
+  #about p, #about span {
+    line-height: 1.5em;
   }
 
 
