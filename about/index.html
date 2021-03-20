@@ -271,37 +271,37 @@
 
 
 				<a target="_blank" href="https://www.instagram.com/p/B3wASTtFNGV/"
-					style="background-image: url(/img/logo/ig/1.jpg);" alt="flowers in Korea" class="ig-photo"></a>
+					style="background-image: url(/img/logo/ig/1.jpg);" name="flowers in Korea" class="ig-photo"></a>
 
 				<a target="_blank" href="https://www.instagram.com/p/BeXg-QFB62n/"
-					style="background-image: url(/img/logo/ig/2.jpg);" alt="Casino in Las Vegas" class="ig-photo"></a>
+					style="background-image: url(/img/logo/ig/2.jpg);" name="Casino in Las Vegas" class="ig-photo"></a>
 
 				<a target="_blank" href="https://www.instagram.com/p/Be2RSlNBCV_/"
-					style="background-image: url(/img/logo/ig/3.jpg);" alt="Skateboard in Venice, California"
+					style="background-image: url(/img/logo/ig/3.jpg);" name="Skateboard in Venice, California"
 					class="ig-photo"></a>
 
 
 				<a target="_blank" href="https://www.instagram.com/p/BeA34Xwh2v1/"
-					style="background-image: url(/img/logo/ig/4.jpg);" alt="Driving in Los Angeles, California"
+					style="background-image: url(/img/logo/ig/4.jpg);" name="Driving in Los Angeles, California"
 					class="ig-photo"></a>
 
 
 				<a target="_blank" href="https://www.instagram.com/p/BW13Fy8BXhA/"
-					style="background-image: url(/img/logo/ig/5.jpg);" alt="Astonishing view in Greenwich Park, London"
+					style="background-image: url(/img/logo/ig/5.jpg);" name="Astonishing view in Greenwich Park, London"
 					class="ig-photo"></a>
 
 				<a target="_blank" href="https://www.instagram.com/p/BWz8BZJh4Uz/"
-					style="background-image: url(/img/logo/ig/6.jpg);" alt="Portobello Road Market, London" class="ig-photo"></a>
+					style="background-image: url(/img/logo/ig/6.jpg);" name="Portobello Road Market, London" class="ig-photo"></a>
 
 				<a target="_blank" href="https://www.instagram.com/p/BWyNLKRBv9v/"
-					style="background-image: url(/img/logo/ig/7.jpg);" alt="Bath, United Kingdom" class="ig-photo"></a>
+					style="background-image: url(/img/logo/ig/7.jpg);" name="Bath, United Kingdom" class="ig-photo"></a>
 
 				<a target="_blank" href="https://www.instagram.com/p/BWu8HHxB7w1/"
-					style="background-image: url(/img/logo/ig/8.jpg);" alt="St. Paul's Cathedral in London" class="ig-photo"></a>
+					style="background-image: url(/img/logo/ig/8.jpg);" name="St. Paul's Cathedral in London" class="ig-photo"></a>
 
 
 				<a target="_blank" href="https://www.instagram.com/p/BWqLgXjhsm6/"
-					style="background-image: url(/img/logo/ig/9.jpg);" alt="At the Top SKY, Burj Khalifa" class="ig-photo"></a>
+					style="background-image: url(/img/logo/ig/9.jpg);" name="At the Top SKY, Burj Khalifa" class="ig-photo"></a>
 
 			</div>
 
@@ -340,7 +340,7 @@
 							<div class="bsn-intro">
 								<img src="/img/logo/name.png" alt="" width="135px" style="margin-bottom: 6px;">
 								<p><i class="fas fa-map-marker-alt"></i> Taipei, Taiwan</p>
-								<p><i class="fas fa-phone"></i> +886 972 231 459</p>
+								<p><i class="fas fa-phone"></i><a href="tel:+886972231459">+886 972 231 459</a></p>
 								<p><i class="fas fa-envelope"></i> <a href="mailto:yuyuchinglin@gmail.com">yuyuchinglin@gmail.com</a>
 								</p>
 							</div>
@@ -532,14 +532,19 @@
 
 	<script>
 		window.addEventListener("load", function (event) {
-			var a = document.querySelectorAll('.port a');
+			var a = document.querySelectorAll('#about a, .books a, .moments a, #contact a, #footer a');
 			a.forEach(function (item) {
 				item.addEventListener("click", function () {
-					var desc = item.querySelector('h5').innerText;
-					//alert(desc);
-					mixpanel.track(desc);
+					if (item.innerText) {
+						var desc = item.innerText;
+					} else {
+						var desc = item.href;
+					}
+					alert(desc);
+					// var desc = item.innerText + ' ' + item.href;
+					mixpanel.track("click " + desc);
 				})
-			})
+			});
 		})
 	</script>
 
