@@ -376,12 +376,16 @@
 
 	<script>
 		window.addEventListener("load", function (event) {
-			var a = document.querySelectorAll('.port a');
+			var a = document.querySelectorAll('.port a, #footer a');
 			a.forEach(function (item) {
 				item.addEventListener("click", function () {
-					var desc = item.querySelector('h5').innerText;
-					//alert(desc);
-					mixpanel.track(desc);
+					if (item.querySelector('h5')) {
+						var desc = item.querySelector('h5').innerText;
+					} else {
+						var desc = item.href;
+					}
+					alert(desc);
+					mixpanel.track("click " + desc);
 				})
 			})
 		})
