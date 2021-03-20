@@ -1287,6 +1287,10 @@ p.title {
     margin: 10px 0px 30px auto;
   }
 
+  #contact .bsncard{
+    transform: rotateY( 180deg );
+  }
+
 }
 
 @media (max-width: 767px) {
@@ -1296,9 +1300,7 @@ p.title {
   }
 
 
-#contact .bsncard{
-  transform: rotateY( 180deg );
-}
+
 
   .footprint{
     display: none;
