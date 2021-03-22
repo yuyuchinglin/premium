@@ -305,10 +305,14 @@
 
 	<script>
 		window.addEventListener("load", function (event) {
-			var a = document.querySelectorAll('#article a');
+			var a = document.querySelectorAll('#article a, #footer a');
 			a.forEach(function (item) {
 				item.addEventListener("click", function () {
-					var desc = item.querySelector('.card-title').innerText;
+					if (item.querySelector('.card-title')) {
+						var desc = item.querySelector('.card-title').innerText;
+					} else {
+						var desc = item.href;
+					}
 					// alert(desc);
 					mixpanel.track("click " + desc);
 				})
