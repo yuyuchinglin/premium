@@ -1273,7 +1273,7 @@ p.title {
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   #footer div{
     width: 100% !important;
     /* font-size: 16px; */
@@ -1290,6 +1290,10 @@ p.title {
   #contact .bsncard{
     transform: rotateY( 180deg );
   }
+  .article-box {
+    margin-top: 60px !important;
+  }
+
 
 }
 
