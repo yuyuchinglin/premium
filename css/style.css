@@ -32,6 +32,11 @@
     margin:70px auto 100px;
   }
 
+
+  #article {
+    margin-top: 100px;
+  }
+  
   #welcomepic {
     margin: 40px auto 0px;
   }
@@ -66,7 +71,7 @@
   }
   
   #welcomepic .welcomepic {
-    margin-top: 56px;
+    margin-top: 60px;
     text-align: center;
   }
 
@@ -152,7 +157,7 @@
 
   #welcome .welcome-intro button {
     font-size: 20px;
-    color: rgba(256,256,256,0.9);
+    /* color: rgba(256,256,256,0.9); */
   }
 
 
@@ -798,8 +803,8 @@ header .link a.active:hover, .navbar .link a.active:hover {
   }
 
   .port .intro .desc small {
-    font-size: 14px;
-    opacity: 0.62;
+    font-size: 14.5px;
+    opacity: 0.68;
   }
 
   .port .intro .desc p {
@@ -1353,7 +1358,7 @@ p.title {
  }
 
  #article {
-   margin: 40px auto 80px auto;
+   margin: 60px auto 80px auto;
    padding: 0 15px; 
  }
 
@@ -1568,7 +1573,7 @@ p.title {
  }
 
   section#welcomepic {
-    margin-top: 40px !important;
+    margin-top: 49px !important;
     margin-bottom: 20px !important;
     background-size: cover;
   }
@@ -1671,6 +1676,7 @@ p.title {
   
   #welcome .welcome-intro h1 {
     font-size: 26px !important;
+    /* line-height: 36px; */
   }
 
   #welcome .welcome-intro p {
