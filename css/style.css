@@ -134,40 +134,28 @@
 
 
 
-  #welcome h1 {
-    color: #0a0a14;
-    font-weight: 700;
-    font-style:italic;
-    font-size:2.8em !important;
-    font-family:'Source Sans Pro', 'Calibri','Roboto','Rubik', sans-serif,"Arial","PingFangSC-Regular","Helvetica", "微軟正黑體","黑體-繁", sans-serif;
-    line-height: 1.2em;
-  }
-
-  #welcome .index-intro p {
-    color:#111;
+  #welcome .welcome-intro h1 {
+    color: #0e0e1b;
     font-weight: 400;
-    font-style:normal;
-    font-size:32px;
-    font-family:'Source Sans Pro', 'Calibri','Roboto','Rubik', sans-serif,"Arial","PingFangSC-Regular","Helvetica", "微軟正黑體","黑體-繁", sans-serif;
-    line-height: 1.9em;
-  }
-
-
-  #welcome .index-intro p:nth-child(2){
-    color:#d9d9d9;
-    font-weight: 700;
-    font-style:italic;
-    font-size:2.8em;
+    font-family: 'Patua One','Roboto';
     line-height: 1.2em;
   }
+
+  #welcome .welcome-intro p {
+    font-size: 28px;
+    color:#555;
+  }
+
+  #welcome .welcome-intro button {
+    font-size: 20px;
+    color: rgba(256,256,256,0.9);
+  }
+
 
 
    #welcome img{
     display: inline-block; margin: 0 auto;
-    padding: 60px 0 65px;
-    width:600px;  vertical-align : middle;
-    /* padding-bottom: 12px; */
-
+    width:250px;  vertical-align : middle;
   } 
 
 
@@ -662,7 +650,7 @@ header .link a.active:hover, .navbar .link a.active:hover {
   color:#9E6B57;
 }
 
-#welcome h1 {
+#welcome .welcome-intro h1 {
   font-size: 36px;
 }
 
@@ -1327,28 +1315,16 @@ p.title {
 
 @media (max-width: 1250px) {
 
-  /* #welcome { */
-    /* padding:11.5% 32px 2.5%; */
-    /* min-height: 45vw; */
-    /* line-height: 45vw; */
-  /* }  */
-
-  #welcome h1 {
-    font-size: 30px;
+  #welcome .welcome-intro h1 {
+    font-size: 32px;
   }
 
-  #welcome p{
-    font-size: 18px;
-  }
-
-  #welcome .index-intro {
-    max-width: 520px;
+  #welcome .welcome-intro p{
+    font-size: 26px;
   }
 
   #welcome img {
-    width:480px;
-    /* padding-bottom: 15px; */
-    /* max-width: 300px; */
+    width:230px;
   }
 
  }
@@ -1356,13 +1332,7 @@ p.title {
 
 
 
-@media screen and (max-width: 950px){
-
-
-  .moments .container-fluid {
-    /* max-width:  640px; */
-  }
-
+@media (max-width: 992px){
 
   .ig-photo {
    margin:0;
@@ -1382,6 +1352,25 @@ p.title {
    margin: 40px auto 80px auto;
    padding: 0 15px; 
  }
+
+
+ #welcome .welcome-intro h1 {
+  font-size: 28px;
+}
+
+#welcome .welcome-intro p{
+  font-size: 20px;
+  line-height: 28px;
+}
+
+#welcome .welcome-intro button {
+  font-size: 16px !important;
+}
+
+#welcome img {
+  width:180px;
+}
+
 } 
 
 
@@ -1445,21 +1434,23 @@ p.title {
     /* padding: 20px 0 40px; */
   }
 
+
+  #welcome .welcome-intro h1 {
+    font-size: 22px;
+  }
+
+  #welcome .welcome-intro p{
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  #welcome .welcome-intro button{
+    font-size: 14px;
+  }
+
   #welcome img {
-    max-width: 500px !important;
-    width:380px;
- 
+    width:120px;
   }
-
-  #welcome h1 {
-    font-size: 24px;
-  }
-
-
-  #welcome img { 
-    max-width: 240px;
-    /* filter: grayscale(0.3);  */
-    }
 
   .about-topic {
     padding-left: 1%;
@@ -1520,6 +1511,10 @@ p.title {
     margin: 0px auto 0px;
   }
 
+  .welcomepic {
+    margin:0 auto !important;
+  }
+
   #about {
     margin: 10px auto 0px;
   }
@@ -1552,18 +1547,7 @@ p.title {
     transition: top 0.5s ease-in-out;
   }
 
-  #welcome h1 {
-    font-weight: 600;
-    font-size: 34px !important;
-  }
-
-  #welcome p:nth-child(2) {
-    font-size: 34px !important;
-  }
-
-  #welcome .index-intro p {
-    font-size: 24px;
-  }
+  
 
   .portfolio-word {
     font-size:16px;
@@ -1621,37 +1605,6 @@ p.title {
     padding-right: 10px;
   }
 
-  #welcome h1, #welcome .index-intro p:nth-child(2) {
-    /* font-weight: 400; */
-    font-size: 26px !important;
-  }
-
-  #welcome .index-intro p {
-    font-size: 20px;
-  }
-
-  /* #welcome { */
-    /* height: 600px; */
-    /* min-height: 30vh; */
-    /* line-height: 30vh; */
-    /* height:45vh; */
-    /* line-height: 45vh; */
-    /* min-height: 0; */
-  /* } */
-
-  #welcome .container {
-    margin: 0;
-    /* padding: 30px 0 30px; */
-    
-  }
-
-  #welcome img {
-    /* margin: 10px auto 0; */
-    /* max-width: 400px !important; */
-   width: 92%;
-   /* padding-bottom: 0; */
-
-  }
 }
 
 
@@ -1707,6 +1660,26 @@ p.title {
     line-height: 30px;
   }
   
+  #welcome .welcome-intro h1 {
+    font-size: 26px !important;
+  }
+
+  #welcome .welcome-intro p {
+    font-size: 20px;
+    line-height: 26px;
+    /* display: none; */
+  }
+
+  #welcome .container {
+    margin: 0;
+    
+  }
+
+  #welcome img {
+   width: 60%;
+   /* margin-top: 5px; */
+   max-width: 220px;
+  }
   }
 
 
