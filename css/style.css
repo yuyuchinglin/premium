@@ -155,6 +155,11 @@
     color:#555;
   }
 
+  #welcome .welcome-intro p span {
+    /* color:#9E6B57; */
+    text-decoration: underline;
+  }
+
   #welcome .welcome-intro button {
     font-size: 20px;
     /* color: rgba(256,256,256,0.9); */
