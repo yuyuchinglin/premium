@@ -814,7 +814,7 @@ header .link a.active:hover, .navbar .link a.active:hover {
   color: #000;
   text-decoration: none;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.1rem;
 }
 
 .underline.active {
@@ -1524,7 +1524,7 @@ p.title {
 @media (max-width: 768px) {
 
   body {
-    font-size: 18px;
+    font-size: 1.1rem;
   }
 
 
@@ -1764,6 +1764,11 @@ p.title {
 
 
 @media (max-width: 575px) { 
+
+
+  #welcome {
+    margin-top: 80px;
+  }
   #welcomepic .welcomepic {
   margin-top: 40px;
   }
