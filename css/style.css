@@ -14,6 +14,11 @@
 
   button {
     cursor: pointer;
+    border-radius: 0px !important;
+  }
+
+  input {
+    border-radius:0px !important;
   }
 
 
@@ -23,18 +28,18 @@
     color: #fff;
   }
 
-  nav, #welcomepic, #about, #moments, .books, #skills, #portfolio, #article, #contact, #footer {
+  nav, #welcomepic, #about, #facts, #moments, .books, #skills, #portfolio, #cases, #article, #contact, #footer {
     overflow: hidden;
     width: 100%;
   }
 
-  #welcomepic, #about, .articles, .books, .moments, #skills, #portfolio, #article, #contact {
-    margin:70px auto 100px;
+  #welcomepic, #about, #facts, .articles, .books, .moments, #skills, #portfolio, #cases, #article, #contact {
+    margin:75px auto 100px;
   }
 
 
   #article {
-    margin-top: 100px;
+    margin-top: 110px;
   }
   
   #welcomepic {
@@ -71,7 +76,7 @@
   }
   
   #welcomepic .welcomepic {
-    margin-top: 60px;
+    margin-top: 70px;
     text-align: center;
   }
 
@@ -127,14 +132,8 @@
   }
 
   #welcome {
-    /* padding-top: 25px; */
-    /* padding: 5px 0px 1%; */
-    /* min-height: 400px; */
-    /* max-height: 510px; */
-    width: 100%;
-    /* line-height: 73vh; */
-    background: url(../img/logo/bg.png) top left repeat;
-    
+    padding:60px 0 20px;
+    width: 100%;    
   }
 
 
@@ -145,9 +144,10 @@
 
   #welcome .welcome-intro h1 {
     color: #0e0e1b;
-    font-weight: 400;
-    font-family: 'Patua One','Roboto';
+    font-weight: 600;
+    font-family: 'Roboto Slab', 'Source Sans Pro','Roboto';
     line-height: 1.2em;
+    font-size: 32px !important;
   }
 
   #welcome .welcome-intro p {
@@ -155,10 +155,7 @@
     color:#555;
   }
 
-  #welcome .welcome-intro p span {
-    /* color:#9E6B57; */
-    text-decoration: underline;
-  }
+
 
   #welcome .welcome-intro button {
     font-size: 20px;
@@ -169,9 +166,91 @@
 
    #welcome img{
     display: inline-block; margin: 0 auto;
-    width:250px;  vertical-align : middle;
+    width:97%;  vertical-align : middle;
   } 
 
+
+
+#facts {
+  font-size: 19px;
+  color: #555;
+  text-align: center;
+}
+
+
+
+#facts img{
+  height:70px;
+  margin-bottom: 12px;
+}
+
+  #cases .case {
+    width: 100%;
+    /* height: 260px; */
+    padding:25px 25px;
+    background-color: #aaa;
+    text-align: right;
+    /* margin-bottom: 10px; */
+    border-radius: 5px;
+   
+  }
+
+  #cases .case img {
+   max-height: 280px;
+   max-width: 90%;
+    text-align: left;
+    margin:0 auto;
+  }
+
+  #cases .case .case-desc {
+    background-color: #fff;
+    padding:20px 30px;
+    border-radius: 5px;
+    text-align: left;
+    width: 480px;
+    
+  }
+
+  #cases .case h5 {
+    font-weight: 600;
+    font-size: 26px;
+    font-family: 'Roboto Slab','Roboto';
+  }
+
+  #cases .case .date {
+    color: #9E6B57;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  #cases .case .tags span {
+    font-size: 15px;
+    background-color: rgba(158, 107, 87, 0.1);
+    padding: 4px 8px;
+    border-radius: 6px;
+    margin-right: 3px;
+  }
+
+  #cases .case button {
+    font-weight: 600;
+    font-size: 17px;
+    background-color: #9E6B57;
+    border-color: #9E6B57;
+    
+  }
+
+  #cases .case button:focus {
+    box-shadow: 0 0 0 3px rgb(158 107 87 / 50%);
+}
+
+
+
+  #cases .case .pic {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
 
 
 /* about */
@@ -211,8 +290,8 @@
     color:#37352f;
     font-size:30px;
     line-height: 1.15em;
-    font-family: 'Patua One','Roboto';
-    font-weight: 400;
+    font-family: 'Roboto Slab','Roboto';
+    font-weight: 600;
   }
 
   .bg-section .sub-name{
@@ -228,9 +307,9 @@
     display: inline;
     color: #9E6B57;
     text-align: center;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 32px;
-    font-family: 'Patua One','Roboto';
+    font-family: 'Roboto Slab','Roboto';
     line-height: 44px;
   }
 
@@ -241,7 +320,7 @@
   }
 
 
-  .CV, .footprint {
+  .outlined-btn, .footprint {
     margin-right: 5px !important;
     margin-bottom: 10px !important;
     padding: 5px 20px;  
@@ -251,9 +330,23 @@
     cursor: pointer;
   }
 
-  .CV {
- 
+  .full-btn, .footprint {
+    margin-right: 5px !important;
+    margin-bottom: 10px !important;
+    padding: 5px 20px;  
+    border: 1px solid #9E6B57;
+    color: #fff;
+    background-color: #9E6B57;
+    text-decoration: none;
+    cursor: pointer;
   }
+
+  .outlined-btn i, .full-btn i {
+    margin-right: 5px;
+  }
+
+
+
 
   .footprint {
     width: 250px;
@@ -263,8 +356,9 @@
 
   }
 
-  .CV:hover, .footprint:hover{
-    background-color: #9E6B57;
+
+  .outlined-btn:hover,.footprint:hover, .full-btn:hover {
+    background-color: #E37D5C;
     color: #fff;
     text-decoration: none;
   }
@@ -391,7 +485,7 @@
     padding: 12px 5px 6px 5px;
     width:100%;
     /* background: #FBE091; */
-    border-radius: 6px;
+    /* border-radius: 6px; */
     color: #333;
 
   }
@@ -605,7 +699,7 @@ header {
   top: 0;
   left: 0;
   z-index: 100;
-  padding: 35px 0px;
+  padding: 37.5px 0px;
   width: 100%;
   height: 100px;
   background-color: transparent;
@@ -666,6 +760,8 @@ header .link a.active:hover, .navbar .link a.active:hover {
 
 #welcome .welcome-intro h1 {
   font-size: 36px;
+  /* font-family: 'Roboto slab'; */
+  /* font-weight:700; */
 }
 
 #welcome p {
@@ -782,9 +878,9 @@ header .link a.active:hover, .navbar .link a.active:hover {
   }
 
   .port h5 {
-    font-weight: 500;
     font-size: 20px;
-    font-family: 'Patua One','Roboto';
+    font-family: 'Roboto Slab','Roboto';
+    font-weight: 600;
 
   }
 
@@ -876,7 +972,7 @@ header .link a.active:hover, .navbar .link a.active:hover {
     margin:1px 0;
     margin-bottom: 5px;
     padding: 8px 0px 0px !important;
-    border-radius:5px;
+    /* border-radius:5px; */
     text-align: center;
   }
 
@@ -959,6 +1055,9 @@ header .link a.active:hover, .navbar .link a.active:hover {
     background-color:rgb(204,229,224);
   }
 
+  .book-item .intro .desc .tag.counseling {
+    background-color:rgb(232, 212, 207);
+  }
   .book-item .intro .desc .tag.ux {
     background-color:rgb(216, 204, 229);
   }
@@ -991,8 +1090,11 @@ header .link a.active:hover, .navbar .link a.active:hover {
 
   .intro {
     margin: 4px 0;
-    width:100%; border-radius: 5px;
+    width:100%; 
+    /* border-radius: 5px; */
     color: #333; 
+    border: 1px solid #ededed;
+    /* background-color: #efefef !important; */
     }
 
   .portfolio-word { right:0;  margin-top:15px; text-align: right;  font-size:20px; 
@@ -1005,6 +1107,32 @@ header .link a.active:hover, .navbar .link a.active:hover {
     max-width:1410px;
   } */
 
+
+  .widget {
+    position: fixed;
+    display: inline-block;
+    vertical-align: middle;
+    bottom: 30px;
+    right:32px;
+    background-color: rgb(234, 234, 234);
+    padding:14px 20px;
+    /* height: 70px; */
+    /* width: 70px; */
+    /* border-radius: 50%; */
+    color: #9E6B57;
+    font-size: 28px;
+    text-align: center;
+    z-index:1000;
+  }
+
+  .widget:hover {
+    color:#E37D5C;
+  }
+
+  /* .widget i {
+    color: #fff !important;
+    
+  } */
   
 
 
@@ -1083,20 +1211,21 @@ html.sr .load-hidden {
 
 p.title {
   display: block;
-  margin: 30px -2px 26px -2px !important;
+  margin: 30px 0px 26px !important;
   padding-bottom: 6px;
   border-bottom: 1px solid rgba(0,0,0,.1);
   color:rgba(0,0,0,.64);
-  font-size: 22px;
+  font-size: 21px;
   
 }
 
 
 .articles-item {
   margin-bottom: 30px;
-  padding: 0 10px !important;
+  padding: 0 13px !important;
   text-decoration: none !important;
 }
+
 
 .articles-item .card-body {
   padding:12px 0 15px 0px;
@@ -1114,7 +1243,7 @@ p.title {
 .articles-item h5 b{
   color:rgba(0,0,0,0.84) !important;
   font-weight: 700;
-  font-size:26px;
+  font-size:25px;
   font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   line-height: 34px;
 }
@@ -1133,7 +1262,7 @@ p.title {
 }
 
 #article .article-box {
-  background: #efefef;
+  background:  #f4f4f4;
 }
 
 
@@ -1212,9 +1341,9 @@ p.title {
 
 .name {
   margin-top: 8px;
-  font-weight: 400;
+  font-weight: 600;
   font-size:24px;
-  font-family: 'Patua One','Roboto';
+  font-family: 'Roboto Slab','Roboto';
 }
 
 
@@ -1464,7 +1593,9 @@ p.title {
   }
 
   #welcome img {
-    width:120px;
+    padding-top: 20px;
+    width:100%;
+  
   }
 
   .about-topic {
@@ -1532,7 +1663,7 @@ p.title {
 
 
   .welcomepic {
-    margin-top: 36px !important;
+    /* margin-top: 36px !important; */
   }
 
   #about {
@@ -1678,6 +1809,10 @@ p.title {
     font-size: 22px;
     line-height: 30px;
   }
+
+  #welcome {
+    padding-top: 5px;
+  }
   
   #welcome .welcome-intro h1 {
     font-size: 26px !important;
@@ -1696,9 +1831,9 @@ p.title {
   }
 
   #welcome img {
-   width: 60%;
+   width: 90%;
    /* margin-top: 5px; */
-   max-width: 220px;
+   /* max-width: 220px; */
   }
   }
 

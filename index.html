@@ -18,8 +18,7 @@
 	<meta property="og:description" content="I'm a UX designer who enjoy applying my psychology background, design experience, and coding ability to
 	create user-centric, delightful, and human experiences." />
 	<meta property="og:image" content="http://premium.yuchinglin.com/img/logo/meta_photo.jpeg" />
-	<meta property="og:image:alt" content="I'm a UX designer who enjoys applying my psychology background, design experience, and coding ability to
-	create user-centric, delightful, and human experiences." />
+	<meta property="og:image:alt" content="Yu-Ching Lin" />
 	<meta property="og:image:type" content="image/jpeg" />
 	<!-- End Facebook Opengraph -->
 
@@ -32,8 +31,13 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
 		integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 	<link rel='stylesheet' href='/css/style.css' type='text/css' />
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Patua+One" rel="stylesheet">
-	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Source+Sans+Pro:wght@400;600&display=swap"
+		rel="stylesheet">
+	<link href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" rel="stylesheet">
+
 
 	<script src="/js/pace.js"></script>
 	<script src="https://unpkg.com/scrollreveal"></script>
@@ -85,28 +89,128 @@
 
 		<div class="container welcomepic">
 
-			<div class="row align-items-center pt-4">
-				<div class="welcome-intro col-12 col-sm-8 text-center text-sm-left">
+			<div class="row align-items-center">
+				<div class="welcome-intro col-12 col-sm-7 text-center text-sm-left">
 					<h1>Hello, I'm Yu-Ching Lin.</h1>
-					<p>I'm a UX designer who enjoys applying my <span>psychology background</span>, <span>design
-							experience</span>,
-						and <span>coding ability</span> to
-						create
-						user-centric, delightful, and human
-						experiences.</p>
-					<button type="button" class="btn btn-primary d-none d-sm-block"
-						onclick="window.location.href='mailto:yuyuchinglin@gmail.com?subject=Hello!'"
-						style="background-color: #9E6B57; border:0; letter-spacing: 1px; font-weight: 500; font-size:18px">Contact
-						Yu-Ching</button>
+					<p>I'm a UX designer who loves applying psychology knowledge to <span>solve real-world
+							problems</span> and <span>create
+							better human
+							experiences</span>.</p>
+
+					<!-- <p>Contact me via E-mail or Schedule a chat with me</p> -->
+
+
+					<!-- <a href="mailto:yuyuchinglin@gmail.com?subject=Hello!" class="full-btn d-inline-block">
+						Contact me
+					</a>
+
+					<a target="_blank" href="./Resume_YuChingLin_2021.pdf" class="outlined-btn d-inline-block">Résumé</a> -->
+					<a href="mailto:yuyuchinglin@gmail.com?subject=Hello!" class="full-btn d-inline-block">
+						<i class="fas fa-paper-plane"></i> Contact me via E-mail
+					</a>
+
+					<a href="" class="outlined-btn d-inline-block"
+						onclick="Calendly.initPopupWidget({ url: 'https://calendly.com/yuyuchinglin/15min', text: 'Schedule time with me', color: '#9E6B57', textColor: '#ffffff', branding: true });return false;">
+						<i class="far fa-calendar-alt"></i> Schedule a Chat
+					</a>
+
+
 				</div>
 
-				<div class="welcome-img col-12 col-sm-4">
-					<img src="/img/logo/yuching2.png" alt="">
+				<div class="welcome-img col-12 col-sm-5 text-center text-sm-right">
+					<img src="/img/logo/index_pic.png" alt="">
 				</div>
 			</div>
 		</div>
 
 	</section>
+
+
+
+	<!-- <section id="facts">
+		<div class="container">
+
+			<div class="word col-12 my-md-2">
+				<h5>3 Facts About Me</h5>
+				<p></p>
+			</div>
+			<div class="row mt-4">
+				<div class="col">
+					<img src="./img/logo/facts/psychology.png" alt=""><br>
+					<p>Psychology Background</p>
+				</div>
+				<div class="col">
+					<img src="./img/logo/facts/sketch.png" alt=""><br>
+					<p>Design Experience</p>
+				</div>
+				<div class="col">
+					<img src="./img/logo/facts/binary-code.png" alt=""><br>
+					<p>Coding Ability</p>
+				</div>
+			</div>
+		</div>
+	</section> -->
+
+
+	<!-- <section id="cases">
+
+		<div class="container p-sm-0">
+
+			<div class="word col-12 my-md-2">
+				<h5>Featured UX Studies</h5>
+				<p> </p>
+			</div>
+
+			<div class="case row mx-0" style="background-color: #FCE4EA;">
+				<div class="col-6 pic">
+					<img src="/img/sm/md_iot.png" alt="" class="align-middle">
+				</div>
+
+				<div class="col-6 case-desc">
+					<p class="date">2020 - 2021</p>
+					<h5>IoT Device Management</h5>
+					<p>Expanding users from admin to end users</p>
+					<div class="tags">
+						<span>UX Research</span>
+						<span>UX/UI Design</span>
+						<span>Design Thinking</span>
+						<span>Prototype</span>
+					</div>
+					<br>
+					<br>
+					<button type="button" class="btn btn-block btn-info align-bottom">Read Case Study&nbsp; &nbsp; ➝</button>
+				</div>
+			</div>
+
+			<br>
+			<div class="case row mx-0" style="background-color: #E4EBFC;">
+
+				<div class="col-6 pic">
+					<img src="/img/sm/md_1828.png" alt="">
+				</div>
+
+
+				<div class="col-6 case-desc">
+					<p class="date">2018</p>
+					<h5>Tea Shop's Application</h5>
+					<p>Converting first-time customers to repeat customers</p>
+					<div class="tags">
+						<span>UX Research</span>
+						<span>UX/UI Design</span>
+						<span>Wireframe</span>
+						<span>Prototype</span>
+					</div>
+					<br>
+					<br>
+					<button type="button" class="btn btn-block btn-info">Read Case Study&nbsp; &nbsp; ➝</button>
+				</div>
+			</div>
+
+
+		</div>
+
+
+	</section> -->
 
 
 
@@ -119,11 +223,13 @@
 
 		<div class="container p-sm-0">
 
+
+
+
 			<div class="categories d-none d-sm-block">
 				<ul class="type">
 					<li><a href="#" data-filter="*" class="underline active">All</a></li>
-					<li><a href="#" data-filter=".research" class="underline">Research</a></li>
-					<li><a href="#" data-filter=".design" class="underline">Design</a></li>
+					<li><a href="#" data-filter=".design" class="underline">UX Study</a></li>
 					<li><a href="#" data-filter=".code" class="underline">Code</a></li>
 				</ul>
 
@@ -249,6 +355,7 @@
 
 			<div class="row">
 				<div class="col-lg-4 col-sm-12 text-lg-right p-0">
+
 					<a target="_blank" href="https://www.linkedin.com/in/yuyuchinglin/">
 						<i class="fab fa-linkedin"></i>
 					</a>
@@ -294,13 +401,19 @@
 			});
 
 
-		ScrollReveal().reveal('#welcome, #portfolio',
+		ScrollReveal().reveal('#welcome, #portfolio, #cases',
 			{
 				origin: 'bottom',
-			});
+			}); å
 
 
 	</script>
+
+
+	<!-- Calendly badge widget begin -->
+	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+	<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+	<!-- Calendly badge widget end -->
 
 	<!-- <script type='text/javascript' src='js/unitegallery.min.js'></script> -->
 	<!-- <script type='text/javascript' src='js/ug-theme-tiles.js'></script> -->
