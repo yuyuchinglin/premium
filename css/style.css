@@ -358,7 +358,7 @@
 
 
   .outlined-btn:hover,.footprint:hover, .full-btn:hover {
-    background-color: #E37D5C;
+    background-color: #865845;
     color: #fff;
     text-decoration: none;
   }
@@ -1467,7 +1467,7 @@ p.title {
   }
 
   #welcome img {
-    width:230px;
+    /* width:230px; */
   }
 
  }
@@ -1498,7 +1498,7 @@ p.title {
 
 
  #welcome .welcome-intro h1 {
-  font-size: 28px;
+  font-size: 24px !important;
 }
 
 #welcome .welcome-intro p{
@@ -1506,12 +1506,16 @@ p.title {
   line-height: 28px;
 }
 
+#welcome .welcome-intro .full-btn, #welcome .welcome-intro .outlined-btn {
+  font-size: 1rem;
+}
+
 #welcome .welcome-intro button {
   font-size: 16px !important;
 }
 
 #welcome img {
-  width:180px;
+  /* width:180px; */
 }
 
 } 
@@ -1574,7 +1578,7 @@ p.title {
   }
 
   #welcome .container {
-    margin: 0;
+    margin: 0 auto;
     /* padding: 20px 0 40px; */
   }
 
@@ -1649,7 +1653,7 @@ p.title {
   }
 
   #welcome {
-    margin-top: 85px;
+    margin-top: 35px;
     /* padding-top:70px; */
   }
 
