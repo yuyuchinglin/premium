@@ -17,7 +17,11 @@
 	<link rel='stylesheet' href='/css/unite-gallery.css' type='text/css' />
 
 	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Patua+One" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Source+Sans+Pro:wght@400;600&display=swap"
+		rel="stylesheet">
 	<link rel='stylesheet' href='/css/slick-theme.css' type='text/css' />
 	<link rel='stylesheet' href='/css/slick.css' type='text/css' />
 	<script src="https://unpkg.com/scrollreveal"></script>
@@ -108,8 +112,8 @@
 						Personally, I appreciate designs that demonstrate simplicity, clarity and profoundness.</p>
 
 					<p>
-						<a target="_blank" href="./Resume_YuChingLin_2021.pdf" class="CV">Résumé</a>
-						<a target="_blank" href="https://www.linkedin.com/in/yuyuchinglin/" class="CV">Linkedin</a>
+						<a target="_blank" href="./Resume_YuChingLin_2021.pdf" class="full-btn">Résumé</a>
+						<a target="_blank" href="https://www.linkedin.com/in/yuyuchinglin/" class="outlined-btn">Linkedin</a>
 					</p>
 
 					<div class="row sm-section">
@@ -163,13 +167,14 @@
 
 				<div class="col-lg-4 col-md-6 col-12 book-item">
 					<a target="_blank"
-						href="https://www.notion.so/Yu-Ching-Lin-s-Bookshelf-2bacefc9e0a7408ba3a5e6b6f6936f2b?p=c9599420df84448fbbe7b348b9dabd2a">
+						href="https://www.notion.so/Yu-Ching-Lin-s-Bookshelf-2bacefc9e0a7408ba3a5e6b6f6936f2b?p=2bc1f2b83b1644869b6a8ce41b157830">
 						<div class="intro">
-							<div class="book-img" style="background: url(/about/books/measure.png) center center;">
+							<div class="book-img" style="background: url(/about/books/talk.png) center center;">
 							</div>
 							<div class="desc row">
-								<b class="col-12 text-truncate">How Will You Measure Your Life?</b> <br>
-								<p class="col-12"> <span class="tag self">Self-Improvement</span></p>
+								<b class="col-12 text-truncate">Maybe You Should Talk to Someone: A Therapist, HER Therapist, and Our
+									Lives Revealed</b> <br>
+								<p class="col-12"> <span class="tag counseling">Counseling</span></p>
 								<!-- <p class="col-12 text-truncate">Clayton Christensen, James Allworth, Karen Dillon</p> -->
 								<!-- <p class="col-12">Jan 17, 2021</p> -->
 							</div>
@@ -179,13 +184,14 @@
 
 				<div class="col-lg-4 col-md-6 col-12 book-item">
 					<a target="_blank"
-						href="https://www.notion.so/Yu-Ching-Lin-s-Bookshelf-2bacefc9e0a7408ba3a5e6b6f6936f2b?p=b1767f510646484697733680472cde13">
+						href="https://www.notion.so/Yu-Ching-Lin-s-Bookshelf-2bacefc9e0a7408ba3a5e6b6f6936f2b?p=c1c000dbdb5b491784f0694ad2f13e30">
 						<div class="intro">
-							<div class="book-img" style="background: url(/about/books/essentialism.png) center center;">
+							<div class="book-img" style="background: url(/about/books/gamification.png) center center;">
 							</div>
 							<div class="desc row">
-								<b class="col-12 text-truncate">essentialism: The Disciplined Pursuit of Less</b> <br>
-								<p class="col-12"> <span class="tag self">Self-Improvement</span></p>
+								<b class="col-12 text-truncate">Actionable Gamification: Beyond Points, Badges, and Leaderboards</b>
+								<br>
+								<p class="col-12"> <span class="tag ux">UX Research / Design</span></p>
 								<!-- <p class="col-12 text-truncate">Greg McKeown</p> -->
 								<!-- <p class="col-12">Jan 9, 2021</p> -->
 							</div>
@@ -345,27 +351,19 @@
 						</figure>
 					</div>
 
-					<!-- <div class="footprint">
-						<b class="pb-5">Digital Footprint</b><br>
-						<a target="_blank" href="https://www.linkedin.com/in/yuyuchinglin/">
-							Linkedin
-						</a><br>
-						<a target="_blank" href="https://medium.com/@yuyuchinglin">
-							Medium
-						</a><br>
-						<a target="_blank" href="https://www.instagram.com/yuyuchingg/">
-							Instagram
-						</a><br>
-						<a target="_blank" href="https://twitter.com/yuyuchinglin">
-							Twitter
-						</a><br>
-						<a target="_blank" href="https://github.com/yuyuchinglin">
-							GitHub
-						</a><br>
-						<a target="_blank" href="http://books.yuchinglin.com">
-							Yu-Ching Lin's Bookshelf
+
+					<div>
+						<!-- <b class="pb-5">Digital Footprint</b><br> -->
+						<a href="mailto:yuyuchinglin@gmail.com?subject=Hello!" class="full-btn d-inline-block">
+							<i class="fas fa-paper-plane"></i> Contact me via E-mail
 						</a>
-					</div> -->
+
+						<a href="" class="outlined-btn d-inline-block"
+							onclick="Calendly.initPopupWidget({ url: 'https://calendly.com/yuyuchinglin/15min', text: 'Schedule time with me', color: '#9E6B57', textColor: '#ffffff', branding: true });return false;">
+							<i class="far fa-calendar-alt"></i> Schedule a Chat
+						</a>
+
+					</div>
 				</div>
 
 
@@ -498,7 +496,11 @@
 
 	</script>
 
+	<!-- Calendly badge widget begin -->
+	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+	<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 
+	<!-- Calendly badge widget end -->
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115360200-1"></script>
