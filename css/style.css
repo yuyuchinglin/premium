@@ -214,7 +214,7 @@
   #cases .case h5 {
     font-weight: 600;
     font-size: 26px;
-    font-family: 'Roboto Slab','Roboto';
+    font-family: 'Roboto Slab', 'Source Sans Pro','Roboto';
   }
 
   #cases .case .date {
