@@ -41,6 +41,10 @@ body {
     
 }
 
+.list-img {
+    margin: 0 auto;
+}
+
 .list-img.pic-2 {
     margin: 0 auto;
     width: 85% !important;
@@ -124,7 +128,7 @@ body {
 .topic h1 {
         margin:0;
         font-weight: 500;
-        font-family: 'Patua One','Roboto';
+        font-family: 'Roboto Slab', 'Patue One', 'Source Sans Pro','Roboto';
         line-height: 1.4em;
 
 
@@ -152,8 +156,8 @@ body {
     margin:25px 0 12px 0 !important;
     color:#111;
     font-weight: 400;
-    font-size: 1.5em;
-    font-family: 'Patua One','Roboto';
+    font-size: 1.3em;
+    font-family: 'Roboto Slab', 'Source Sans Pro','Roboto';
 
 }
 
@@ -358,6 +362,94 @@ font-family: Montserrat, sans-serif;
 color:rgb(83,107,87);
     }
 
+.quotes, .quotes span  {
+    font-style: italic;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+}
+
+.quotes {
+    padding: 0 10px;
+    color:#444;
+    z-index: 0;
+    position: relative;
+    /* display: inline-block; */
+}
+
+.quote-sign1 {
+    position: absolute;
+    z-index: -1;
+    width: 46px;
+    height: 37px;
+    background-image: url(../img/logo/quotes-up.svg);
+    background-position: 0 0;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.quote-sign2 {
+    position: absolute;
+    left: auto;
+    right: 25px;
+    bottom: 52px;
+    z-index: -1;
+    overflow: visible;
+    width: 46px;
+    height: 37px;
+    background-image: url(../img/logo/quotes-down.svg);
+    background-position: 0 0;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.quote-word {
+    /* z-index: 8; */
+    /* position: absolute; */
+    display: inline-block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.quote-word p:first-child {
+    font-size: 22px;
+}
+
+.quote-word p {
+    z-index: 8;
+    padding: 6px 0 0 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-style: italic !important;
+    font-size: 20px;
+}
+
+.quotes .desc {
+    margin-top: 60px;
+    padding: 0 42px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic !important;
+    color: #888;
+    font-size: 18px;
+}
+
+
+.quotes img {
+    position: absolute;
+    top:-3px;
+    left:-3px;
+    max-width: 42px;
+    z-index: 1;
+}
+
+.quotes span {
+    color:#999
+}
+
+.level-1 b {
+    font-size: 1.3rem;
+}
+
 
 
 @media screen and (min-width: 901px) { 
@@ -460,7 +552,7 @@ color:rgb(83,107,87);
 }
 
 
-.list p {
+.list p, .list-img p {
     color:rgba(0,0,0,.76);
     /* --x-height-multiplier: 0.375; */
     /* --baseline-multiplier: 0.5; */
@@ -539,7 +631,8 @@ color:rgb(83,107,87);
 
 
   #port p {
-      margin:8px 0 30px 0;
+      margin:2px 0 30px 0;
+      line-height: 1.6;
   }
 
   #port .list.point p {
