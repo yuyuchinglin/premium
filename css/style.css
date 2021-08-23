@@ -8,6 +8,8 @@
     font-size: 1.25em;
   }
 
+ 
+
   header .row, .navbar .row {
     margin: 0 auto;
   }
@@ -390,7 +392,7 @@
 
   .sm-section a:hover{
     color:#9E6B57 !important;
-    text-decoration: none;
+    /* text-decoration: none; */
   }
 
 
@@ -826,6 +828,7 @@ header .link a.active:hover, .navbar .link a.active:hover {
 
 .underline {
   position: relative;
+  text-decoration: none;
   /* font-size: 18px; */
 } 
 

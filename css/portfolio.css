@@ -4,6 +4,10 @@ body {
     font-size: 1.2rem;
 }
 
+.list a, .list-img a {
+    text-decoration: underline;
+  }
+
 .portpic {
     position: relative;
     margin: 0 auto;
