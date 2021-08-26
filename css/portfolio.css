@@ -75,7 +75,7 @@ body {
 .research-table {
     max-width: 100%;
     margin-top: 5px;
-    color: rgba(0,0,0,.76);
+    color: rgba(41, 22, 22, 0.85);
     
 }
 
@@ -118,8 +118,8 @@ body {
 
 .webintro p {
     margin: 5px !important;
-    font-size: 1.1em;
-    line-height: 30px;
+    /* font-size: 1.1em; */
+    /* line-height: 30px; */
 
 }
 
@@ -139,7 +139,7 @@ body {
     }
 
 .topic p {
-    font-size: 22px;
+    /* font-size: 22px; */
 }
 
 
@@ -332,6 +332,10 @@ body {
     margin: 8px 0 !important;
 }
 
+.list-img.w85 {
+    width: 85%;
+}
+
 #port .list p.quotes {
     font-style: italic;
     margin: 8px 0;
@@ -368,7 +372,7 @@ color:rgb(83,107,87);
 
 .quotes, .quotes span  {
     font-style: italic;
-    font-size: 18px;
+    /* font-size: 18px; */
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: left;
 }
@@ -425,7 +429,7 @@ color:rgb(83,107,87);
     padding: 6px 0 0 36px;
     font-family: Georgia, 'Times New Roman', Times, serif; 
     font-style: italic !important;
-    font-size: 20px;
+    /* font-size: 20px; */
 }
 
 .quotes .desc {
@@ -450,9 +454,6 @@ color:rgb(83,107,87);
     color:#999
 }
 
-.level-1 b {
-    font-size: 1.3rem;
-}
 
 
 
@@ -487,8 +488,8 @@ color:rgb(83,107,87);
     #port .topic img {width: 100%;}
     .webintro p {
         margin-bottom: 5px;
-        font-size: 1.1em;
-        line-height: 28px;
+        /* font-size: 1.1em; */
+        /* line-height: 28px; */
     }
     .topic p:last-child{
         margin-bottom: 10px;
@@ -540,6 +541,10 @@ color:rgb(83,107,87);
     }
     .list-img > img{
         width: 90%;
+    }
+
+    .list-img.w85 {
+        width: 98%;
     }
 }
 
@@ -703,13 +708,13 @@ color:rgb(83,107,87);
     }
 
     .topic h1 {
-        font-size: 32px;
+        font-size: 30px;
     }
 
     .list h4 {
         margin:10px 0 !important;
-        font-size: 1.3em;
-        line-height: 1.3em;
+        font-size: 1.45rem;
+        line-height: 1.9rem;
     }
 
     .level-2 .list h4 {
@@ -732,9 +737,9 @@ color:rgb(83,107,87);
         margin-top: 10px;
     }
 
-    .list p, .list b {
-        font-size: 16px;
-        line-height: 24px;
+    .list p, .list b, .list-img p {
+        font-size: 1 rem;
+        /* line-height: 24px; */
     }
 
     .caption {
