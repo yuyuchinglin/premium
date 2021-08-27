@@ -334,7 +334,7 @@ body {
 .list small.sm-topic {
     color:rgb(83,107,87);
     font-weight: 800;
-    letter-spacing: .5px;
+    /* letter-spacing: .5px; */
     margin: 25px 0 5px 0 !important;
 }
 
@@ -582,7 +582,7 @@ color:rgb(83,107,87);
     /* --baseline-multiplier: 0.5; */
     word-break: break-word;
     /* font-family:medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif; */
-    letter-spacing: .004em;
+    /* letter-spacing: .004em; */
     font-weight: 400!important;
     font-style: normal;
     font-variant: normal;
@@ -628,7 +628,7 @@ color:rgb(83,107,87);
     color:#666;
     text-align: center !important;
     /* font-family: Georgia,Cambria,"Times New Roman",Times,serif; */
-    letter-spacing: .004em;
+    /* letter-spacing: .004em; */
     font-size:16px;
 }
 
