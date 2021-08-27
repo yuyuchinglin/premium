@@ -95,6 +95,21 @@ body {
 }
 
 
+.iframe {
+    position: relative;
+    padding-bottom: 75%; 
+    overflow: hidden;
+}
+
+.iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
 
 
 
@@ -118,7 +133,7 @@ body {
 
 .webintro p {
     margin: 5px !important;
-    /* font-size: 1.1em; */
+    font-size: 1.35rem;
     /* line-height: 30px; */
 
 }
@@ -400,7 +415,7 @@ color:rgb(83,107,87);
     position: absolute;
     left: auto;
     right: 25px;
-    bottom: 52px;
+    bottom: 15px;
     z-index: -1;
     overflow: visible;
     width: 46px;
@@ -488,7 +503,7 @@ color:rgb(83,107,87);
     #port .topic img {width: 100%;}
     .webintro p {
         margin-bottom: 5px;
-        /* font-size: 1.1em; */
+        font-size: 1.1rem;
         /* line-height: 28px; */
     }
     .topic p:last-child{
@@ -641,7 +656,7 @@ color:rgb(83,107,87);
 
   #port p {
       margin:2px 0 30px 0;
-      line-height: 1.6;
+      line-height: 1.58;
   }
 
   #port .list.point p {
@@ -739,7 +754,7 @@ color:rgb(83,107,87);
 
     .list p, .list b, .list-img p {
         font-size: 1 rem;
-        /* line-height: 24px; */
+        line-height: 1.55;
     }
 
     .caption {
