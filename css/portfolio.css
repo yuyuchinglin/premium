@@ -546,6 +546,14 @@ color:rgb(83,107,87);
 
 
 @media screen and (max-width: 768px) {
+    body {
+        font-size: 1.18rem;
+    }
+
+    #port p {
+        line-height: 1.5 !important;
+    }
+    
     .list {
         width: 98%;
         /* font-size:1em; */
