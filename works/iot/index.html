@@ -111,7 +111,7 @@
 			</div>
 		</div>
 
-		<div class="container level-1">
+		<div class="container">
 
 			<section class="js-scroll-step" id="overview">
 				<div class="seperate"> ·&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;·</div>
@@ -177,10 +177,25 @@
 					</div>
 				</div>
 
+				<!-- </section>
+		</div>
+
+
+
+		<div class="part" style="background-color: #FCEBE4;">
+			<div class="rect">
+				<h3>Expanding to General Users</h3>
+				<p>User Flow #1</p>
+			</div>
+		</div>
+
+		<div class="container">
+			<section> -->
+
 
 				<div class="seperate"> ·&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;·</div>
 				<div class="list">
-					<h4>Problem</h4>
+					<h4>The Challenge</h4>
 					<p>This platform is designed for professional use. Our existing internal users are project managers (PMs) and
 						salespeople who help customers update their software and firmware. However, our company regards the cloud
 						service as a software solution and wants to promote it to our customers. In the future, they can buy and
@@ -193,7 +208,7 @@
 					<a href="/img/portfolio/iot/new/users.png" data-fancybox data-caption="Expand Users">
 						<img src="/img/portfolio/iot/new/users.png" alt="" style="max-width: 670px;" class="my-1">
 					</a>
-					<div class="caption">Goal: Expanding users
+					<div class="caption">The Challenge: Expanding Users
 					</div>
 				</div>
 
@@ -207,10 +222,11 @@
 				<div class="list">
 					<h4>Early Research Findings</h4>
 					<p>Since the platform is an operating system, we emphasize usability. Therefore, we use a
-						<a href="https://www.usability.gov/how-to-and-tools/methods/system-usability-scale.html">system usability
+						<a target="_blank"
+							href="https://www.usability.gov/how-to-and-tools/methods/system-usability-scale.html">system usability
 							scale
 							(SUS)</a>
-						as a quick, reliable measurement tool. Our previous <a
+						as a quick, reliable measurement tool. Our previous <a target="_blank"
 							href="https://fog-metal-f1b.notion.site/A-B-Testing-Geo-fence-716f03ffd38d4080aad3aad23ffc0dab">user
 							testing</a> indicated that general users believed they lack sufficient background knowledge to use the
 						system.
@@ -238,15 +254,15 @@
 
 				<div class="list mb-3">
 
-					<h4>Emphasizing Users</h4>
+					<h4>Emphasize Users</h4>
 					<p>Looking into general user sentiment on the product, I discovered that users with different familiarity
 						levels have different needs.
 					</p>
-					<b>1. Unfamiliar users need a basic understanding.</b>
+					<b class="bigger_title">1. Unfamiliar users need a basic understanding.</b>
 					<p>Since the topic or content is unfamiliar to general users, they need to grasp the purpose of the cloud
 						service or the meaning of a geofence.
 					</p>
-					<b>2. Familiar users need a guide.</b>
+					<b class="bigger_title">2. Familiar users need a guide.</b>
 					<p>Users with basic knowledge of OTA or MDM reported that they could not readily find the feature and that it
 						lacked clear indicators.
 					</p>
@@ -261,7 +277,7 @@
 									<div class="quote-sign1"></div>
 									<p class="mb-1">It appears to be intuitive, but I lack a basic understanding of what this interface is
 										exactly.</p>
-									<p class="desc">— Comment from user testing</p>
+									<p class="desc">— Unfamiliar user from user testing</p>
 									<div class="quote-sign2"></div>
 								</div>
 							</div>
@@ -272,7 +288,7 @@
 									<p class="mb-1">Even with a knowledge of geofencing, the navigation wasn't always clear. It has a
 										clean design, but it took awhile to find exactly where it is because there weren't very clear
 										indications.</p>
-									<p class="desc">— Comment from user testing</p>
+									<p class="desc">— Familiar user from user testing</p>
 									<div class="quote-sign2"></div>
 								</div>
 							</div>
@@ -303,11 +319,18 @@
 					</p>
 
 
-					<p style="font-style: italic; font-size: 1.8rem; line-height: 2.6rem; color:#aaa; font-weight: normal;">
-						How might we provide a clear, basic understanding to better engage users? <br>How might we guide users to
-						efficiently and confidently complete the task?
-
+					<p
+						style="font-style: italic; font-size: 1.8rem; line-height: 2.6rem; color:#aaa; margin-bottom:15px; font-weight: normal;">
+						How might we provide a basic understanding to better engage users?
 					</p>
+
+					<p
+						style="font-style: italic; font-size: 1.8rem; line-height: 2.6rem; color:#aaa; margin-bottom:15px; font-weight: normal;">
+						How might we guide users to
+						efficiently and confidently complete the task?
+					</p>
+
+
 				</div>
 
 				<div class="seperate"> ·&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;·</div>
@@ -315,7 +338,7 @@
 
 				<div class="list">
 
-					<h4>Develop a Vision</h4>
+					<h4>Develop Design Principles</h4>
 					<p class="mb-1">With these findings in mind, we held a design sprint with stakeholders. To meet our high-level
 						design goals, we decided on a design that is:
 
@@ -331,7 +354,7 @@
 					<a href="/img/portfolio/iot/new/vision.jpg" data-fancybox data-caption="Developing a design vision">
 						<img src="/img/portfolio/iot/new/vision.jpg" alt="" style="max-width: 670px;" class="my-1">
 					</a>
-					<div class="caption">Developing a design vision
+					<div class="caption">Developing Design Principles
 						(Photo by
 						<a href="https://unsplash.com/photos/vbxyFxlgpjM" target="_blank">Leon</a> on
 						<a href="https://unsplash.com/" target="_blank">Unsplash</a>)
@@ -352,39 +375,63 @@
 				<div class="list">
 
 					<h4>Generate and Prioritize Ideas</h4>
-					<p>I invited and led a diverse group including managers and engineers for a quick online meeting that
+					<p>I invited and led a diverse group including managers and engineers for an online meeting that
 						included:
 
 					</p>
 				</div>
 
-				<div class="list-img">
-					<div class="row">
-						<div class="col-12 col-sm-4">
-							<div class="caption mb-2">(1) Brainstorming</div>
-							<a href="/img/portfolio/iot/new/ideate1.png" data-fancybox="sprint"
-								data-caption="(1) Brainstorming: People in various positions and departments presented different perspectives.">
-								<img src="/img/portfolio/iot/new/ideate1.png" alt="" style="width: 100%;">
-							</a>
+				<div class="list-img w85">
 
+					<div class="row">
+						<div class="col-12 col-md-5 pr-md-5 pl-md-0" style="text-align:left">
+							<b class="bigger_title">(1) Brainstorming</b>
+							<p>People in various positions and departments presented different ideas.</p>
 						</div>
-						<div class="col-12 col-sm-4">
-							<div class="caption mb-2 mt-4 mt-md-0">(2) Organizing & Categorizing the Solution</div>
-							<a href="/img/portfolio/iot/new/ideate2.png" data-fancybox="sprint"
-								data-caption="(2) Organizing & Categorizing the Solution: Since some descriptions were repeated, I organized them into three categories—indicators, places, and support. I invited everyone to vote for the five decisions they liked best.">
-								<img src="/img/portfolio/iot/new/ideate2.png" alt="" style="width: 100%;">
+						<div class="col-12 col-md-7">
+							<a href="/img/portfolio/iot/new/ideate1.png" data-fancybox="sprint" data-caption="(1) Brainstorming">
+								<img src="/img/portfolio/iot/new/ideate1.png" alt="" style="width:100%;">
 							</a>
 						</div>
-						<div class="col-12 col-sm-4">
-							<div class="caption mb-2 mt-4 mt-md-0">(3) Prioritizing with an Impact & Effort Matrix</div>
+
+					</div>
+
+					<div class="seperate"></div>
+
+					<div class="row">
+						<div class="col-12 col-md-5 pr-md-5 pl-md-0" style="text-align:left">
+							<b class="bigger_title">(2) Organizing & Categorizing the Solution</b>
+							<p>Since some descriptions were repeated, I organized them into three categories—indicators, places, and
+								support. I invited everyone to vote for the five decisions they liked best.</p>
+						</div>
+						<div class="col-12 col-md-7">
+							<a href="/img/portfolio/iot/new/ideate2.png" data-fancybox="sprint"
+								data-caption="(2) Organizing & Categorizing the Solution">
+								<img src="/img/portfolio/iot/new/ideate2.png" alt="" style="width:100%;">
+							</a>
+						</div>
+					</div>
+
+					<div class="seperate"></div>
+
+					<div class="row">
+						<div class="col-12 col-md-5 pr-md-5 pl-md-0" style="text-align:left">
+							<b class="bigger_title">(3) Prioritizing with an Impact & Effort Matrix</b>
+							<p>In the Low-Hanging Fruit quadrant, we will create a prototype to compare and evaluate the result. We
+								will ask the PM to evaluate the efforts and resources for items in the Big Bets quadrant. We will
+								consider adding items in the Worth Considering quadrant since they take little effort.</p>
+						</div>
+						<div class="col-12 col-md-7">
 							<a href="/img/portfolio/iot/new/ideate3.png" data-fancybox="sprint"
-								data-caption="(3) Prioritizing with an Impact & Effort Matrix: In the Low-Hanging Fruit quadrant, we will create a prototype to compare and evaluate the result. We will ask the PM to evaluate the efforts and resources for items in the Big Bets quadrant. We will consider adding items in the Worth Considering quadrant since they take little effort.">
-								<img src="/img/portfolio/iot/new/ideate3.png" alt="" style="width: 100%;">
+								data-caption="(3) Prioritizing with an Impact & Effort Matrix">
+								<img src="/img/portfolio/iot/new/ideate3.png" alt="" style="width:100%;">
 							</a>
 						</div>
 					</div>
 
 				</div>
+
+
 
 				<div class="seperate"> ·&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;·</div>
 
@@ -396,8 +443,9 @@
 
 
 				<div class="list mb-5">
-					<h4>Modifying the User Flow with Wireframes</h4>
-					<p>Based on the design vision and design sprint, I proposed adding a new dashboard and feature onboarding page
+					<h4>Modify the User Flow with Wireframes</h4>
+					<p>Based on the design vision and design sprint, I proposed adding a new dashboard and feature onboarding
+						page
 						to the user flow to enhance usability.
 					</p>
 				</div>
@@ -418,14 +466,14 @@
 
 
 				<div class="list mb-4">
-					<h4>Introducing New Product Interfaces</h4>
+					<h4>Introduce New Product Interfaces</h4>
 				</div>
 
 
 				<div class="list-img w85">
 					<div class="row">
-						<div class="col-12 col-md-4 p-0 p-md-2" style="text-align:left">
-							<b>(1) Dashboard</b>
+						<div class="col-12 col-md-4 p-0 p-md-3" style="text-align:left">
+							<b class="bigger_title">Dashboard for better engaging users</b>
 							<p>
 								The previous design used a devices index page as the entry page. Because this design intimidated and
 								confused general users, I added a dashboard to help users navigate.
@@ -446,10 +494,11 @@
 
 				<div class="list-img w85">
 					<div class="row">
-						<div class="col-12 col-md-4 p-0 p-md-2" style="text-align:left">
-							<b>(2) Onboarding Messages</b>
+						<div class="col-12 col-md-4 p-0 p-md-3" style="text-align:left">
+							<b class="bigger_title">Onboarding messages for guiding users to complete the tasks</b>
 							<p>
-								The addition of operation steps and a feature introduction helps users navigate when they first onboard
+								The addition of operation steps and a feature introduction helps users understand when they first
+								onboard
 								onto the feature page. Although users do not always read them, onboarding messages inform and welcome
 								users.
 							</p>
@@ -468,7 +517,7 @@
 
 
 				<div class="list mb-4">
-					<b>(3) Before & After Prototype</b>
+					<b class="bigger_title">Before & After Prototype</b>
 					<p>To enhance usability, I designed a dashboard and onboarding experience to facilitate navigation and give
 						general users detailed background knowledge for later reference.
 					</p>
@@ -518,7 +567,7 @@
 				<div class="seperate"> ·&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;·</div>
 				<div class="list">
 					<h4>Results</h4>
-					<b>Small Changes, Big Impact
+					<b class="bigger_title">Small Changes, Big Impact
 					</b>
 					<p>I was pleasantly surprised to learn that the SUS score has risen drastically. I believe this is due to the
 						dashboard design. However, this was only a design model; how the engineer implements it will be important.
@@ -575,7 +624,7 @@
 				<div class="seperate"> ·&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;·</div>
 				<div class="list">
 					<h4>Future Proposals</h4>
-					<b>Dashboard for Familiar Users
+					<b class="bigger_title">Dashboard for Familiar Users
 					</b>
 					<p>Right now, our dashboard is just for navigation. However, after using the system for a while, users will
 						need a clear information dashboard. We should research what information is necessary for familiar users

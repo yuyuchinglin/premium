@@ -8,6 +8,8 @@
     font-size: 1.25em;
   }
 
+
+
  
 
   header .row, .navbar .row {
@@ -171,6 +173,30 @@
     display: inline-block; margin: 0 auto;
     width:97%;  vertical-align : middle;
   } 
+
+
+  .part {
+    height: 300px;
+    line-height: 300px;
+    width: 100%;
+    background-color: #f7b196;
+    margin: 80px auto;
+    /* filter: brightness(90%); */
+    color:#666;
+  }
+
+  .part .rect {
+    border: 2px solid #999;
+    display: inline-block;
+    text-align: left;
+    padding:20px 50px 20px 40px;
+    vertical-align: middle;
+    /* height: auto; */
+  }
+
+  #port .part .rect p {
+    margin-bottom: 2px;
+  }
 
 
 

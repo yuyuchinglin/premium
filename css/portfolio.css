@@ -8,6 +8,11 @@ body {
     text-decoration: underline;
   }
 
+
+  .bigger_title {
+    font-size: 1.38rem;
+  }
+
 .portpic {
     position: relative;
     margin: 0 auto;
@@ -736,6 +741,12 @@ color:rgb(83,107,87);
         font-size: 1.45rem;
         line-height: 2.1rem;
     }
+
+
+    .bigger_title {
+        font-size: 1.3rem !important;
+        line-height: 1.65rem !important;
+      }
 
     .level-2 .list h4 {
         margin:10px 0 5px 0 !important;
