@@ -176,26 +176,37 @@
 
 
   .part {
-    height: 300px;
+    /* height: 300px; */
     line-height: 300px;
     width: 100%;
     background-color: #f7b196;
     margin: 80px auto;
+    padding:60px auto !important;
     /* filter: brightness(90%); */
     color:#666;
   }
 
   .part .rect {
-    border: 2px solid #999;
+    border: 2px solid rgba(256,256,256,0.7);
     display: inline-block;
     text-align: left;
     padding:20px 50px 20px 40px;
+    margin: 80px auto;
     vertical-align: middle;
+    max-width: 500px;
+    line-height: 2.1rem;
+    color: rgba(256,256,256,1);
     /* height: auto; */
   }
 
+  .part .rect h3 {
+    line-height: 2.2rem !important;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+  }
+
   #port .part .rect p {
-    margin-bottom: 2px;
+    margin-bottom: 6px;
   }
 
 

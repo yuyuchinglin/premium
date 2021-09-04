@@ -14,6 +14,10 @@ body {
     line-height: 1.9rem !important;
   }
 
+  .small_words {
+    font-size: 1.1rem !important;
+}
+
 .portpic {
     position: relative;
     margin: 0 auto;
@@ -566,7 +570,7 @@ color:rgb(83,107,87);
 }
 
 
-.list p, .list-img p {
+.list p, .list-img p, .list-img li {
     color:rgba(0,0,0,.76);
     /* --x-height-multiplier: 0.375; */
     /* --baseline-multiplier: 0.5; */
@@ -748,6 +752,8 @@ color:rgb(83,107,87);
         font-size: 1.3rem !important;
         line-height: 1.65rem !important;
       }
+
+    
 
     .level-2 .list h4 {
         margin:10px 0 5px 0 !important;
