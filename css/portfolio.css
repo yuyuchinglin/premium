@@ -1,7 +1,7 @@
 body {
     /* background-color: #333; */
     overflow-x: hidden;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
 }
 
 .list a, .list-img a {
@@ -571,7 +571,7 @@ color:rgb(83,107,87);
 
 
 .list p, .list-img p, .list-img li {
-    color:rgba(0,0,0,.76);
+    color:rgba(0,0,0,.85);
     /* --x-height-multiplier: 0.375; */
     /* --baseline-multiplier: 0.5; */
     word-break: break-word;
