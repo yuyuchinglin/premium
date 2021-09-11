@@ -138,7 +138,9 @@
   #welcome {
     padding:35px 0 20px;
     width: 100%; 
-    background: url(../img/logo/bg.png) top left repeat;   
+    /* background: url(../img/logo/bg.png) top left repeat;    */
+    background-color: rgba(240,240,240,.6);
+    /* background-color: #b8968983; */
   }
 
 
