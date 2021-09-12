@@ -261,16 +261,13 @@
     transition: filter .3s;
   }
 
-  #cases .case img {
-    transition: transform .5s;
-  }
   
 
   #cases .case:hover .case-desc{
     filter: drop-shadow(3px 3px 3px rgb(202, 202, 202));
   }
 
-  #cases .case:hover img {
+  #cases .case img {
     transform: scale(1.02);
   }
 
