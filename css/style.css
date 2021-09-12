@@ -159,7 +159,7 @@
 
   #welcome .welcome-intro p {
     font-size: 28px;
-    color:#555;
+    color:rgba(0,0,0,.85);
   }
 
 
@@ -233,13 +233,14 @@
     background-color: #aaa;
     text-align: right;
     /* margin-bottom: 10px; */
-    border-radius: 5px;
-   
+    /* border-radius: 5px; */
+    border: 1px solid #ededed;
   }
 
   #cases .case img {
-   max-height: 280px;
-   max-width: 90%;
+   max-height: 320px;
+   /* max-width: 100%; */
+   /* width:100%; */
     text-align: left;
     margin:0 auto;
   }
@@ -247,11 +248,44 @@
   #cases .case .case-desc {
     background-color: #fff;
     padding:20px 30px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     text-align: left;
     width: 480px;
-    
+    border: 1px solid #ededed;
+    /* height: 360px; */
+ 
   }
+
+
+  #cases .case .case-desc {
+    transition: filter .3s;
+  }
+
+  #cases .case img {
+    transition: transform .5s;
+  }
+  
+
+  #cases .case:hover .case-desc{
+    filter: drop-shadow(3px 3px 3px rgb(202, 202, 202));
+  }
+
+  #cases .case:hover img {
+    transform: scale(1.02);
+  }
+
+  #cases .case .btn {
+    background: #cf9e8a ;
+   /* transition: opacity .5s ease-out; */
+   /* opacity: 1.5; */
+  }
+
+
+  #cases .case:hover .btn {
+    background: linear-gradient(135deg,#cf9e8a 0,#9E6B57 100%);
+    /* opacity:0.9; */
+   }
+ 
 
   #cases .case h5 {
     font-weight: 600;
@@ -272,15 +306,18 @@
     padding: 4px 8px;
     border-radius: 6px;
     margin-right: 3px;
+    white-space:nowrap;
+    line-height: 34px;
   }
 
   #cases .case button {
     font-weight: 600;
-    font-size: 17px;
-    background-color: #9E6B57;
+    /* font-size: 26px; */
+    background: linear-gradient(135deg,#9E6B57 0,#ff8929 100%);
     border-color: #9E6B57;
-    
+    transition: background 2s;
   }
+
 
   #cases .case button:focus {
     box-shadow: 0 0 0 3px rgb(158 107 87 / 50%);
@@ -293,6 +330,17 @@
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
+  }
+
+
+  #cases .case .case-btn {
+    background-color: #9E6B57;
+    border:0px;
+    border-radius: 0px;
+  }
+
+  #cases .case .case-btn:hover {
+    background-color: #865845;
   }
 
 
@@ -352,7 +400,7 @@
     text-align: center;
     font-weight: 600;
     font-size: 32px;
-    font-family: 'Roboto Slab','Roboto';
+    font-family: 'Roboto Slab', 'Source Sans Pro';
     line-height: 44px;
     overflow: hidden;
   }
