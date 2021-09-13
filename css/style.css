@@ -235,11 +235,17 @@
     /* margin-bottom: 10px; */
     /* border-radius: 5px; */
     border: 1px solid #ededed;
+    transition: filter .3s;
+  }
+
+  #cases .case:hover {
+    /* filter: drop-shadow(3px 3px 3px rgb(202, 202, 202)); */
+    border: 2px solid #ededed;
   }
 
   #cases .case img {
    max-height: 320px;
-   /* max-width: 100%; */
+   max-width: 100%;
    /* width:100%; */
     text-align: left;
     margin:0 auto;
@@ -250,7 +256,7 @@
     padding:20px 30px;
     /* border-radius: 5px; */
     text-align: left;
-    width: 480px;
+    /* width: 480px; */
     border: 1px solid #ededed;
     /* height: 360px; */
  
@@ -268,7 +274,7 @@
   }
 
   #cases .case img {
-    transform: scale(1.02);
+    transform: scale(1.03);
   }
 
   #cases .case .btn {
