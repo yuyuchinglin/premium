@@ -277,17 +277,7 @@
     transform: scale(1.03);
   }
 
-  #cases .case .btn {
-    background: #cf9e8a ;
-   /* transition: opacity .5s ease-out; */
-   /* opacity: 1.5; */
-  }
 
-
-  #cases .case:hover .btn {
-    background: linear-gradient(135deg,#cf9e8a 0,#9E6B57 100%);
-    /* opacity:0.9; */
-   }
  
 
   #cases .case h5 {
@@ -316,9 +306,9 @@
   #cases .case button {
     font-weight: 600;
     /* font-size: 26px; */
-    background: linear-gradient(135deg,#9E6B57 0,#ff8929 100%);
+    /* background: linear-gradient(135deg,#9E6B57 0,#ff8929 100%); */
     border-color: #9E6B57;
-    transition: background 2s;
+    /* transition: background 2s; */
   }
 
 
@@ -1441,13 +1431,24 @@ p.title {
   #contact.hover .bsncard{
     transform: rotateY( 0deg );
   }
+
 }
 
 @media (min-width: 960px){
   .articles-item.col-lg-6 .pic {
     height:245px !important;
   }
+
+  #cases .case .btn {
+    background: #9E6B57;
+  }
+
+
+  #cases .case:hover .btn {
+    background: linear-gradient(135deg,#cf9e8a 0,#9E6B57 100%);
+   }
 }
+
 
 .name {
   margin-top: 8px;
