@@ -181,34 +181,88 @@
     /* height: 300px; */
     line-height: 300px;
     width: 100%;
+    height: 100vh;
     background-color: #f7b196;
-    margin: 80px auto;
+    margin: 60px auto;
     padding:60px auto !important;
     /* filter: brightness(90%); */
     color:#666;
+    display:  flex;
+    align-items: center;
+    justify-content:  center;
   }
 
   .part .rect {
-    border: 2px solid rgba(256,256,256,0.7);
+    border: 3px solid rgba(255,255,255,0.9);
     display: inline-block;
     text-align: left;
-    padding:20px 50px 20px 40px;
+    padding:40px 55px 40px 45px;
     margin: 80px auto;
     vertical-align: middle;
-    max-width: 500px;
-    line-height: 2.1rem;
-    color: rgba(256,256,256,1);
-    /* height: auto; */
+    max-width: 350px;
+    color: #fff;
+    min-height: 300px;
+    display:  flex;
+    align-items: center;
+    justify-content:  center;
   }
 
+
   .part .rect h3 {
-    line-height: 2.2rem !important;
+    line-height: 2.6rem !important;
     font-family: 'Roboto Slab';
     font-weight: 400;
+    font-size: 2rem;
   }
 
   #port .part .rect p {
     margin-bottom: 6px;
+  }
+
+
+  .password {
+    background-color: #eee;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    display:  flex;
+    align-items: center;
+    justify-content:  center;
+  }
+
+  .password h2 {
+    font-family: 'Roboto Slab', 'Source Sans Pro','Roboto';
+    color:#333;
+    /* font-size: 2.8rem; */
+  }
+
+  .password >div {
+    max-width: 600px;
+  }
+  .password p {
+    color:#666;
+    /* font-size:1.35rem; */
+  }
+
+
+  .password .form-group {
+    position:relative;
+  }
+
+  .password .form-group button {
+    position: absolute;
+    top:0;
+   right:0;
+   color: #666 !important;
+  }
+
+  .password .form-group button:hover {
+    color: #9E6B57 !important;
+  }
+
+  .password .form-group button:focus {
+    outline: 0px;
+    background-color: transparent;
   }
 
 
@@ -1546,7 +1600,13 @@ p.title {
   }
 
 
-
+  .password {
+    background-color: #eee;
+    width: 100%;
+    height: 100%;
+    padding: 100px 0px 100px;
+    margin-bottom: 0 !important;
+  }
 
   .footprint{
     display: none;
