@@ -294,7 +294,7 @@
 
   #cases .case:hover {
     /* filter: drop-shadow(3px 3px 3px rgb(202, 202, 202)); */
-    border: 2px solid #ededed;
+    /* border: 2px solid #ededed; */
   }
 
   #cases .case img {
