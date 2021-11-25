@@ -35,12 +35,12 @@
 			var cn_articles = request.response.cn_articles;
 
 			for (var i = 0; i < en_articles.length; i++) {
-				var txt = "<a target='_blank' class ='articles-item col-12 col-md-6 col-lg-" + en_articles[i].lg_col + "' href=" + en_articles[i].link + "> <div class='card' style='width:100%'><div class='pic' style='background: url(/articles/articles/" + en_articles[i].img + ") center center grey; background-size: cover'></div><div class='card-body'><h5 class='card-title'><b>" + en_articles[i].title + "</b></h5><p class='card-text'>" + en_articles[i].subtitle + "</p><small class='text-muted'>" + en_articles[i].date + " " + en_articles[i].publication + "</small></div></div></a>";
+				var txt = "<a target='_blank' class ='articles-item col-12 col-md-6 col-lg-" + en_articles[i].lg_col + "' href=" + en_articles[i].link + "> <div class='card' style='width:100%'><div class='pic' style='background: url(/blogs/articles/" + en_articles[i].img + ") center center grey; background-size: cover'></div><div class='card-body'><h5 class='card-title'><b>" + en_articles[i].title + "</b></h5><p class='card-text'>" + en_articles[i].subtitle + "</p><small class='text-muted'>" + en_articles[i].date + " " + en_articles[i].publication + "</small></div></div></a>";
 				document.getElementById("en_articles").innerHTML += txt;
 			}
 
 			for (var i = 0; i < cn_articles.length; i++) {
-				var txt = "<a target='_blank' class ='articles-item col-12 col-md-6 col-lg-" + cn_articles[i].lg_col + "' href=" + cn_articles[i].link + "> <div class='card' style='width:100%'><div class='pic' style='background: url(/articles/articles/" + cn_articles[i].img + ") center center grey; background-size: cover'></div><div class='card-body'><h5 class='card-title'><b>" + cn_articles[i].title + "</b></h5><p class='card-text'>" + cn_articles[i].subtitle + "</p><small class='text-muted'>" + cn_articles[i].date + " " + cn_articles[i].publication + "</small></div></div></a>";
+				var txt = "<a target='_blank' class ='articles-item col-12 col-md-6 col-lg-" + cn_articles[i].lg_col + "' href=" + cn_articles[i].link + "> <div class='card' style='width:100%'><div class='pic' style='background: url(/blogs/articles/" + cn_articles[i].img + ") center center grey; background-size: cover'></div><div class='card-body'><h5 class='card-title'><b>" + cn_articles[i].title + "</b></h5><p class='card-text'>" + cn_articles[i].subtitle + "</p><small class='text-muted'>" + cn_articles[i].date + " " + cn_articles[i].publication + "</small></div></div></a>";
 				document.getElementById("cn_articles").innerHTML += txt;
 
 			}
@@ -77,7 +77,7 @@
 				</div>
 				<div class="col-11 col-md-8 link p-0" style="text-align:right">
 					<a href="/" class="underline">WORKS</a>
-					<a href="/articles" class="underline active">ARTICLES</a>
+					<a href="/blogs" class="underline active">BLOGS</a>
 					<a href="/about" style="margin-right: 0;" class="underline">ABOUT</a>
 				</div>
 			</div>
@@ -102,7 +102,7 @@
 			<div class="article-box d-none d-sm-flex" style="display: flex;align-items: center;">
 
 				<div class="articles-img d-none d-lg-block" style="height: 220px;">
-					<img src="/articles/articles/medium_photo.jpeg" alt="">
+					<img src="/blogs/articles/medium_photo.jpeg" alt="">
 				</div>
 
 
@@ -154,7 +154,7 @@
 					class="articles-item col-12 col-md-6 col-lg-6">
 					<div class="card" style="width:100%">
 						<div class="pic"
-							style="background: url('/articles/articles/2020_cool.jpg') center center grey; background-size: cover"
+							style="background: url('/blogs/articles/2020_cool.jpg') center center grey; background-size: cover"
 							alt="">
 						</div>
 						<div class="card-body">
@@ -170,7 +170,7 @@
 					class=" articles-item col-12 col-md-6 col-lg-6">
 					<div class="card" style="width:100%">
 						<div class="pic"
-							style="background: url('/articles/articles/2021_gamification.jpeg') center center grey; background-size: cover"
+							style="background: url('/blogs/articles/2021_gamification.jpeg') center center grey; background-size: cover"
 							alt="">
 						</div>
 						<div class="card-body">
