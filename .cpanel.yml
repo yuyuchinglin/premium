@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/jnq0c7r43joe/premium.yuchinglin.com/
+    - export DEPLOYPATH=/home/jnq0c7r43joe/public_html/premium.yuchinglin.com/
     - /bin/cp -a * $DEPLOYPATH
