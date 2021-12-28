@@ -887,14 +887,15 @@ header .link, .navbar .link {
 header .link a, .navbar .link a{
   margin: 0 8px;
   padding: 0;
-  color:#252525;
-  font-weight: 500;
+  color:#666;
+  font-weight: 400;
   /* font-size: 18px; */
   line-height: 35px;
+  /* font-family: 'poppins'; */
 }
 
 header .link a:hover, .navbar .link a:hover {
-  color:#9E6B57;
+  /* color:#9E6B57; */
 }
 
 header .link a.active:hover, .navbar .link a.active:hover {
@@ -958,7 +959,7 @@ header .link a.active:hover, .navbar .link a.active:hover {
 
 .type li a {
   margin: 0 12px;
-  color: #000;
+  /* color: #000; */
   text-decoration: none;
   font-weight: 400;
   font-size: 20px;
@@ -967,20 +968,21 @@ header .link a.active:hover, .navbar .link a.active:hover {
 .underline.active {
   border-width: 0px 0px 2px 0px;
   border-style: solid;
-  color:#9E6B57;
+  color:#454545;
   font-weight: 600;
 }
 
 .underline {
   position: relative;
   text-decoration: none;
+  color: #999;
   /* font-size: 18px; */
 } 
 
 .underline:hover,
 .underline:focus,
 .underline:active {
-  color:#9E6B57;
+  color:#454545;
   text-decoration: none;  cursor: pointer;
   }
 
@@ -988,7 +990,7 @@ header .link a.active:hover, .navbar .link a.active:hover {
 .underline:focus:after,
 .underline:active:after  {
       width: 100%;
-      color:#9E6B57 !important;
+      color:#454545;
 }
 
 
@@ -1005,7 +1007,7 @@ header .link a.active:hover, .navbar .link a.active:hover {
     position: absolute; bottom: -2px;
     left: 0;  width: 0;
     height: 1px;
-    background-color:#9E6B57;
+    background-color:#454545;
     content: '';
     transition: width .4s;
     }
@@ -1809,7 +1811,6 @@ p.title {
     text-align: center !important;
       font-size: 28px;
       line-height: 58px;
-    
   }
 
   .word {
