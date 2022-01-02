@@ -899,7 +899,7 @@ header .link a:hover, .navbar .link a:hover {
 }
 
 header .link a.active:hover, .navbar .link a.active:hover {
-  color:#9E6B57;
+  /* color:#9E6B57; */
 }
 
 #welcome .welcome-intro h1 {
@@ -938,6 +938,8 @@ header .link a.active:hover, .navbar .link a.active:hover {
   display: inline-block;
   height:28px;
 }
+
+
 
 
 /* underline */
