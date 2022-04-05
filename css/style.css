@@ -443,10 +443,10 @@
 
   .word h5{
     display: inline;
-    color: #9E6B57;
+    color: #37352f;
     text-align: center;
-    font-weight: 600;
-    font-size: 32px;
+    font-weight: 400;
+    font-size: 30px;
     font-family: 'Roboto Slab', 'Source Sans Pro';
     line-height: 44px;
     overflow: hidden;
@@ -462,11 +462,12 @@
   .outlined-btn, .footprint {
     margin-right: 5px !important;
     margin-bottom: 10px !important;
-    padding: 5px 20px;  
+    padding: 5px 18px;  
     border: 1px solid #9E6B57;
     color: #9E6B57;
     text-decoration: none;
     cursor: pointer;
+    font-size: 19px;
   }
 
   .outlined-btn {
@@ -476,12 +477,13 @@
   .full-btn, .footprint {
     margin-right: 5px !important;
     margin-bottom: 10px !important;
-    padding: 5px 20px;  
+    padding: 5px 18px;  
     border: 1px solid #9E6B57;
     color: #fff;
     background-color: #9E6B57;
     text-decoration: none;
     cursor: pointer;
+    font-size: 19px;
   }
 
   .outlined-btn i, .full-btn i {
@@ -887,7 +889,7 @@ header .link, .navbar .link {
 header .link a, .navbar .link a{
   margin: 0 8px;
   padding: 0;
-  color:#666;
+  color:#868e96;
   font-weight: 400;
   /* font-size: 18px; */
   line-height: 35px;
@@ -977,14 +979,14 @@ header .link a.active:hover, .navbar .link a.active:hover {
 .underline {
   position: relative;
   text-decoration: none;
-  color: #999;
+  color: #868e96;
   /* font-size: 18px; */
 } 
 
 .underline:hover,
 .underline:focus,
 .underline:active {
-  color:#454545;
+  color:#868e96;
   text-decoration: none;  cursor: pointer;
   }
 
@@ -992,7 +994,7 @@ header .link a.active:hover, .navbar .link a.active:hover {
 .underline:focus:after,
 .underline:active:after  {
       width: 100%;
-      color:#454545;
+      color:#868e96;
 }
 
 
@@ -1009,7 +1011,7 @@ header .link a.active:hover, .navbar .link a.active:hover {
     position: absolute; bottom: -2px;
     left: 0;  width: 0;
     height: 1px;
-    background-color:#454545;
+    background-color:#868e96;
     content: '';
     transition: width .4s;
     }
