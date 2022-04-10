@@ -750,6 +750,11 @@ color:rgb(83,107,87);
         margin: 0;
     }
 
+    .part .rect {
+        border: 0px;
+    }
+    
+
     .seperate {
         margin: 30px 0;
     }
