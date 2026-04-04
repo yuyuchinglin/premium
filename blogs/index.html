@@ -10,41 +10,120 @@
 
 	<title>Blogs - Yu-Ching Lin</title>
 
-	<link rel="shortcut icon" href="/img/logo/favicon.ico" />
+	<link rel="shortcut icon" href="/img/logo/favicon/favicon.ico" />
 
+	<link rel='stylesheet' href='/css/base.css' type='text/css' />
 	<link rel="stylesheet" href="/css/bootstrap.min.css">
-	<link rel='stylesheet' href='/css/style.css' type='text/css' />
+	<link rel='stylesheet' href='/css/blogs.css' type='text/css' />
 	<link
-		href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Source+Sans+Pro:wght@400;600&display=swap"
+		href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700;1,800&family=Poppins:ital,wght@0,400;0,500;1,400;1,500&family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Source+Sans+Pro:wght@400;600&display=swap"
 		rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" rel="stylesheet">
 
 	<script src="/js/pace.js"></script>
+	<script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
 	<!-- <script src="https://requirejs.org/docs/release/2.3.6/r.js"></script> -->
 	<script src="https://unpkg.com/scrollreveal"></script>
 
 	<script>
+		var allArticles = [];
+		var currentLang = 'en';
+		var currentCat = 'all';
+
+		function normalizeCategory(cat) {
+			if (!cat) return 'Other';
+			var c = cat.toLowerCase();
+			if (c.includes('psychology') || c.includes('self compassion')) return 'Psychology';
+			if (c.includes('ux') || c.includes('user experience')) return 'UX';
+			if (c.includes('personal growth') || c.includes('reading')) return 'Personal Growth';
+			if (c.includes('strategy')) return 'Strategy';
+			return 'Other';
+		}
+
+		var catOrder = { 'Psychology': 1, 'UX': 2, 'Personal Growth': 3, 'Strategy': 4, 'Other': 5 };
+
+		function sortArticles(articles) {
+			return articles.slice().sort(function (a, b) {
+				var dateDiff = new Date(b.date) - new Date(a.date);
+				if (dateDiff !== 0) return dateDiff;
+				var catDiff = (catOrder[normalizeCategory(a.category)] || 9) - (catOrder[normalizeCategory(b.category)] || 9);
+				if (catDiff !== 0) return catDiff;
+				return (a.publication || '').localeCompare(b.publication || '');
+			});
+		}
+
+		function renderArticles(articles) {
+			var feed = document.getElementById('blog-feed');
+			feed.innerHTML = '';
+			if (articles.length === 0) {
+				feed.innerHTML = '<p style="color:#999; padding: 40px 0;">No articles found.</p>';
+				return;
+			}
+			articles.forEach(function (a) {
+				var cat = normalizeCategory(a.category);
+				feed.innerHTML += '<a class="blog-article-item" href="' + a.link + '" target="_blank" data-lang="' + a.lang + '" data-cat="' + cat + '">' +
+					'<div class="blog-article-body">' +
+						'<div class="blog-article-meta">' +
+							'<span class="blog-cat-tag">' + cat + '</span>' +
+							'<span class="blog-article-date">' + a.date + (a.publication ? ' · ' + a.publication : '') + '</span>' +
+						'</div>' +
+						'<h3 class="blog-article-title">' + a.title + '</h3>' +
+						'<p class="blog-article-subtitle">' + a.subtitle + '</p>' +
+						'<div class="blog-article-img" style="background-image: url(/blogs/articles/' + a.img + ')"></div>' +
+						'<p class="blog-article-excerpt">' + (a.excerpt || '') + ' <span class="blog-read-more">Read more →</span></p>' +
+					'</div>' +
+				'</a>';
+			});
+			ScrollReveal().reveal('.blog-article-item', {
+				origin: 'bottom',
+				distance: '30px',
+				duration: 800,
+				interval: 100,
+				reset: false,
+			});
+		}
+
+		function filterArticles() {
+			return sortArticles(allArticles.filter(function (a) {
+				var langOk = currentLang === 'all' || a.lang === currentLang;
+				var catOk = currentCat === 'all' || normalizeCategory(a.category) === currentCat;
+				return langOk && catOk;
+			}));
+		}
+
+		function updateCounts() {
+			var langCounts = {};
+			allArticles.forEach(function (a) { langCounts[a.lang] = (langCounts[a.lang] || 0) + 1; });
+			document.querySelector('[data-filter="lang"][data-value="en"]').innerHTML = 'English <span class="btn-count">(' + (langCounts['en'] || 0) + ')</span>';
+			document.querySelector('[data-filter="lang"][data-value="cn"]').innerHTML = '中文 <span class="btn-count">(' + (langCounts['cn'] || 0) + ')</span>';
+
+			var langFiltered = allArticles.filter(function (a) {
+				return currentLang === 'all' || a.lang === currentLang;
+			});
+			var catCounts = {};
+			langFiltered.forEach(function (a) {
+				var cat = normalizeCategory(a.category);
+				catCounts[cat] = (catCounts[cat] || 0) + 1;
+			});
+			document.querySelector('[data-filter="cat"][data-value="all"]').innerHTML = 'All <span class="btn-count">(' + langFiltered.length + ')</span>';
+			['Psychology', 'UX', 'Personal Growth', 'Strategy'].forEach(function (cat) {
+				var btn = document.querySelector('[data-filter="cat"][data-value="' + cat + '"]');
+				if (btn) btn.innerHTML = cat + ' <span class="btn-count">(' + (catCounts[cat] || 0) + ')</span>';
+			});
+		}
+
 		const requestURL = './articles.json';
 		var request = new XMLHttpRequest();
 		request.open('GET', requestURL);
 		request.responseType = 'json';
 		request.send();
 		request.onload = function () {
-
-			var en_articles = request.response.en_articles;
-			var cn_articles = request.response.cn_articles;
-
-			for (var i = 0; i < en_articles.length; i++) {
-				var txt = "<a target='_blank' class ='articles-item col-12 col-md-6 col-lg-" + en_articles[i].lg_col + "' href=" + en_articles[i].link + "> <div class='card' style='width:100%'><div class='pic' style='background: url(/blogs/articles/" + en_articles[i].img + ") center center grey; background-size: cover'></div><div class='card-body'><h5 class='card-title'><b>" + en_articles[i].title + "</b></h5><p class='card-text'>" + en_articles[i].subtitle + "</p><small class='text-muted'>" + en_articles[i].date + " " + en_articles[i].publication + "</small></div></div></a>";
-				document.getElementById("en_articles").innerHTML += txt;
-			}
-
-			for (var i = 0; i < cn_articles.length; i++) {
-				var txt = "<a target='_blank' class ='articles-item col-12 col-md-6 col-lg-" + cn_articles[i].lg_col + "' href=" + cn_articles[i].link + "> <div class='card' style='width:100%'><div class='pic' style='background: url(/blogs/articles/" + cn_articles[i].img + ") center center grey; background-size: cover'></div><div class='card-body'><h5 class='card-title'><b>" + cn_articles[i].title + "</b></h5><p class='card-text'>" + cn_articles[i].subtitle + "</p><small class='text-muted'>" + cn_articles[i].date + " " + cn_articles[i].publication + "</small></div></div></a>";
-				document.getElementById("cn_articles").innerHTML += txt;
-
-			}
-		}
+			var en = request.response.en_articles.map(function (a) { return Object.assign({}, a, { lang: 'en' }); });
+			var cn = request.response.cn_articles.map(function (a) { return Object.assign({}, a, { lang: 'cn' }); });
+			allArticles = en.concat(cn);
+			renderArticles(filterArticles());
+			updateCounts();
+		};
 	</script>
 
 
@@ -71,8 +150,7 @@
 			<div class="row align-items-center">
 				<div class="col-1 col-md-4 p-0" style="text-align:left">
 					<a href="/" class="logo">
-						<img src="/img/logo/logo.png" alt="">
-						<img src="/img/logo/name.png" alt="">
+						YUCHING
 					</a>
 				</div>
 				<div class="col-11 col-md-8 link p-0" style="text-align:right">
@@ -95,97 +173,50 @@
 	<!-- portfolio -->
 
 
-	<section id="article" class="load-hidden">
+	<section id="article">
 
 		<div class="container">
 
-			<div class="article-box d-none d-sm-flex" style="display: flex;align-items: center;">
+			<div class="blog-layout">
 
-				<div class="articles-img d-none d-lg-block" style="height: 220px;">
-					<img src="/blogs/articles/medium_photo.jpeg" alt="">
-				</div>
+				<!-- Left: Article feed -->
+				<div class="blog-feed" id="blog-feed"></div>
 
+				<!-- Right: Sidebar -->
+				<aside class="blog-sidebar">
 
-
-
-				<div class="article-intro">
-
-					<!-- <small class="text-muted" style="letter-spacing:.5px">ABOUT</small><br> -->
-
-					<h5 class="name d-inline-block">Yu-Ching Lin</h5> <a target="_blank"
-						href="https://yuyuchinglin.medium.com/">@Medium</a>
-					<br>
-					<span style="color:#555">
-						A UX thinker and practitioner who loves applying psychology knowledge to solve real-world problems and
-						provide insights on strategies,
-						user experience, and personal
-						growth.
-					</span>
-
-					<!-- <form id="google-form" class="contact100-form validate-form">
-						<div class="form-row">
-							<div class="col-8 col-sm-9 my-2">
-								<input type="email" class="form-control mt-2" id="email" aria-describedby="emailHelp"
-									placeholder="Your Email Address">
-							</div>
-
-							<div class="col-4 col-sm-3 my-2">
-								<button type="submit" class="btn mt-2 btn-primary"
-									style="background-color:#9E6B57; border:0; letter-spacing: .5px; font-weight: 500;">Subscribe</button>
-							</div>
-
-						</div>
-					</form> -->
-
-				</div>
-
-			</div>
-
-
-			<p class=" row title pt-lg-3 mb-3">English Articles</p>
-			<div class="row my-0 my-lg-3" id="en_articles" style="margin-left: -13px; margin-right:-13px"></div>
-
-			<!-- <br> -->
-			<p class="row title mb-3">Chinese Articles / 中文文章</p>
-
-			<div class="row my-0 my-lg-3" id="cn_articles" style="margin-left: -13px; margin-right:-13px">
-				<!-- <a target="_blank"
-					href="https://medium.com/as-a-product-designer/%E7%B6%B2%E7%AB%99%E8%BF%B7%E6%80%9D-%E7%B6%B2%E7%AB%99%E7%89%B9%E6%95%88%E8%B6%8A%E9%85%B7%E7%82%AB%E8%B6%8A%E5%A5%BD-%E8%A6%96%E8%A6%BA%E5%82%B3%E9%81%94%E7%9A%84%E9%99%90%E5%88%B6-b984b882dbc3"
-					class="articles-item col-12 col-md-6 col-lg-6">
-					<div class="card" style="width:100%">
-						<div class="pic"
-							style="background: url('/blogs/articles/2020_cool.jpg') center center grey; background-size: cover"
-							alt="">
-						</div>
-						<div class="card-body">
-							<h5 class="card-title"><b>網站特效越酷炫越好？視覺傳達的限制？</b></h5>
-							<p class="card-text">介紹兩個眼動研究，並討論視覺傳達的限制。</p>
-							<small class="text-muted">Sep 25, 2020 @ AAPD — As A Product Designer</small>
+					<div class="blog-intro">
+						<img src="/blogs/articles/medium_photo.jpeg" alt="Yu-Ching Lin" class="blog-avatar">
+						<div>
+							<h5 class="name">Yu-Ching Lin <a target="_blank" href="https://yuyuchinglin.medium.com/" class="medium-link">@Medium</a></h5>
+							<p class="blog-intro-desc">I apply psychology to uncover insights and shape strategy, user experience, and personal growth.</p>
 						</div>
 					</div>
-				</a>
 
-				<a target="_blank"
-					href="https://yuyuchinglin.medium.com/%E5%B0%8D%E6%8A%97%E6%B6%88%E8%B2%BB%E4%B8%BB%E7%BE%A9%E7%9A%84%E6%A5%B5%E7%B0%A1%E7%94%9F%E6%B4%BB-%E5%AF%A6%E7%8F%BE%E8%B2%A1%E5%8B%99%E7%9B%AE%E6%A8%99%E5%8F%8A%E7%90%86%E6%83%B3%E7%A9%BA%E9%96%93%E7%9A%84%E7%A7%98%E8%A8%A3-f85d5df93f7f"
-					class=" articles-item col-12 col-md-6 col-lg-6">
-					<div class="card" style="width:100%">
-						<div class="pic"
-							style="background: url('/blogs/articles/2021_gamification.jpeg') center center grey; background-size: cover"
-							alt="">
-						</div>
-						<div class="card-body">
-							<h5 class="card-title"><b>遊戲讓人們樂此不疲的秘訣—賦予創造力與回饋</b></h5>
-							<p class="card-text">遊戲化八角框架理論中「賦予創造力與回饋」的應用與技巧。</p>
-							<small class="text-muted">Aug 12, 2021</small>
+					<div class="sidebar-section">
+						<p class="section-title">Language</p>
+						<div class="filter-group" id="lang-filters">
+							<button class="filter-btn active" data-filter="lang" data-value="en">English</button>
+							<button class="filter-btn" data-filter="lang" data-value="cn">中文</button>
 						</div>
 					</div>
-				</a> -->
 
+					<div class="sidebar-section">
+						<p class="section-title">Category</p>
+						<div class="filter-group" id="cat-filters">
+							<button class="filter-btn active" data-filter="cat" data-value="all">All</button>
+							<button class="filter-btn" data-filter="cat" data-value="Psychology">Psychology</button>
+							<button class="filter-btn" data-filter="cat" data-value="UX">UX</button>
+							<button class="filter-btn" data-filter="cat" data-value="Personal Growth">Personal Growth</button>
+							<button class="filter-btn" data-filter="cat" data-value="Strategy">Strategy</button>
+						</div>
+					</div>
+
+				</aside>
 
 			</div>
 
 		</div>
-
 
 	</section>
 
@@ -198,43 +229,36 @@
 
 
 	<!-- footer -->
-	<section id="footer">
-		<div class="container">
+	<footer class="footer-contact">
+		<div class="container text-center">
 
-			<div class="row">
-				<div class="col-lg-4 col-sm-12 text-lg-right p-0">
-					<a target="_blank" href="https://www.linkedin.com/in/yuyuchinglin/">
-						<i class="fab fa-linkedin"></i>
-					</a>
-					<a target="_blank" href="https://medium.com/@yuyuchinglin">
-						<i class="fab fa-medium-m"></i>
-					</a>
-					<a target="_blank" href="https://www.instagram.com/yuyuchingg/">
-						<i class="fab fa-instagram"></i>
-					</a>
-					<a target="_blank" href="https://twitter.com/yuyuchinglin">
-						<i class="fab fa-twitter"></i>
-					</a>
-					<a target="_blank" href="http://books.yuchinglin.com">
-						<i class="fas fa-book"></i>
-					</a>
-					<a target="_blank" href="https://github.com/yuyuchinglin">
-						<i class="fab fa-github"></i>
-					</a>
+			<h5 class="footer-heading">Let's Connect!</h5>
+			<p class="footer-desc">Feel free to reach out for collaborations or just a friendly hello!</p>
+
+			<div class="footer-btns">
+				<a href="mailto:yuyuchinglin@gmail.com?subject=Hello!" class="btn-filled d-inline-block">
+					<i class="fas fa-paper-plane"></i> Email me
+				</a>
+				<a href="https://calendar.app.google/mv9e2en3dcnepTW36" target="_blank" rel="noopener" class="btn-outline d-inline-block">
+					<i class="far fa-calendar-alt"></i> Schedule a Chat
+				</a>
+			</div>
+
+			<div class="footer-meta">
+				<div class="footer-social">
+					<a target="_blank" href="https://www.linkedin.com/in/yuyuchinglin/"><i class="fab fa-linkedin"></i></a>
+					<a target="_blank" href="https://medium.com/@yuyuchinglin"><i class="fab fa-medium-m"></i></a>
+					<a target="_blank" href="https://www.instagram.com/yuyuchingg/"><i class="fab fa-instagram footer-ig"></i></a>
+					<a target="_blank" href="https://twitter.com/yuyuchinglin"><i class="fab fa-twitter"></i></a>
+					<a target="_blank" href="https://github.com/yuyuchinglin"><i class="fab fa-github"></i></a>
 				</div>
-
-				<div class="col-lg-4 col-sm-12 p-0">
-					<a href="mailto:yuyuchinglin@gmail.com"><b>yuyuchinglin@gmail.com</b></a>
-				</div>
-
-				<div class="col-lg-4 col-sm-12 text-lg-left p-0">
-					<span>Copyright © Yu-Ching Lin 2017 -
-						<script>document.write(new Date().getFullYear())</script>
-					</span>
+				<div class="footer-meta-bottom">
+					<span class="footer-copy">© YUCHING 2017–<script>document.write(new Date().getFullYear())</script></span>
 				</div>
 			</div>
+
 		</div>
-	</section>
+	</footer>
 
 
 
@@ -253,10 +277,6 @@
 			});
 
 
-		ScrollReveal().reveal('#article',
-			{
-				origin: 'bottom',
-			});
 
 	</script>
 
@@ -278,7 +298,7 @@
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115360200-1"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
+		function gtag () { dataLayer.push(arguments); }
 		gtag('js', new Date());
 		gtag('config', 'UA-115360200-1');
 	</script>
@@ -287,7 +307,7 @@
 	<script type="text/javascript">(function (e, a) {
 			if (!a.__SV) {
 				var b = window; try { var c, l, i, j = b.location, g = j.hash; c = function (a, b) { return (l = a.match(RegExp(b + "=([^&]*)"))) ? l[1] : null }; g && c(g, "state") && (i = JSON.parse(decodeURIComponent(c(g, "state"))), "mpeditor" === i.action && (b.sessionStorage.setItem("_mpcehash", g), history.replaceState(i.desiredHash || "", e.title, j.pathname + j.search))) } catch (m) { } var k, h; window.mixpanel = a; a._i = []; a.init = function (b, c, f) {
-					function e(b, a) {
+					function e (b, a) {
 						var c = a.split("."); 2 == c.length && (b = b[c[0]], a = c[1]); b[a] = function () {
 							b.push([a].concat(Array.prototype.slice.call(arguments,
 								0)))
@@ -302,43 +322,30 @@
 	<script>mixpanel.track("pageview articles");</script>
 
 	<script>
-		window.addEventListener("load", function (event) {
-			var a = document.querySelectorAll('#article a, #footer a');
-			a.forEach(function (item) {
-				item.addEventListener("click", function () {
-					if (item.querySelector('.card-title')) {
-						var desc = item.querySelector('.card-title').innerText;
-					} else {
-						var desc = item.href;
-					}
-					// alert(desc);
-					mixpanel.track("click " + desc);
-				})
-			})
-		})
-	</script>
-
-	<script>
-		$('#google-form').submit(function (e) {
-			e.preventDefault();
-			if ($('#email').val()) {
-				$.ajax({
-					url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSd_bLaa23ycM4xi6D2AstnXXgcHzQVMjdM5E_1rq-bA-im2ww/formResponse",
-					crossDomain: true,
-					data: {
-						"entry.1000806426": $('#email').val(),
-					},
-					type: "POST",
-					dataType: "JSONP",
-					complete: function () {
-						$('#email').val('')
-						alert('Thanks for your subscribing! :)')
-						// window.location.replace("/article/article.html");
-					}
+		window.addEventListener("load", function () {
+			document.querySelectorAll('.filter-btn').forEach(function (btn) {
+				btn.addEventListener('click', function () {
+					var filterType = btn.dataset.filter;
+					var value = btn.dataset.value;
+					document.querySelectorAll('[data-filter="' + filterType + '"]').forEach(function (b) { b.classList.remove('active'); });
+					btn.classList.add('active');
+					if (filterType === 'lang') currentLang = value;
+					if (filterType === 'cat') currentCat = value;
+					renderArticles(filterArticles());
+					if (filterType === 'lang') updateCounts();
+					window.scrollTo({ top: 0, behavior: 'smooth' });
 				});
-			}
+			});
+
+			document.querySelectorAll('#article a, footer a').forEach(function (item) {
+				item.addEventListener('click', function () {
+					var title = item.querySelector('.blog-article-title');
+					mixpanel.track('click ' + (title ? title.innerText : item.href));
+				});
+			});
 		});
 	</script>
+
 
 
 </body>

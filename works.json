@@ -1,0 +1,72 @@
+{
+  "works": [
+    {
+      "title": "Synology Calendar",
+      "desc": "Research that secured US$600K in investment, driving a mobile app launch with +42% license sales and +20% MAU.",
+      "date": "2024",
+      "tags": [
+        "Featured",
+        "Research",
+        "Design",
+        "Strategy"
+      ],
+      "link": "/works/calendar/",
+      "img": "/img/portfolio/calendar_plugin/index_pic.png",
+      "color": "#e4f6fc",
+      "researchOrder": 1,
+      "designOrder": 3,
+      "strategyOrder": 1,
+      "allOrder": 2,
+      "password": true
+    },
+    {
+      "title": "IoT Device Management",
+      "desc": "Research-driven redesign of onboarding and dashboard—boosted usability by 30.6% and cut task time from 18.9s to 5.2s.",
+      "date": "2020 – 2022",
+      "tags": [
+        "Featured",
+        "Research",
+        "Design",
+        "Strategy"
+      ],
+      "link": "/works/iot/",
+      "img": "/img/sm/md_iot3.png",
+      "color": "#fdf0e8",
+      "researchOrder": 2,
+      "designOrder": 1,
+      "strategyOrder": 2,
+      "allOrder": 1
+    },
+    {
+      "title": "MailPlus Mobile AI",
+      "desc": "Designed AI email composition and summarization flows for mobile—making powerful AI feel intuitive and familiar.",
+      "date": "2024 – 2025",
+      "tags": [
+        "Featured",
+        "Research",
+        "Design"
+      ],
+      "link": "/works/mail_ai/",
+      "img": "/img/portfolio/mail_ai/pic.png",
+      "color": "#e4eefc",
+      "researchOrder": 3,
+      "designOrder": 2,
+      "allOrder": 3,
+      "password": true
+    },
+    {
+      "title": "1828 WLJ Tea App",
+      "desc": "Uncovered purchase barriers through UX research and redesigned the app to reduce friction and retain customers.",
+      "date": "2019",
+      "tags": [
+        "Research",
+        "Design"
+      ],
+      "link": "/works/1828WLJ",
+      "img": "/img/sm/md_1828.png",
+      "color": "#EAE6FA",
+      "designOrder": 4,
+      "allOrder": 4
+    }
+  ]
+}

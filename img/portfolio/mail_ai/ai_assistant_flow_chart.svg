@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760"
+     font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK TC', sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="9" markerHeight="8" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 Z" fill="#888"/>
+    </marker>
+    <marker id="arrBlue" markerWidth="9" markerHeight="8" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 Z" fill="#2B78D7"/>
+    </marker>
+    <marker id="arrDash" markerWidth="9" markerHeight="8" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 Z" fill="#aaa"/>
+    </marker>
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#ccc" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="760" fill="white"/>
+
+  <!-- ========================================= -->
+  <!-- ROW 1: AI icon → D1 → D2 → Toast (no text) -->
+  <!-- ========================================= -->
+
+  <!-- AI icon -->
+  <circle cx="52" cy="85" r="22" fill="#EBF2FD" stroke="#2B78D7" stroke-width="1.5"/>
+  <rect x="40" y="76" width="24" height="17" rx="2" fill="none" stroke="#2B78D7" stroke-width="1.5"/>
+  <polyline points="40,76 52,87 64,76" fill="none" stroke="#2B78D7" stroke-width="1.5"/>
+  <text x="63" y="72" font-size="10" fill="#2B78D7" font-weight="bold">✦</text>
+
+  <!-- Click label + blue arrow -->
+  <text x="80" y="77" font-size="12" fill="#2B78D7" font-weight="600">Click</text>
+  <line x1="76" y1="85" x2="126" y2="85" stroke="#2B78D7" stroke-width="1.5" marker-end="url(#arrBlue)"/>
+
+  <!-- Diamond 1: 有選取文字? center=(248,85) hw=122 hh=53 -->
+  <polygon points="248,32 370,85 248,138 126,85" fill="white" stroke="#aaa" stroke-width="1.5"/>
+  <text x="248" y="80" text-anchor="middle" font-size="13" fill="#333">有選取</text>
+  <text x="248" y="97" text-anchor="middle" font-size="13" fill="#333">文字？</text>
+
+  <!-- D1 No → D2 -->
+  <text x="376" y="80" font-size="12" fill="#888">No</text>
+  <line x1="370" y1="85" x2="416" y2="85" stroke="#888" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- D1 Yes ↓ AI Options -->
+  <text x="253" y="153" font-size="12" fill="#888">Yes</text>
+  <line x1="248" y1="138" x2="248" y2="220" stroke="#888" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Diamond 2: 信件有文字? center=(536,85) hw=120 hh=53 -->
+  <polygon points="536,32 656,85 536,138 416,85" fill="white" stroke="#aaa" stroke-width="1.5"/>
+  <text x="536" y="80" text-anchor="middle" font-size="13" fill="#333">信件有</text>
+  <text x="536" y="97" text-anchor="middle" font-size="13" fill="#333">文字？</text>
+
+  <!-- D2 No → Toast1 -->
+  <text x="661" y="80" font-size="12" fill="#888">No</text>
+  <line x1="656" y1="85" x2="732" y2="85" stroke="#888" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- D2 Yes ↓ Dialog -->
+  <text x="541" y="153" font-size="12" fill="#888">Yes</text>
+  <line x1="536" y1="138" x2="536" y2="215" stroke="#888" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Toast 1: 請先輸入文字 -->
+  <rect x="732" y="60" width="225" height="50" rx="10" fill="#3d4047"/>
+  <text x="843" y="80" text-anchor="middle" font-size="12.5" fill="white">請先輸入文字</text>
+  <text x="843" y="97" text-anchor="middle" font-size="12.5" fill="white">再使用 AI 功能</text>
+  <text x="946" y="79" font-size="12" fill="#888">✕</text>
+
+  <!-- ========================================= -->
+  <!-- ROW 2: AI Options box  +  Dialog box     -->
+  <!-- ========================================= -->
+
+  <!-- AI Options box: x=128 y=220 w=240 h=90 -->
+  <rect x="128" y="220" width="240" height="90" rx="12" fill="white" stroke="#ddd" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="248" y="246" text-anchor="middle" font-size="11" fill="#999" font-style="italic">AI 選項面板</text>
+  <text x="248" y="264" text-anchor="middle" font-size="13" fill="#333" font-weight="600">潤稿　調整語氣　自訂…</text>
+  <text x="248" y="282" text-anchor="middle" font-size="11.5" fill="#2B78D7">以選取文字為操作對象</text>
+  <text x="248" y="298" text-anchor="middle" font-size="11" fill="#999">(使用者選擇優化類型)</text>
+
+  <!-- AI Options → AI Gen -->
+  <line x1="248" y1="310" x2="248" y2="358" stroke="#888" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Dialog box: x=448 y=215 w=242 h=112 -->
+  <rect x="448" y="215" width="242" height="112" rx="12" fill="white" stroke="#ddd" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="569" y="246" text-anchor="middle" font-size="12.5" fill="#333">目前沒有選取文字。</text>
+  <text x="569" y="265" text-anchor="middle" font-size="12" fill="#333">要套用 AI 至整封信嗎？</text>
+
+  <!-- 取消 button -->
+  <rect x="474" y="280" width="70" height="28" rx="14" fill="#f0f0f0"/>
+  <text x="509" y="298" text-anchor="middle" font-size="12" fill="#666">取消</text>
+
+  <!-- 確定 button -->
+  <rect x="560" y="280" width="70" height="28" rx="14" fill="#333"/>
+  <text x="595" y="298" text-anchor="middle" font-size="12" fill="white">確定</text>
+
+  <!-- 確定 → AI Options (path: right → up → left into box right edge) -->
+  <path d="M 630,294 L 708,294 L 708,265 L 368,265"
+        stroke="#888" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+  <text x="644" y="289" font-size="11" fill="#888">確定</text>
+
+  <!-- ========================================= -->
+  <!-- ROW 3: AI Generation                     -->
+  <!-- ========================================= -->
+
+  <!-- AI Gen box: x=128 y=362 w=240 h=65 -->
+  <rect x="128" y="362" width="240" height="65" rx="12" fill="#EFF5FF" stroke="#B3CDFB" stroke-width="1.5"/>
+  <text x="248" y="388" text-anchor="middle" font-size="13" fill="#333" font-weight="600">AI 生成草稿中…</text>
+  <text x="248" y="408" text-anchor="middle" font-size="12" fill="#555">生成結果直接取代原始文字</text>
+
+  <!-- AI Gen → Bottom Sheet -->
+  <line x1="248" y1="427" x2="248" y2="466" stroke="#888" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- ========================================= -->
+  <!-- ROW 4: Bottom Sheet (Draft Review)       -->
+  <!-- ========================================= -->
+
+  <!-- Bottom Sheet box: x=128 y=470 w=240 h=80 -->
+  <rect x="128" y="470" width="240" height="80" rx="12" fill="white" stroke="#ddd" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="248" y="494" text-anchor="middle" font-size="11" fill="#999" font-style="italic">底部表單出現</text>
+  <text x="248" y="514" text-anchor="middle" font-size="13" fill="#333" font-weight="600">Keep　　Discard</text>
+  <text x="248" y="532" text-anchor="middle" font-size="11" fill="#555">↑ 上滑查看更多優化選項</text>
+
+  <!-- Bottom Sheet → D3 -->
+  <line x1="248" y1="550" x2="248" y2="586" stroke="#888" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Pull up dashed branch → More Options -->
+  <text x="374" y="505" font-size="11" fill="#aaa">↑ Pull up</text>
+  <line x1="368" y1="510" x2="424" y2="510" stroke="#bbb" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrDash)"/>
+
+  <!-- More Options box: x=424 y=485 w=228 h=54 -->
+  <rect x="424" y="485" width="228" height="54" rx="10" fill="white" stroke="#ddd" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="538" y="508" text-anchor="middle" font-size="11" fill="#999" font-style="italic">更多優化選項</text>
+  <text x="538" y="527" text-anchor="middle" font-size="12.5" fill="#333">重新生成　更正式　更輕鬆</text>
+
+  <!-- Loop: More Options right → up → AI Gen right side -->
+  <path d="M 652,512 L 716,512 L 716,394 L 368,394"
+        stroke="#bbb" stroke-width="1.5" stroke-dasharray="5,3" fill="none" marker-end="url(#arrDash)"/>
+  <text x="720" y="460" font-size="11" fill="#bbb" writing-mode="tb">重新生成</text>
+
+  <!-- ========================================= -->
+  <!-- ROW 5: Decision + Outcomes               -->
+  <!-- ========================================= -->
+
+  <!-- Diamond 3: 選擇動作? center=(248,630) hw=110 hh=50 -->
+  <polygon points="248,580 358,630 248,680 138,630" fill="white" stroke="#aaa" stroke-width="1.5"/>
+  <text x="248" y="624" text-anchor="middle" font-size="13" fill="#333">選擇</text>
+  <text x="248" y="641" text-anchor="middle" font-size="13" fill="#333">動作？</text>
+
+  <!-- D3 Keep → right → Toast2 -->
+  <text x="364" y="624" font-size="12" fill="#888">Keep</text>
+  <line x1="358" y1="630" x2="424" y2="630" stroke="#888" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Toast2: 已套用 AI 建議 -->
+  <rect x="424" y="605" width="235" height="50" rx="10" fill="#3d4047"/>
+  <text x="526" y="626" text-anchor="middle" font-size="13" fill="white">已套用 AI 建議</text>
+  <text x="624" y="626" text-anchor="middle" font-size="12" fill="#55D6C8">Undo</text>
+  <text x="649" y="626" font-size="11" fill="#888">✕</text>
+  <text x="526" y="644" text-anchor="middle" font-size="11" fill="#aaa">(回到原始撰寫狀態)</text>
+
+  <!-- D3 Discard → down → right → Toast3 -->
+  <text x="253" y="697" font-size="12" fill="#888">Discard</text>
+  <path d="M 248,680 L 248,720 L 424,720"
+        stroke="#888" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+
+  <!-- Toast3: 已還原原始文字 -->
+  <rect x="424" y="695" width="235" height="50" rx="10" fill="#3d4047"/>
+  <text x="535" y="724" text-anchor="middle" font-size="13" fill="white">已還原原始文字</text>
+  <text x="649" y="724" font-size="11" fill="#888">✕</text>
+
+</svg>

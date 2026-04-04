@@ -1,0 +1,824 @@
+/* =============================================
+   About-page-only styles
+   ============================================= */
+
+
+
+/* --- Hero / welcome pic section --- */
+
+.hero-image {
+  text-align: center;
+}
+
+#hero .hero-image {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.hero-quote {
+  position: absolute;
+  right: 10%;
+  top: 48%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.75);
+  color: var(--color-heading);
+  padding: 32px 40px;
+  margin: 0;
+  max-width: 480px;
+  border-radius: 0;
+}
+
+.hero-quote p {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.65rem;
+  line-height: 1.6;
+  color: var(--color-brand);
+  margin-bottom: 12px;
+}
+
+.hero-quote-dark {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--color-heading);
+}
+
+.hero-quote-accent {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: inherit;
+  font-weight: inherit;
+  color: var(--color-brand);
+}
+
+.hero-quote-name {
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+#hero h1 {
+  position: absolute;
+  right: 0;
+  display: block;
+  padding: 3vw 0;
+  width: 45vw;
+  color: var(--color-brand);
+  text-align: center;
+  font-size: 4vw;
+  line-height: 5vw;
+  animation-name: slidein;
+  animation-duration: 4s;
+}
+
+
+/* --- Topic / decorative elements --- */
+
+.topic {
+  margin: 0;
+  padding: 25px;
+  padding-top: 40px;
+  color: var(--color-brand);
+  text-align: center;
+}
+
+.topic h2 {
+  padding: 10px;
+}
+
+.under {
+  margin: 0 auto;
+  width: 150px;
+  height: 25px;
+  background: url('../img/line.jpg') center center no-repeat;
+  background-size: contain;
+}
+
+
+/* --- Facts section --- */
+
+#facts {
+  font-size: 19px;
+  color: #555;
+  text-align: center;
+}
+
+#facts img {
+  height: 70px;
+  margin-bottom: 12px;
+}
+
+
+/* --- About section --- */
+
+.status-badge {
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  display: table;
+  margin: 0 auto;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: var(--color-brand);
+}
+
+.status-badge p {
+  color: var(--color-body);
+}
+
+.badge-content {
+  display: table-cell;
+  padding-top: 10px;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 23px;
+}
+
+.section-label {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+#about .about-main h4 b {
+  color: var(--color-heading);
+  font-size: 38px;
+  line-height: 1.2em;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+.accent-italic {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 700;
+  color: #C4622D;
+}
+
+.accent-color {
+  color: #C4622D;
+}
+
+.about-main .sub-name {
+  font-family: var(--font-ui);
+  font-weight: 400;
+  font-size: 24px;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.btn-group-row {
+  margin-bottom: 8px;
+}
+
+.about-list {
+  list-style: disc;
+  padding-left: 18px;
+  margin-top: 8px;
+  line-height: 1.9;
+  color: var(--color-brand);
+}
+
+.about-list li {
+  color: var(--color-heading);
+  font-family: var(--font-ui);
+  font-size: 15px;
+}
+
+.about-list li .text-muted {
+  font-family: var(--font-ui);
+  font-size: 13px;
+}
+
+.word h5 {
+  font-family: 'Lora', var(--font-heading);
+  font-weight: 700;
+  font-size: 1.75rem;
+  margin-bottom: 8px;
+}
+
+.word p {
+  font-size: 16px;
+  line-height: 1.8em;
+  color: var(--color-text-muted);
+}
+
+#about p,
+#about a,
+.word p {
+  line-height: 1.75em;
+}
+
+.about-main {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: var(--color-heading);
+}
+
+.about-extra {
+  margin-top: 40px;
+  color: var(--color-heading);
+}
+
+.interest-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.interest-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border: 1px solid var(--color-border-mid);
+  border-radius: 999px;
+  font-size: 14px;
+  font-family: var(--font-ui);
+  color: var(--color-heading);
+  text-decoration: none;
+  background: #fff;
+}
+
+a.interest-tag:hover {
+  border-color: var(--color-brand);
+  color: var(--color-brand);
+  text-decoration: none;
+}
+
+
+/* --- Experience & Education --- */
+
+#experience {
+  padding: 20px 0 20px;
+}
+
+.exp-block {
+  margin-bottom: 48px;
+}
+
+.exp-section-title {
+  font-family: 'Lora', var(--font-heading);
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: var(--color-heading);
+  margin-bottom: 24px;
+}
+
+.exp-item {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 28px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.exp-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.exp-meta {
+  min-width: 130px;
+  padding-top: 4px;
+  flex-shrink: 0;
+}
+
+.exp-date {
+  font-size: 13px;
+  color: var(--color-brand);
+  font-family: var(--font-ui);
+  letter-spacing: 0.02em;
+}
+
+.exp-title {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--color-heading);
+  margin-bottom: 2px;
+}
+
+.exp-company {
+  font-size: 0.9rem;
+  color: var(--color-text-medium);
+  margin-bottom: 10px;
+}
+
+.exp-list {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.exp-list li {
+  margin-bottom: 6px;
+  color: var(--color-body);
+  line-height: 1.65;
+  font-size: 0.95rem;
+}
+
+.exp-note {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+@media (max-width: 576px) {
+  .exp-item {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
+.about-extra .col {
+  line-height: 1.7;
+}
+
+.about-extra p,
+.about-main p {
+  line-height: 1.6em;
+}
+
+.about-extra a:hover {
+  color: var(--color-brand);
+}
+
+.about-topic {
+  padding-left: 10%;
+}
+
+.about-topic h4 {
+  width: auto;
+  color: var(--color-brand);
+  text-decoration: underline;
+  font-size: 25px;
+  line-height: 70px;
+}
+
+
+/* --- Footer + Contact --- */
+
+footer.footer-contact {
+  padding: 60px 0 32px;
+  border-top: 1px solid var(--color-border);
+  background: var(--color-bg-light);
+  display: block;
+}
+
+footer.footer-contact .container {
+  flex-direction: unset !important;
+}
+
+.footer-heading {
+  font-family: 'Lora', var(--font-heading);
+  font-weight: 700;
+  color: var(--color-brand);
+  font-size: 1.75rem;
+  margin-bottom: 8px;
+  color: var(--color-heading);
+}
+
+.footer-desc {
+  color: var(--color-text-muted);
+  margin-bottom: 24px;
+}
+
+.footer-btns {
+  margin-bottom: 0;
+}
+
+.footer-btns a i {
+  font-size: 14px !important;
+}
+
+.footer-divider {
+  border-top: 1px solid var(--color-border);
+  margin-bottom: 24px;
+}
+
+.footer-meta {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-text-muted);
+  font-size: 15px;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.footer-meta-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.footer-meta a {
+  display: inline !important;
+  padding: 6px 4px !important;
+  color: var(--color-btn) !important;
+  font-size: 28px !important;
+  margin: 0 4px !important;
+}
+
+.footer-meta a:hover {
+  color: var(--color-brand) !important;
+}
+
+.footer-meta a i {
+  font-size: 28px !important;
+}
+
+.footer-ig {
+  -webkit-text-stroke: 0.4px currentColor;
+}
+
+.footer-meta .footer-email {
+  font-size: 15px !important;
+  color: var(--color-text-muted) !important;
+  text-transform: uppercase;
+}
+
+.footer-sep {
+  color: var(--color-border-mid);
+  padding: 0 4px;
+}
+
+.footer-copy {
+  font-size: 15px;
+  color: var(--color-text-muted);
+}
+
+
+/* --- Slick carousel (used on about page) --- */
+
+.slick-slide {
+  display: block;
+  padding: 5px;
+  width: 180px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.slick-slide p {
+  margin: 2px 0 0 0;
+  color: var(--color-text-dark);
+}
+
+.slick-slide p:last-child {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+}
+
+.slick-slider {
+  margin: 0 auto;
+  width: 95%;
+}
+
+
+/* --- Books section --- */
+
+.book-item {
+  padding: 10px 10px;
+}
+
+.book-item .book-img {
+  width: 100%;
+  height: 200px;
+  border-bottom: 1px solid #eee;
+  background-size: cover;
+}
+
+.book-item .intro {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.book-item a {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  padding: 0;
+  border-radius: 3px;
+  background: rgba(55, 53, 47, 0.01);
+  box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 2px 4px;
+  font-size: 16px;
+  transition: background 20ms ease-in 0s;
+}
+
+.book-item .intro .desc {
+  overflow: hidden;
+  padding: 12px 14px 8px;
+}
+
+.book-item .intro .desc p {
+  margin-bottom: 8px;
+  color: var(--color-heading);
+  font-size: 15px;
+  line-height: 15px;
+}
+
+.book-item .intro .desc b {
+  margin-bottom: 8px;
+  color: var(--color-heading);
+  font-size: 17px;
+}
+
+.book-item .intro .desc .tag {
+  display: inline-block;
+  padding: 0px 5px 1px 5px;
+  border-radius: 2px;
+  background-color: var(--color-border-mid);
+  font-style: system-ui;
+  font-size: 14px;
+}
+
+.book-item .intro .desc .tag.self {
+  background-color: rgb(204, 229, 224);
+}
+
+.book-item .intro .desc .tag.counseling {
+  background-color: rgb(232, 212, 207);
+}
+
+.book-item .intro .desc .tag.ux {
+  background-color: rgb(216, 204, 229);
+}
+
+.book-item .intro .desc .tag.economics {
+  background-color: rgb(229, 204, 204);
+}
+
+.book-item .intro:focus,
+.book-item a:focus {
+  outline: none;
+  outline-style: none;
+}
+
+.book-item:hover a {
+  background: rgba(55, 53, 47, 0.03);
+  text-decoration: none;
+}
+
+
+/* --- Moments / photo grid --- */
+
+.moments .container-fluid {
+  max-width: 950px;
+}
+
+.photo-item {
+  display: inline-block;
+  overflow: hidden;
+  margin: 10px;
+  max-width: 280px;
+  max-height: 280px;
+  width: 33vw;
+  height: 33vw;
+  background-position: center;
+  background-size: cover;
+}
+
+.photo-item:hover {
+  opacity: 0.85;
+}
+
+
+/* --- Widget --- */
+
+.widget {
+  position: fixed;
+  display: inline-block;
+  vertical-align: middle;
+  bottom: 30px;
+  right: 32px;
+  background-color: rgb(234, 234, 234);
+  padding: 14px 20px;
+  color: var(--color-brand);
+  font-size: 28px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.widget:hover {
+  color: var(--color-accent);
+}
+
+
+/* --- Responsive rules --- */
+
+@media (max-width: 992px) {
+  .business-card .front {
+    display: none;
+  }
+
+  .business-card .back {
+    transform: rotateY(0deg);
+  }
+
+  #contact:hover .business-card,
+  #contact.hover .business-card {
+    transform: rotateY(0deg);
+  }
+
+  .business-card {
+    margin: 10px 0 30px auto;
+  }
+
+  #contact .business-card {
+    transform: rotateY(180deg);
+  }
+
+  .photo-item {
+    margin: 0;
+    width: 30vw;
+    height: 30vw;
+  }
+
+  .moments .container {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  /* === Hero === */
+  section#hero {
+    margin-top: 36px;
+    margin-bottom: 0;
+    background-size: cover;
+  }
+
+  .hero-quote {
+    right: 4%;
+    left: 4%;
+    top: auto;
+    bottom: 4%;
+    transform: none;
+    max-width: none;
+    padding: 18px 22px;
+  }
+
+  .hero-quote p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+  }
+
+  /* === Hero container — zero out base.css section .container { padding: 50px 0 } === */
+  #hero .container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  /* === About section === */
+  #about {
+    margin: 12px auto 48px;
+  }
+
+  #about .container {
+    padding-top: 12px;
+    padding-bottom: 0;
+  }
+
+  #about .about-main p {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .about-extra {
+    margin-top: 24px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .about-extra .col {
+    margin-bottom: 16px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .btn-group-row {
+    margin-top: 18px;
+    margin-bottom: 20px;
+  }
+
+  .interest-tags {
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .interest-tag {
+    font-size: 13px;
+    padding: 5px 11px;
+  }
+
+  /* === Life Moments === */
+  .moments {
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+
+  .word h5 {
+    display: inline;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .word p {
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: center;
+    padding: 0 8px;
+  }
+
+  .word {
+    text-align: center;
+  }
+
+  .moments .container {
+    padding: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  /* === Hero === */
+  section#hero {
+    margin-top: 36px;
+    margin-bottom: 0;
+  }
+
+  #hero .hero-image {
+    margin-top: 0;
+  }
+
+  .hero-quote {
+    position: static;
+    transform: none;
+    max-width: none;
+    padding: 20px 16px 24px;
+    background: rgba(255, 255, 255, 0.97);
+    text-align: center;
+    border-radius: 0;
+  }
+
+  .hero-quote p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 4px;
+  }
+
+  .hero-quote-name {
+    font-size: 13px;
+  }
+
+  /* === About section === */
+  #about {
+    margin: 8px auto 40px;
+  }
+
+  #about .container {
+    padding: 12px 16px 0;
+  }
+
+  #about .about-main p {
+    font-size: 15px;
+  }
+
+  .about-extra {
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .about-extra .col {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .section-label {
+    font-size: 12px;
+  }
+
+  .interest-tag {
+    font-size: 12px;
+    padding: 4px 10px;
+  }
+}

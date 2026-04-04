@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/jnq0c7r43joe/design.yuchinglin.com/
-    - /bin/cp -R images $DEPLOYPATH
+    - export DEPLOYPATH=/home/jnq0c7r43joe/public_html/
+    - /bin/cp -R . $DEPLOYPATH

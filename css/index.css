@@ -1,0 +1,396 @@
+/* ============================================================
+   index.css — styles used exclusively on the index (home) page
+   ============================================================ */
+
+
+/* ----------------------------------------------------------
+   Navbar override — transparent + white text over dark hero
+   ---------------------------------------------------------- */
+
+header.header-dark {
+  background-color: transparent;
+}
+
+header.header-dark .logo,
+header.header-dark .link a {
+  color: rgba(255,255,255,0.85);
+}
+
+header.header-dark .link a:hover,
+header.header-dark .logo:hover {
+  color: #FFFFFF;
+}
+
+header.header-dark .link a.active {
+  color: #FFFFFF;
+}
+
+
+/* ----------------------------------------------------------
+   #welcome hero section — minimal
+   ---------------------------------------------------------- */
+
+#welcome {
+  width: 100%;
+  background-color: #F8F8F8;
+  background-image: radial-gradient(circle, rgba(0,0,0,0.15) 1px, transparent 1px);
+  background-size: 40px 40px;
+  padding: 130px 0 80px;
+  border-bottom: none;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-name {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(48px, 6.5vw, 90px);
+  font-weight: 700;
+  color: var(--color-heading);
+  letter-spacing: -0.02em;
+  line-height: 1.0;
+  margin: 0 0 20px;
+}
+
+.hero-name em {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: var(--color-brand);
+}
+
+.hero-accent {
+  width: 36px;
+  height: 3px;
+  background: var(--color-brand);
+  margin: 0 auto 20px;
+}
+
+.hero-role {
+  font-family: var(--font-ui), sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--color-text-medium);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+
+/* ----------------------------------------------------------
+   Portfolio grid (legacy — kept for any old markup)
+   ---------------------------------------------------------- */
+
+.categories {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.type li {
+  display: inline-block;
+  list-style: none;
+}
+
+.type li a.active {
+  color: var(--color-brand);
+}
+
+.type li a {
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.work-grid div {
+  height: auto;
+}
+
+.work-grid h5 {
+  font-size: 1.25rem;
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
+.work-grid .intro {
+  overflow: hidden;
+  transition: background-color .3s;
+}
+
+.work-grid .intro .desc {
+  margin: 12px 25px 8px;
+  text-align: left;
+}
+
+.work-grid .intro .desc h5 {
+  overflow: hidden;
+  margin-top: 3px;
+  margin-bottom: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.work-grid .intro .desc small {
+  font-size: 0.9rem;
+  opacity: 0.68;
+  font-family: var(--font-ui);
+}
+
+.work-grid .intro .desc p {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  margin-top: 6px;
+  margin-bottom: 0;
+  text-overflow: ellipsis;
+  font-size: 15px;
+  opacity: 0.62;
+  -webkit-line-clamp: 2;
+}
+
+.portfolio-item {
+  padding: 10px;
+}
+
+.portfolio-item a {
+  text-decoration: none;
+}
+
+.portfolio-item .intro {
+  margin: 1px 0;
+  margin-bottom: 5px;
+  padding: 8px 0 0;
+  text-align: center;
+}
+
+.portfolio-item .intro:focus,
+.portfolio-item a:focus {
+  outline: none;
+}
+
+.portfolio-item:hover .intro {
+  background-color: var(--card-color) !important;
+}
+
+.portfolio-item:hover a {
+  text-decoration: none;
+}
+
+
+/* ----------------------------------------------------------
+   Work grid — 2-column card layout
+   ---------------------------------------------------------- */
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px;
+  max-width: 1140px;
+  margin: 24px auto 0;
+}
+
+.work-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.work-card:hover {
+  text-decoration: none;
+  transform: translateY(-4px);
+}
+
+.work-card-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background-color: var(--card-color, #f0f0f0);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 6%;
+  background-origin: content-box;
+  overflow: hidden;
+  transition: transform 0.4s ease;
+}
+
+.work-card:hover .work-card-img {
+  transform: scale(1.04);
+}
+
+.work-card-body {
+  background-color: var(--card-color, #f5f5f5);
+  padding: 28px 28px 12px;
+  text-align: left;
+}
+
+.work-card-date {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  color: #777;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.work-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: var(--color-heading);
+  line-height: 1.35;
+  margin: 0 0 10px;
+  transition: color 0.2s;
+}
+
+.work-card-desc {
+  font-size: 17px;
+  color: #555;
+  line-height: 1.75;
+  margin: 0 0 14px;
+}
+
+.work-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.work-card-label {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 600;
+  color: #222;
+  letter-spacing: 0.01em;
+}
+
+.work-tag {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #777;
+}
+
+.work-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.work-card-meta .work-card-date {
+  margin-bottom: 0;
+}
+
+.work-card-featured {
+  font-size: 10px;
+  line-height: 1;
+  color: #777;
+  margin-right: -4px;
+}
+
+/* Cards — fade + slide on filter */
+.work-card.hiding {
+  opacity: 0;
+  transform: translateY(12px);
+  pointer-events: none;
+}
+
+
+/* ----------------------------------------------------------
+   Filter bar — tab style, centered
+   ---------------------------------------------------------- */
+
+.filter-bar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0;
+  margin: 36px 0 28px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.filter-bar .filter-btn {
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  padding: 10px 22px;
+  font-family: var(--font-ui);
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  color: #aaa;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.filter-bar .filter-btn:hover {
+  color: var(--color-heading);
+}
+
+.filter-bar .filter-btn:focus {
+  outline: none;
+}
+
+.filter-bar .filter-btn.active {
+  color: var(--color-heading);
+  border-bottom-color: var(--color-heading);
+  font-weight: 600;
+}
+
+
+/* ----------------------------------------------------------
+   Responsive overrides
+   ---------------------------------------------------------- */
+
+@media (max-width: 992px) {
+  #portfolio {
+    margin: 40px auto 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  #welcome {
+    padding: 100px 24px 60px;
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .work-card-body {
+    padding: 20px 20px 10px;
+  }
+
+  .work-card-title {
+    font-size: 1.35rem;
+  }
+
+  .work-card-desc {
+    font-size: 15px;
+  }
+
+  .filter-bar .filter-btn {
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 575px) {
+  #welcome {
+    padding: 90px 20px 50px;
+  }
+
+  .hero-name {
+    font-size: clamp(32px, 8vw, 48px);
+  }
+
+  .hero-accent {
+    margin: 0 auto 16px;
+  }
+
+  .hero-role {
+    font-size: 12px;
+  }
+}
