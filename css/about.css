@@ -373,7 +373,7 @@ a.interest-tag:hover {
 
 footer.footer-contact {
   padding: 60px 0 32px;
-  border-top: 1px solid var(--color-border);
+  margin-top: 80px;
   background: var(--color-bg-light);
   display: block;
 }
@@ -586,19 +586,19 @@ footer.footer-contact .container {
   max-width: 950px;
 }
 
-.photo-item {
+.photo-item,
+.ig-photo {
   display: inline-block;
   overflow: hidden;
-  margin: 10px;
-  max-width: 280px;
-  max-height: 280px;
-  width: 33vw;
-  height: 33vw;
+  margin: 0;
+  width: 33.33%;
+  padding-top: 22%;
   background-position: center;
   background-size: cover;
 }
 
-.photo-item:hover {
+.photo-item:hover,
+.ig-photo:hover {
   opacity: 0.85;
 }
 
@@ -648,10 +648,10 @@ footer.footer-contact .container {
     transform: rotateY(180deg);
   }
 
-  .photo-item {
-    margin: 0;
-    width: 30vw;
-    height: 30vw;
+  .photo-item,
+  .ig-photo {
+    width: 33.33%;
+    padding-top: 22%;
   }
 
   .moments .container {

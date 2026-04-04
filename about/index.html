@@ -5,36 +5,35 @@
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- <meta http-equiv="Cache-control" content="public, max-age=3600"> -->
-	<META NAME="ROBOTS" CONTENT="NOINDEX,NOFOLLOW">
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="description" content="Yu-Ching Lin is a psychology-trained UX strategist based in Taipei. She turns research insights into logical and impactful user experiences.">
+
 	<title>About - Yu-Ching Lin</title>
 
-	<link rel="shortcut icon" href="/img/logo/favicon.ico" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
-		integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-	<!-- <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> -->
-	<link rel='stylesheet' href='/css/style.css' type='text/css' />
-	<link rel='stylesheet' href='/css/unite-gallery.css' type='text/css' />
+	<link rel="shortcut icon" href="/img/logo/favicon/favicon.ico" />
 
-	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Montserrat:wght@400&family=Source+Sans+Pro:wght@400;600&display=swap"
-		rel="stylesheet">
+
+	<link rel='stylesheet' href='/css/base.css' type='text/css' />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+		integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel='stylesheet' href='/css/about.css' type='text/css' />
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,500;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+	<link href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" rel="stylesheet">
 	<link rel='stylesheet' href='/css/slick-theme.css' type='text/css' />
 	<link rel='stylesheet' href='/css/slick.css' type='text/css' />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
-	<script src="https://unpkg.com/scrollreveal"></script>
 
 	<script src="/js/pace.js"></script>
+	<script src="https://unpkg.com/scrollreveal"></script>
 	<script>
 		ScrollReveal({
 			distance: '35px',
 			duration: '1000',
 			easing: 'ease',
 			mobile: 'true',
-			viewFactor: 0.33,
+			viewFactor: 0.2,
 		});
 	</script>
 
@@ -42,431 +41,259 @@
 
 <body>
 
-	<!-- nav bar -->
+	<!-- nav -->
 	<header class="load-hidden">
 		<div class="container">
-
 			<div class="row align-items-center">
-				<div class="col-1 col-md-4 p-0">
-					<a href="/" class="logo">
-						<img src="/img/logo/logo.png" alt="">
-						<img src="/img/logo/name.png" alt="">
-					</a>
+				<div class="col-1 col-md-4 p-0" style="text-align:left">
+					<a href="/" class="logo">YUCHING</a>
 				</div>
-				<div class="col-11 col-md-8 link p-0" style="text-align:right">
+				<nav class="col-11 col-md-8 link p-0" style="text-align:right" aria-label="Main navigation">
 					<a href="/" class="underline">WORKS</a>
 					<a href="/blogs" class="underline">BLOGS</a>
 					<a href="/about" style="margin-right: 0;" class="underline active">ABOUT</a>
-				</div>
+				</nav>
 			</div>
-
 		</div>
-
 	</header>
 
 
-	<!-- welcome -->
-	<section id="welcomepic" class="load-hidden mb-4 mb-xl-5 mb-lg-3">
-		<div class="container welcomepic">
+	<main>
 
-			<img class="d-none d-sm-block" src="/img/logo/yuchingpic.jpg" alt="" width="100%">
-			<img class="d-sm-none mt-1" src="/img/logo/yuchingpic_vertical.jpg" alt="" width="100%">
+		<!-- hero -->
+		<section id="hero" class="load-hidden">
+			<div class="container-fluid p-0" style="position:relative">
+				<div class="hero-image">
+					<img class="d-none d-sm-block" src="/img/logo/yuchingpic.jpg" alt="Yu-Ching Lin" width="100%">
+					<img class="d-sm-none" src="/img/logo/yuchingpic_vertical.jpg" alt="Yu-Ching Lin" width="100%">
+				</div>
+				<div class="hero-quote">
+					<p>Psychology-trained UX strategist<span class="hero-quote-dark"> — I understand people before I shape products.</span></p>
+					<span class="hero-quote-name">Yu-Ching Lin · UX Strategist, Taipei</span>
+				</div>
+			</div>
+		</section>
 
 
-		</div>
-	</section>
+		<!-- about -->
+		<section id="about" class="load-hidden">
+			<div class="container">
+				<div class="col-12 col-lg-10 col-xl-9 p-1" style="margin: 0 auto;">
 
-	<section id="about" class="load-hidden mt-md-0">
+					<div class="about-main">
+						<h4><b>Hello, I'm Yu-Ching Lin.</b></h4>
+						<span class="sub-name text-muted">Currently a UX designer at Synology based in Taipei.</span>
 
-		<div class="container">
+						<p>As <b>a lover of psychology</b>, I spent my college years studying the subject and delving deep into
+							understanding human behavior. I was fascinated by the ways in which psychological principles could be applied to
+							real-world challenges — and this passion led me to pursue a career in UX.</p>
 
-			<div class="col-12 col-lg-10 col-xl-9 about-desc p-1 " style="margin: 0 auto;">
-				<div class="bg-section">
-					<h4>
-						<b>Hello, I'm Yu-Ching Lin.</b>
-					</h4>
+						<p>Throughout my professional journey, I have tackled complex projects involving both B2B technical and B2C
+							consumer-facing products. The most rewarding aspect of my work is identifying users' needs and translating
+							them into intuitive interfaces that influence human behavior.</p>
 
-					<span class="sub-name text-muted">Currently a UX designer at Synology based in Taipei.</span>
+						<p>I'm passionate about <b>unleashing my creativity</b>. I love reading and writing because it helps me
+							connect my ideas and come up with new ones. In my personal life, I'm always experimenting with new ways to
+							improve myself — like keeping my surroundings clean, saving money, and staying active.</p>
 
-					<p color="muted"></p>
-
-					<p>As <b>a lover of psychology</b>, I spent my college years studying the subject and delving deep into
-						understanding human behavior. I was fascinated by the ways in which psychological principles could be applied to
-						real-world challenges and this passion led me to pursue a career in UX. </p>
-
-					<p>Throughout my professional journey, I have tackled complex projects involving both B2B technical and B2C
-						consumer-facing products. The most rewarding aspect of my work is
-						identifying users' needs and translating them into intuitive interfaces that influence
-						human behavior.</p>
-
-					<p>
-						I'm passionate about <b>unleashing my creativity</b>. I love reading and writing because it helps me
-						connect my ideas and come up with new ones. In my personal life, I'm always experimenting with new ways to
-						improve myself, like keeping my surroundings clean, saving money, and staying active.
-					</p>
-
-					<p>
-
-						<!-- <a target="_blank" href="https://www.linkedin.com/in/yuyuchinglin/" class="outlined-btn">Linkedin</a> -->
-						<a target="_blank" href="https://www.linkedin.com/in/yuyuchinglin/" class="full-btn">Linkedin</a>
-						<a target="_blank" href="./CV_yuchinglin_2022.pdf" class="outlined-btn">Résumé</a>
-					</p>
-
-					<div class="row sm-section">
-						<div class="col col-12 col-md-6">
-							<b>Specializations</b><br>
-							- UX Research<br>
-							- Usability Testing<br>
-							- UX & Product Design <span class="text-muted">(Sketch, Figma)</span><br>
-							- Prototype <span class="text-muted">(inVision, FramerX)</span> <br>
-							- Data Analysis <span class="text-muted">(R, SPSS)</span><br>
-							- Front-end Development <span class="text-muted">(CSS, JS, VueJS)</span><br>
-						</div>
-
-						<div class="col col-12 col-md-6">
-							<b>Interests</b><br>
-							📓 <a target="_blank" href="https://books.yuchinglin.com">Reading Books</a><br>
-							✍🏼 <a target="_blank" href="https://yuyuchinglin.medium.com/">Writing</a><br>
-							😺 Cats & Dogs<br>
-							◻️ Minimalism<br>
-							📷 Travel & Photography<br>
-							👾 Playing Games
-							(Overcooked addict)
+						<div class="btn-group-row">
+							<a target="_blank" href="https://www.linkedin.com/in/yuyuchinglin/" class="btn-filled d-inline-block">
+								<i class="fab fa-linkedin"></i> LinkedIn
+							</a>
+							<a target="_blank" href="./CV_yuchinglin_2025.pdf" class="btn-outline d-inline-block">
+								<i class="far fa-file-alt"></i> Résumé
+							</a>
 						</div>
 					</div>
+
+					<div class="about-extra">
+						<div class="row">
+							<div class="col col-12 col-md-6">
+								<span class="section-label">Specializations</span>
+								<ul class="about-list">
+									<li>UX Research</li>
+									<li>Usability Testing</li>
+									<li>UX &amp; Product Design <span class="text-muted">(Sketch, Figma)</span></li>
+									<li>Prototyping <span class="text-muted">(InVision, FramerX)</span></li>
+									<li>Data Analysis <span class="text-muted">(R, SPSS)</span></li>
+									<li>Front-end Development <span class="text-muted">(CSS, JS, VueJS)</span></li>
+								</ul>
+							</div>
+							<div class="col col-12 col-md-6">
+								<span class="section-label">Interests</span>
+								<div class="interest-tags">
+									<a href="https://books.yuchinglin.com" target="_blank" class="interest-tag">📓 Reading Books</a>
+									<a href="https://yuyuchinglin.medium.com/" target="_blank" class="interest-tag">✍🏼 Writing</a>
+									<span class="interest-tag">😺 Cats &amp; Dogs</span>
+									<span class="interest-tag">◻️ Minimalism</span>
+									<span class="interest-tag">📷 Travel &amp; Photography</span>
+									<span class="interest-tag">👾 Playing Games</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
 
+		<!-- books -->
+		<section class="books load-hidden">
+			<div class="container container-sm-large">
 
-	<section class="books">
-		<div class="container container-sm-large">
-
-			<div class="word col-12 my-md-2">
-				<h5>Book Collection</h5>
-				<p>My recent book
-					collection and reading notes are in <a target="_blank" href="http://books.yuchinglin.com">Yu-Ching Lin's
-						Bookshelf</a>.</p>
-			</div>
-
-			<div class="row book-row">
-
-				<div class="col-lg-4 col-md-6 col-12 book-item">
-					<a target="_blank"
-						href="https://www.notion.so/Yu-Ching-Lin-s-Bookshelf-2bacefc9e0a7408ba3a5e6b6f6936f2b?p=e3826e9c5a804ccaaa595fde1fac795d">
-						<div class="intro">
-							<div class="book-img" style="background: url(/about/books/design.png) center center;">
-							</div>
-							<div class="desc row">
-								<b class="col-12 text-truncate">The Design of Everyday Things</b> <br>
-								<p class="col-12"> <span class="tag ux">UX Research / Design</span></p>
-								<!-- <p class="col-12 text-truncate">Don Norman</p> -->
-								<!-- <p class="col-12">Jan 24, 2021</p> -->
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class="col-lg-4 col-md-6 col-12 book-item">
-					<a target="_blank"
-						href="https://www.notion.so/Yu-Ching-Lin-s-Bookshelf-2bacefc9e0a7408ba3a5e6b6f6936f2b?p=2bc1f2b83b1644869b6a8ce41b157830">
-						<div class="intro">
-							<div class="book-img" style="background: url(/about/books/talk.png) center center;">
-							</div>
-							<div class="desc row">
-								<b class="col-12 text-truncate">Maybe You Should Talk to Someone: A Therapist, HER Therapist, and Our
-									Lives Revealed</b> <br>
-								<p class="col-12"> <span class="tag counseling">Counseling</span></p>
-								<!-- <p class="col-12 text-truncate">Clayton Christensen, James Allworth, Karen Dillon</p> -->
-								<!-- <p class="col-12">Jan 17, 2021</p> -->
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class="col-lg-4 col-md-6 col-12 book-item">
-					<a target="_blank"
-						href="https://www.notion.so/Yu-Ching-Lin-s-Bookshelf-2bacefc9e0a7408ba3a5e6b6f6936f2b?p=c1c000dbdb5b491784f0694ad2f13e30">
-						<div class="intro">
-							<div class="book-img" style="background: url(/about/books/gamification.png) center center;">
-							</div>
-							<div class="desc row">
-								<b class="col-12 text-truncate">Actionable Gamification: Beyond Points, Badges, and Leaderboards</b>
-								<br>
-								<p class="col-12"> <span class="tag ux">UX Research / Design</span></p>
-								<!-- <p class="col-12 text-truncate">Greg McKeown</p> -->
-								<!-- <p class="col-12">Jan 9, 2021</p> -->
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class="col-lg-4 col-md-6 col-12 book-item">
-					<a target="_blank"
-						href="https://www.notion.so/Yu-Ching-Lin-s-Bookshelf-2bacefc9e0a7408ba3a5e6b6f6936f2b?p=5e50892ab3e54450bbd74d01ac36085d">
-						<div class="intro">
-							<div class="book-img" style="background: url(/about/books/sight.png) center center;">
-							</div>
-							<div class="desc row">
-								<b class="col-12 text-truncate">Hidden in Plain Sight: How to Create Extraordinary Products for
-									Tomorrow's
-									Customers</b> <br>
-								<p class="col-12"> <span class="tag ux">UX Research / Design</span></p>
-								<!-- <p class="col-12 text-truncate">Jan Chipchase, Simon Steinhardt</p> -->
-								<!-- <p class="col-12">Jan 6, 2021</p> -->
-							</div>
-						</div>
-					</a>
-				</div>
-
-
-				<div class="col-lg-4 col-md-6 col-12 book-item">
-					<a target="_blank"
-						href="https://www.notion.so/Yu-Ching-Lin-s-Bookshelf-2bacefc9e0a7408ba3a5e6b6f6936f2b?p=7f2543a49c7040b2bee234d652e0b03b">
-						<div class="intro">
-							<div class="book-img" style="background: url(/about/books/enemy.png) center center;">
-							</div>
-							<div class="desc row">
-								<b class="col-12 text-truncate">Ego Is the Enemy</b> <br>
-								<p class="col-12"> <span class="tag self">Self-Improvement</span></p>
-								<!-- <p class="col-12 text-truncate">Ryan Holiday</p> -->
-								<!-- <p class="col-12">Nov 17, 2020</p> -->
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class="col-lg-4 col-md-6 col-12 book-item">
-					<a target="_blank"
-						href="https://www.notion.so/Yu-Ching-Lin-s-Bookshelf-2bacefc9e0a7408ba3a5e6b6f6936f2b?p=3441857afd71428bbb13ddda8241e060">
-						<div class="intro">
-							<div class="book-img" style="background: url(/about/books/irrationality.png) center center;">
-							</div>
-							<div class="desc row">
-								<b class="col-12 text-truncate">The Upside of Irrationality: The Unexpected Benefits of Defying Logic at
-									Work and at Home</b> <br>
-								<p class="col-12"> <span class="tag economics">Behavioral Economics</span></p>
-								<!-- <p class="col-12 text-truncate">Dan Ariery</p> -->
-								<!-- <p class="col-12">Oct 30, 2020</p> -->
-							</div>
-						</div>
-					</a>
-				</div>
-
-			</div>
-	</section>
-
-
-
-	<!-- moments -->
-	<section class="moments load-hidden">
-
-
-		<div class="container-fluid" style="text-align: center;">
-
-			<!-- <div class="row"> -->
-
-			<div class="word col-12 my-md-2">
-				<h5>Life Moments</h5>
-				<p>I capture photographs to preserve the delightful moments in various countries.</p>
-			</div>
-
-
-			<div class="col-12 p-0" style="margin:0 auto">
-
-
-				<a target="_blank" href="/img/logo/ig/1.jpg" data-fancybox="moments" data-caption="[2018] Flowers in Korea"
-					style="background-image: url(/img/logo/ig/1.jpg);" name="flowers in Korea" class="ig-photo"></a>
-
-				<a target="_blank" href="/img/logo/ig/2.jpg" data-fancybox="moments" data-caption="[2018] Casino in Las Vegas"
-					style="background-image: url(/img/logo/ig/2.jpg);" name="Casino in Las Vegas" class="ig-photo"></a>
-
-				<a target="_blank" href="/img/logo/ig/3.jpg" data-fancybox="moments"
-					data-caption="[2018] Skateboard in Venice, California" style="background-image: url(/img/logo/ig/3.jpg);"
-					name="Skateboard in Venice, California" class="ig-photo"></a>
-
-
-				<a target="_blank" href="/img/logo/ig/4.jpg" data-fancybox="moments"
-					data-caption="[2018] Driving in Los Angeles, California" style="background-image: url(/img/logo/ig/4.jpg);"
-					name="Driving in Los Angeles, California" class="ig-photo"></a>
-
-
-				<a target="_blank" href="/img/logo/ig/5.jpg" data-fancybox="moments"
-					data-caption="[2017] Astonishing view in Greenwich Park, London" style="background-image: url(/img/logo/ig/5.jpg);"
-					name="Astonishing view in Greenwich Park, London" class="ig-photo"></a>
-
-				<a target="_blank" href="/img/logo/ig/6.jpg" data-fancybox="moments"
-					data-caption="[2017] Portobello Road Market, London" style="background-image: url(/img/logo/ig/6.jpg);"
-					name="Portobello Road Market, London" class="ig-photo"></a>
-
-				<a target="_blank" href="/img/logo/ig/7.jpg" data-fancybox="moments" data-caption="[2017] Bath, United Kingdom"
-					style="background-image: url(/img/logo/ig/7.jpg);" name="Bath, United Kingdom" class="ig-photo"></a>
-
-				<a target="_blank" href="/img/logo/ig/8.jpg" data-fancybox="moments"
-					data-caption="[2017] St. Paul's Cathedral in London" style="background-image: url(/img/logo/ig/8.jpg);"
-					name="St. Paul's Cathedral in London" class="ig-photo"></a>
-
-
-				<a target="_blank" href="/img/logo/ig/9.jpg" data-fancybox="moments" data-caption="[2017] At the Top SKY, Burj Khalifa"
-					style="background-image: url(/img/logo/ig/9.jpg);" name="At the Top SKY, Burj Khalifa" class="ig-photo"></a>
-
-			</div>
-
-		</div>
-
-
-	</section>
-
-
-
-
-	<!-- contact -->
-
-
-	<section id="contact" class="load-hidden">
-
-		<div class="container-fluid">
-
-			<div class="row contact-intro">
 				<div class="word col-12 my-md-2">
-					<h5>Let's Connect!</h5>
-					<p class="mb-1">Feel free to reach out for collaborations or just a friendly hello! <span role="image"
-							aria-label="🙂"
-							style="font-family:'Apple Color Emoji','Segoe UI Emoji',NotoColorEmoji,'Noto Color Emoji','Segoe UI Symbol','Android Emoji',EmojiSymbols;line-height:1em;font-size:1em">🙂</span>
-					</p>
+					<h5>Book Collection</h5>
+					<p>My recent book collection and reading notes are in <a target="_blank" href="http://books.yuchinglin.com">Yu-Ching's Bookshelf</a>.</p>
 				</div>
 
-				<div style="margin:0 auto" class="mb-2">
-					<!-- <b class="pb-5">Digital Footprint</b><br> -->
-					<a href="mailto:yuyuchinglin@gmail.com?subject=Hello!" class="full-btn d-inline-block">
-						<i class="fas fa-paper-plane"></i> Contact me
-					</a>
-					<a href="" class="outlined-btn d-inline-block"
-						onclick="Calendly.initPopupWidget({ url: 'https://calendly.com/yuyuchinglin/30min', text: 'Schedule time with me', color: '#9E6B57', textColor: '#ffffff', branding: true });return false;">
-						<i class="far fa-calendar-alt"></i> Schedule a Chat
-					</a>
+				<div class="row book-row">
+
+					<div class="col-lg-4 col-md-6 col-12 book-item">
+						<a target="_blank" href="https://www.notion.so/Yu-Ching-Lin-s-Bookshelf-2bacefc9e0a7408ba3a5e6b6f6936f2b?p=e3826e9c5a804ccaaa595fde1fac795d">
+							<div class="intro">
+								<div class="book-img" style="background: url(/about/books/design.png) center center;"></div>
+								<div class="desc row">
+									<b class="col-12 text-truncate">The Design of Everyday Things</b>
+									<p class="col-12"><span class="tag ux">UX Research / Design</span></p>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-lg-4 col-md-6 col-12 book-item">
+						<a target="_blank" href="https://www.notion.so/Yu-Ching-Lin-s-Bookshelf-2bacefc9e0a7408ba3a5e6b6f6936f2b?p=2bc1f2b83b1644869b6a8ce41b157830">
+							<div class="intro">
+								<div class="book-img" style="background: url(/about/books/talk.png) center center;"></div>
+								<div class="desc row">
+									<b class="col-12 text-truncate">Maybe You Should Talk to Someone</b>
+									<p class="col-12"><span class="tag counseling">Counseling</span></p>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-lg-4 col-md-6 col-12 book-item">
+						<a target="_blank" href="https://www.notion.so/Yu-Ching-Lin-s-Bookshelf-2bacefc9e0a7408ba3a5e6b6f6936f2b?p=c1c000dbdb5b491784f0694ad2f13e30">
+							<div class="intro">
+								<div class="book-img" style="background: url(/about/books/gamification.png) center center;"></div>
+								<div class="desc row">
+									<b class="col-12 text-truncate">Actionable Gamification</b>
+									<p class="col-12"><span class="tag ux">UX Research / Design</span></p>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-lg-4 col-md-6 col-12 book-item">
+						<a target="_blank" href="https://www.notion.so/Yu-Ching-Lin-s-Bookshelf-2bacefc9e0a7408ba3a5e6b6f6936f2b?p=5e50892ab3e54450bbd74d01ac36085d">
+							<div class="intro">
+								<div class="book-img" style="background: url(/about/books/sight.png) center center;"></div>
+								<div class="desc row">
+									<b class="col-12 text-truncate">Hidden in Plain Sight</b>
+									<p class="col-12"><span class="tag ux">UX Research / Design</span></p>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-lg-4 col-md-6 col-12 book-item">
+						<a target="_blank" href="https://www.notion.so/Yu-Ching-Lin-s-Bookshelf-2bacefc9e0a7408ba3a5e6b6f6936f2b?p=7f2543a49c7040b2bee234d652e0b03b">
+							<div class="intro">
+								<div class="book-img" style="background: url(/about/books/enemy.png) center center;"></div>
+								<div class="desc row">
+									<b class="col-12 text-truncate">Ego Is the Enemy</b>
+									<p class="col-12"><span class="tag self">Self-Improvement</span></p>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-lg-4 col-md-6 col-12 book-item">
+						<a target="_blank" href="https://www.notion.so/Yu-Ching-Lin-s-Bookshelf-2bacefc9e0a7408ba3a5e6b6f6936f2b?p=3441857afd71428bbb13ddda8241e060">
+							<div class="intro">
+								<div class="book-img" style="background: url(/about/books/irrationality.png) center center;"></div>
+								<div class="desc row">
+									<b class="col-12 text-truncate">The Upside of Irrationality</b>
+									<p class="col-12"><span class="tag economics">Behavioral Economics</span></p>
+								</div>
+							</div>
+						</a>
+					</div>
+
 				</div>
 			</div>
+		</section>
 
 
-			<div>
+		<!-- moments -->
+		<section class="moments load-hidden">
+			<div class="container-fluid" style="text-align: center;">
 
-
-				<div class="bsncard-container">
-					<div class="bsncard">
-						<figure class="front">
-						</figure>
-						<figure class="back">
-							<div class="bsn-logo"></div>
-							<div class="bsn-intro">
-								<img src="/img/logo/name.png" alt="" width="135px" style="margin-bottom: 6px;">
-								<p><i class="fas fa-map-marker-alt"></i> Taipei, Taiwan</p>
-								<p><i class="fas fa-phone"></i><a href="tel:+886972231459">+886 972 231 459</a></p>
-								<p><i class="fas fa-envelope"></i> <a href="mailto:yuyuchinglin@gmail.com">yuyuchinglin@gmail.com</a>
-								</p>
-							</div>
-						</figure>
-					</div>
+				<div class="word col-12 my-md-2">
+					<h5>Life Moments</h5>
+					<p>I capture photographs to preserve the delightful moments in various countries.</p>
 				</div>
 
-
-				<!-- <div class="row">
-
-					<a target="_blank" href="https://www.linkedin.com/in/yuyuchinglin/" class="footprint">Linkedin</a>
-					<a target="_blank" href="https://www.linkedin.com/in/yuyuchinglin/" class="footprint">Medium</a>
-					<a target="_blank" href="https://www.linkedin.com/in/yuyuchinglin/" class="footprint">Instagram</a>
+				<div class="col-12 p-0" style="margin: 0 auto;">
+					<a target="_blank" href="/img/logo/ig/1.jpg" data-fancybox="moments" data-caption="[2018] Flowers in Korea"
+						style="background-image: url(/img/logo/ig/1.jpg);" class="ig-photo"></a>
+					<a target="_blank" href="/img/logo/ig/2.jpg" data-fancybox="moments" data-caption="[2018] Casino in Las Vegas"
+						style="background-image: url(/img/logo/ig/2.jpg);" class="ig-photo"></a>
+					<a target="_blank" href="/img/logo/ig/3.jpg" data-fancybox="moments" data-caption="[2018] Skateboard in Venice, California"
+						style="background-image: url(/img/logo/ig/3.jpg);" class="ig-photo"></a>
+					<a target="_blank" href="/img/logo/ig/4.jpg" data-fancybox="moments" data-caption="[2018] Driving in Los Angeles, California"
+						style="background-image: url(/img/logo/ig/4.jpg);" class="ig-photo"></a>
+					<a target="_blank" href="/img/logo/ig/5.jpg" data-fancybox="moments" data-caption="[2017] Astonishing view in Greenwich Park, London"
+						style="background-image: url(/img/logo/ig/5.jpg);" class="ig-photo"></a>
+					<a target="_blank" href="/img/logo/ig/6.jpg" data-fancybox="moments" data-caption="[2017] Portobello Road Market, London"
+						style="background-image: url(/img/logo/ig/6.jpg);" class="ig-photo"></a>
+					<a target="_blank" href="/img/logo/ig/7.jpg" data-fancybox="moments" data-caption="[2017] Bath, United Kingdom"
+						style="background-image: url(/img/logo/ig/7.jpg);" class="ig-photo"></a>
+					<a target="_blank" href="/img/logo/ig/8.jpg" data-fancybox="moments" data-caption="[2017] St. Paul's Cathedral in London"
+						style="background-image: url(/img/logo/ig/8.jpg);" class="ig-photo"></a>
+					<a target="_blank" href="/img/logo/ig/9.jpg" data-fancybox="moments" data-caption="[2017] At the Top SKY, Burj Khalifa"
+						style="background-image: url(/img/logo/ig/9.jpg);" class="ig-photo"></a>
 				</div>
 
-				<div class="row">
+			</div>
+		</section>
 
-					<a target="_blank" href="https://www.linkedin.com/in/yuyuchinglin/" class="footprint">Twitter</a>
-					<a target="_blank" href="https://www.linkedin.com/in/yuyuchinglin/" class="footprint">GitHub</a>
-					<a target="_blank" href="https://www.linkedin.com/in/yuyuchinglin/" class="footprint">Bookshelf</a>
-				</div> -->
-
-
-
-	</section>
-
+	</main>
 
 
 	<!-- footer -->
-	<section id="footer">
-		<div class="container">
+	<footer class="footer-contact">
+		<div class="container text-center">
 
-			<div class="row">
-				<div class="col-lg-4 col-sm-12 text-lg-right p-0">
-					<a target="_blank" href="https://www.linkedin.com/in/yuyuchinglin/">
-						<i class="fab fa-linkedin"></i>
-					</a>
-					<a target="_blank" href="https://medium.com/@yuyuchinglin">
-						<i class="fab fa-medium-m"></i>
-					</a>
-					<a target="_blank" href="https://www.instagram.com/yuyuchingg/">
-						<i class="fab fa-instagram"></i>
-					</a>
-					<a target="_blank" href="https://twitter.com/yuyuchinglin">
-						<i class="fab fa-twitter"></i>
-					</a>
-					<a target="_blank" href="http://books.yuchinglin.com">
-						<i class="fas fa-book"></i>
-					</a>
-					<a target="_blank" href="https://github.com/yuyuchinglin">
-						<i class="fab fa-github"></i>
-					</a>
-				</div>
-				<div class="col-lg-4 col-sm-12 p-0">
-					<a href="mailto:yuyuchinglin@gmail.com"><b>yuyuchinglin@gmail.com</b></a>
-				</div>
+			<h5 class="footer-heading">Let's Connect!</h5>
+			<p class="footer-desc">Feel free to reach out for collaborations or just a friendly hello!</p>
 
-				<div class="col-lg-4 col-sm-12 text-lg-left p-0">
-					<span>Copyright © Yu-Ching Lin 2017 -
-						<script>document.write(new Date().getFullYear())</script>
-					</span>
-				</div>
-
-
-
+			<div class="footer-btns">
+				<a href="mailto:yuyuchinglin@gmail.com?subject=Hello!" class="btn-filled d-inline-block" target="_blank" rel="noopener">
+					<i class="fas fa-paper-plane"></i> Email me
+				</a>
+				<a href="https://calendar.app.google/mv9e2en3dcnepTW36" target="_blank" rel="noopener" class="btn-outline d-inline-block">
+					<i class="far fa-calendar-alt"></i> Schedule a Chat
+				</a>
 			</div>
+
+			<div class="footer-meta">
+				<div class="footer-social">
+					<a target="_blank" href="https://www.linkedin.com/in/yuyuchinglin/"><i class="fab fa-linkedin"></i></a>
+					<a target="_blank" href="https://medium.com/@yuyuchinglin"><i class="fab fa-medium-m"></i></a>
+					<a target="_blank" href="https://www.instagram.com/yuyuchingg/"><i class="fab fa-instagram footer-ig"></i></a>
+					<a target="_blank" href="https://twitter.com/yuyuchinglin"><i class="fab fa-twitter"></i></a>
+					<a target="_blank" href="https://github.com/yuyuchinglin"><i class="fab fa-github"></i></a>
+				</div>
+				<div class="footer-meta-bottom">
+					<span class="footer-copy">© YUCHING 2017–<script>document.write(new Date().getFullYear())</script></span>
+				</div>
+			</div>
+
 		</div>
-	</section>
+	</footer>
 
-
-
-
-
-
-
-	<!-- js開始 -->
-
-
-	<script>
-
-		ScrollReveal().reveal('header',
-			{
-				origin: 'top',
-			});
-
-
-		ScrollReveal().reveal('#welcomepic, #about, .books, .moments, #contact',
-			{
-				origin: 'bottom',
-			});
-
-
-	</script>
-	<!-- <script type='text/javascript' src='js/jquery-11.0.min.js'></script> -->
-	<!-- <script type='text/javascript' src='js/unitegallery.min.js'></script> -->
-	<!-- <script type='text/javascript' src='js/ug-theme-tiles.js'></script> -->
-	<!-- <script src="js/popper.min.js"></script> -->
-	<!-- <script src="js/bootstrap.min.js"></script> -->
-	<!-- <script src="js/SmoothScroll.js"></script> -->
-	<!-- <script src="js/easypiechart.js"></script> -->
-	<!-- <script src="js/main.js"></script> -->
-	<!-- <script src="js/lazyload.min.js"></script> -->
-	<!-- <script src="js/waypoints.js"></script> -->
 
 	<script type='text/javascript' src='/js/jquery-11.0.min.js'></script>
 	<script type='text/javascript' src='/js/slick.min.js'></script>
@@ -480,113 +307,50 @@
 			responsive: [
 				{
 					breakpoint: 1024,
-					settings: {
-						slidesToShow: 2,
-						slidesToScroll: 2
-					}
+					settings: { slidesToShow: 2, slidesToScroll: 2 }
 				},
 				{
 					breakpoint: 600,
-					settings: {
-						slidesToShow: 1,
-						slidesToScroll: 1,
-						arrows: true,
-						dots: false
-					}
-				},
-
-				// You can unslick at a given breakpoint now by adding:
-				// settings: "unslick"
-				// instead of a settings object
+					settings: { slidesToShow: 1, slidesToScroll: 1, arrows: true, dots: false }
+				}
 			]
 		});
-
 	</script>
 
-	<!-- Calendly badge widget begin -->
+	<script>
+		ScrollReveal().reveal('header', { origin: 'top' });
+		ScrollReveal().reveal('#hero, #about, .books, .moments', { origin: 'bottom' });
+	</script>
+
 	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 	<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
 
-	<!-- Calendly badge widget end -->
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<!-- Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115360200-1"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
-
 		gtag('config', 'UA-115360200-1');
 	</script>
 
-	<!-- start Mixpanel -->
+	<!-- Mixpanel -->
 	<script type="text/javascript">(function (e, a) {
 			if (!a.__SV) {
 				var b = window; try { var c, l, i, j = b.location, g = j.hash; c = function (a, b) { return (l = a.match(RegExp(b + "=([^&]*)"))) ? l[1] : null }; g && c(g, "state") && (i = JSON.parse(decodeURIComponent(c(g, "state"))), "mpeditor" === i.action && (b.sessionStorage.setItem("_mpcehash", g), history.replaceState(i.desiredHash || "", e.title, j.pathname + j.search))) } catch (m) { } var k, h; window.mixpanel = a; a._i = []; a.init = function (b, c, f) {
 					function e(b, a) {
 						var c = a.split("."); 2 == c.length && (b = b[c[0]], a = c[1]); b[a] = function () {
-							b.push([a].concat(Array.prototype.slice.call(arguments,
-								0)))
+							b.push([a].concat(Array.prototype.slice.call(arguments, 0)))
 						}
 					} var d = a; "undefined" !== typeof f ? d = a[f] = [] : f = "mixpanel"; d.people = d.people || []; d.toString = function (b) { var a = "mixpanel"; "mixpanel" !== f && (a += "." + f); b || (a += " (stub)"); return a }; d.people.toString = function () { return d.toString(1) + ".people (stub)" }; k = "disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
-					for (h = 0; h < k.length; h++)e(d, k[h]); a._i.push([b, c, f])
+					for (h = 0; h < k.length; h++) e(d, k[h]); a._i.push([b, c, f])
 				}; a.__SV = 1.2; b = e.createElement("script"); b.type = "text/javascript"; b.async = !0; b.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === e.location.protocol && "//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js"; c = e.getElementsByTagName("script")[0]; c.parentNode.insertBefore(b, c)
 			}
 		})(document, window.mixpanel || []);
-		mixpanel.init("4a6a775cccb977118be3fc9e1c01df76");</script><!-- end Mixpanel -->
+		mixpanel.init("4a6a775cccb977118be3fc9e1c01df76");</script>
 
 	<script>mixpanel.track("pageview about");</script>
-
-	<script>
-		window.addEventListener("load", function (event) {
-			var a = document.querySelectorAll('#about a, .books a, .moments a, #contact a, #footer a');
-			a.forEach(function (item) {
-				item.addEventListener("click", function () {
-					if (item.innerText) {
-						var desc = item.innerText;
-					} else {
-						var desc = item.href;
-					}
-					// alert(desc);
-					mixpanel.track("click " + desc);
-				})
-			});
-		})
-	</script>
-
-
-	<script>$(document).ready(function () {
-
-			/* This is basic - uses default settings */
-
-			$("a#single_image").fancybox();
-
-			/* Using custom settings */
-
-			$("a#inline").fancybox({
-				'hideOnContentClick': true
-			});
-
-			/* Apply fancybox to multiple items */
-
-			$("a.group").fancybox({
-				'transitionIn': 'elastic',
-				'transitionOut': 'elastic',
-				'speedIn': 600,
-				'speedOut': 200,
-				'overlayShow': false
-			});
-
-		});
-
-
-		$("a.grouped_elements").fancybox();
-	</script>
-
-
-
-
 
 </body>
 
