@@ -115,6 +115,10 @@
 
 /* --- About section --- */
 
+#about {
+  margin-top: 32px;
+}
+
 .status-badge {
   position: absolute;
   top: 3%;
@@ -590,8 +594,9 @@ footer.footer-contact .container {
 .ig-photo {
   float: left;
   overflow: hidden;
-  width: 33.333%;
-  padding-top: 33.333%;
+  width: calc(33.333% - 4px);
+  padding-top: calc(33.333% - 4px);
+  margin: 2px;
   background-position: center;
   background-size: cover;
 }
@@ -649,8 +654,9 @@ footer.footer-contact .container {
 
   .photo-item,
   .ig-photo {
-    width: 33.333%;
-    padding-top: 33.333%;
+    width: calc(33.333% - 4px);
+    padding-top: calc(33.333% - 4px);
+    margin: 2px;
   }
 
   .moments .container {
