@@ -588,11 +588,10 @@ footer.footer-contact .container {
 
 .photo-item,
 .ig-photo {
-  display: inline-block;
+  float: left;
   overflow: hidden;
-  margin: 0;
-  width: 33.33%;
-  padding-top: 33.33%;
+  width: 33.333%;
+  padding-top: 33.333%;
   background-position: center;
   background-size: cover;
 }
@@ -650,8 +649,8 @@ footer.footer-contact .container {
 
   .photo-item,
   .ig-photo {
-    width: 33.33%;
-    padding-top: 33.33%;
+    width: 33.333%;
+    padding-top: 33.333%;
   }
 
   .moments .container {
