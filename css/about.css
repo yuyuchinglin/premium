@@ -592,7 +592,7 @@ footer.footer-contact .container {
   overflow: hidden;
   margin: 0;
   width: 33.33%;
-  padding-top: 22%;
+  padding-top: 33.33%;
   background-position: center;
   background-size: cover;
 }
@@ -651,7 +651,7 @@ footer.footer-contact .container {
   .photo-item,
   .ig-photo {
     width: 33.33%;
-    padding-top: 22%;
+    padding-top: 33.33%;
   }
 
   .moments .container {
