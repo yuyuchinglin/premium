@@ -37,10 +37,11 @@
 			if (c.includes('ux') || c.includes('user experience')) return 'UX';
 			if (c.includes('personal growth') || c.includes('reading')) return 'Personal Growth';
 			if (c.includes('strategy')) return 'Strategy';
+			if (c.includes('ai') || c.includes('productivity')) return 'AI';
 			return 'Other';
 		}
 
-		var catOrder = { 'Psychology': 1, 'UX': 2, 'Personal Growth': 3, 'Strategy': 4, 'Other': 5 };
+		var catOrder = { 'Psychology': 1, 'UX': 2, 'Personal Growth': 3, 'Strategy': 4, 'AI': 5, 'Other': 6 };
 
 		function sortArticles(articles) {
 			return articles.slice().sort(function (a, b) {
