@@ -2,6 +2,17 @@
   "en_articles": [
     {
       "lg_col": 4,
+      "title": "Turning Psychology Book Notes into a Second Brain with an LLM Wiki",
+      "subtitle": "Knowledge only truly enters your brain when books begin to converse with each other.",
+      "excerpt": "The other day, I was chatting with a friend about \"boundaries.\" I had read more than a dozen books on the topic, and yet I couldn't put together a single coherent take. That was the moment I realized — the books were finished, but the knowledge hadn't truly entered my brain.",
+      "date": "May 7, 2026",
+      "publication": "@ Design Bootcamp",
+      "category": "Productivity",
+      "img": "2026_llmwiki.webp",
+      "link": "https://medium.com/design-bootcamp/turning-psychology-book-notes-into-a-second-brain-with-an-llm-wiki-7b76b3c0d810"
+    },
+    {
+      "lg_col": 4,
       "title": "Progress Without Shame: Using Self-Compassion to Reclaim the Strength to Keep Moving Forward",
       "subtitle": "When we stop pushing ourselves with self-criticism, we gain the strength to keep growing.",
       "excerpt": "In Chinese culture, it's common to hear harsh words directed at oneself or one's children: \"How can you not understand even this?\" \"You're worse than a pig.\" \"You don't deserve that title.\" These words aren't entirely without effect — they may push us in the short term. But over time, this approach drains our emotional energy and leaves us exhausted.",
@@ -79,6 +90,17 @@
     }
   ],
   "cn_articles": [
+    {
+      "lg_col": 4,
+      "title": "用 LLM Wiki 把心理學書摘變成第二大腦：讓書與書真正對話",
+      "subtitle": "當書與書開始彼此對話，知識才真正進了大腦",
+      "excerpt": "某天和朋友聊「界線」，我明明讀過十幾本相關書籍，卻說不出一個完整的講法。我同時想起太多本書、太多個詮釋，卻沒辦法把它們疊在一起。那一刻我才意識到，書是讀完了，但知識其實並沒有真正進大腦。",
+      "date": "May 4, 2026",
+      "publication": "",
+      "category": "Productivity",
+      "img": "2026_llmwiki.webp",
+      "link": "https://yuyuchinglin.medium.com/%E7%94%A8-llm-wiki-%E6%8A%8A%E5%BF%83%E7%90%86%E5%AD%B8%E6%9B%B8%E6%91%98%E8%AE%8A%E6%88%90%E7%AC%AC%E4%BA%8C%E5%A4%A7%E8%85%A6-%E8%AE%93%E6%9B%B8%E8%88%87%E6%9B%B8%E7%9C%9F%E6%AD%A3%E5%B0%8D%E8%A9%B1-201f6e229f86"
+    },
     {
       "lg_col": 4,
       "title": "進步不靠羞辱，用「自我疼惜」找回穩定前行的底氣",
