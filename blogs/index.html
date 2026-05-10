@@ -107,7 +107,7 @@
 				catCounts[cat] = (catCounts[cat] || 0) + 1;
 			});
 			document.querySelector('[data-filter="cat"][data-value="all"]').innerHTML = 'All <span class="btn-count">(' + langFiltered.length + ')</span>';
-			['Psychology', 'UX', 'Personal Growth', 'Strategy'].forEach(function (cat) {
+			['Psychology', 'UX', 'Personal Growth', 'Strategy', 'AI'].forEach(function (cat) {
 				var btn = document.querySelector('[data-filter="cat"][data-value="' + cat + '"]');
 				if (btn) btn.innerHTML = cat + ' <span class="btn-count">(' + (catCounts[cat] || 0) + ')</span>';
 			});
