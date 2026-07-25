@@ -31,6 +31,19 @@
   gap: 8px;
 }
 
+.hero-quote-mark {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  line-height: 1;
+  color: var(--color-heading);
+  opacity: 0.15;
+  align-self: flex-start;
+}
+
+.hero-quote-mark-close {
+  align-self: flex-end;
+}
+
 .hero-quote-line {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
