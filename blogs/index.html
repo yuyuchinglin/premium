@@ -27,7 +27,8 @@
 
 	<script>
 		var allArticles = [];
-		var currentLang = 'en';
+		var browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+		var currentLang = (browserLang.startsWith('zh') || browserLang.startsWith('cmn')) ? 'cn' : 'en';
 		var currentCat = 'all';
 
 		function normalizeCategory(cat) {
@@ -325,6 +326,13 @@
 
 	<script>
 		window.addEventListener("load", function () {
+			// Sync lang button active state to browser language default
+			document.querySelectorAll('[data-filter="lang"]').forEach(function (b) { b.classList.remove('active'); });
+			var defaultLangBtn = document.querySelector('[data-filter="lang"][data-value="' + currentLang + '"]');
+			if (defaultLangBtn) defaultLangBtn.classList.add('active');
+			renderArticles(filterArticles());
+			updateCounts();
+
 			document.querySelectorAll('.filter-btn').forEach(function (btn) {
 				btn.addEventListener('click', function () {
 					var filterType = btn.dataset.filter;
