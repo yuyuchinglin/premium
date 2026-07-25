@@ -386,6 +386,57 @@ a.interest-tag:hover {
 }
 
 
+/* --- Manman section --- */
+
+.manman {
+  padding: 80px 0;
+}
+
+.manman-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.manman-title {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-heading);
+  margin: 12px 0 16px;
+}
+
+.manman-desc {
+  font-size: 17px;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.manman-imgs {
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+}
+
+.manman-imgs img {
+  width: calc(33.333% - 8px);
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .manman-inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .manman-imgs {
+    order: -1;
+  }
+}
+
+
 /* --- Footer + Contact --- */
 
 footer.footer-contact {
