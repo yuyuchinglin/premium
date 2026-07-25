@@ -396,7 +396,7 @@ a.interest-tag:hover {
 .manman-photo {
   display: inline-block;
   margin: 4px;
-  width: calc(33.333% - 8px);
+  width: calc(22% - 8px);
   vertical-align: top;
 }
 
