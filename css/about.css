@@ -24,7 +24,7 @@
   color: var(--color-heading);
   padding: 0;
   margin: 0;
-  max-width: 480px;
+  max-width: 300px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -35,12 +35,12 @@
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 1.45rem;
-  line-height: 1.5;
+  font-size: 1.75rem;
+  line-height: 1.6;
   color: var(--color-heading);
   background: rgba(255,255,255,0.75);
   padding: 4px 24px;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .hero-quote-dark {
