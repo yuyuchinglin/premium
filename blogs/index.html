@@ -112,6 +112,15 @@
 				var btn = document.querySelector('[data-filter="cat"][data-value="' + cat + '"]');
 				if (btn) btn.innerHTML = cat + ' <span class="btn-count">(' + (catCounts[cat] || 0) + ')</span>';
 			});
+			// Sort cat buttons by count descending (keep All first)
+			var catGroup = document.getElementById('cat-filters');
+			var allBtn = catGroup.querySelector('[data-value="all"]');
+			var catBtns = Array.from(catGroup.querySelectorAll('[data-value]:not([data-value="all"])'));
+			catBtns.sort(function (a, b) {
+				var aVal = a.dataset.value, bVal = b.dataset.value;
+				return (catCounts[bVal] || 0) - (catCounts[aVal] || 0);
+			});
+			catBtns.forEach(function (btn) { catGroup.appendChild(btn); });
 		}
 
 		const requestURL = './articles.json';
