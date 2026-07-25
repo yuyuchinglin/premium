@@ -59,16 +59,11 @@
 }
 
 .hero-quote-name {
-  display: inline;
   font-family: var(--font-ui);
   font-size: 0.85rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   opacity: 0.85;
-  background: rgba(255,255,255,0.75);
-  padding: 3px 8px;
-  box-decoration-break: clone;
-  -webkit-box-decoration-break: clone;
 }
 
 #hero h1 {
