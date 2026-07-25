@@ -201,8 +201,8 @@ header .logo {
 }
 
 .filter-btn.active {
-  border-color: var(--color-brand);
-  color: var(--color-brand);
+  border-color: var(--color-heading);
+  color: var(--color-heading);
   font-weight: 600;
 }
 
