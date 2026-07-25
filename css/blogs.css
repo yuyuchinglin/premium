@@ -190,7 +190,7 @@ header .logo {
   gap: 4px;
   padding: 6px 14px;
   border: 1px solid var(--color-border-mid);
-  border-radius: 999px;
+  border-radius: 999px !important;
   background: #fff;
   cursor: pointer;
   font-family: var(--font-ui);
