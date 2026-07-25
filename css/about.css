@@ -32,11 +32,10 @@
 }
 
 .hero-quote-mark {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.8rem;
   line-height: 1;
   color: var(--color-heading);
-  opacity: 0.5;
   vertical-align: middle;
 }
 
