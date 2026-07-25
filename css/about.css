@@ -20,12 +20,11 @@
   right: 10%;
   top: 48%;
   transform: translateY(-50%);
-  background: rgba(255,255,255,0.75);
+  background: none;
   color: var(--color-heading);
-  padding: 32px 40px;
+  padding: 0;
   margin: 0;
   max-width: 480px;
-  border-radius: 0;
   text-align: center;
 }
 
@@ -34,9 +33,14 @@
   font-style: normal;
   font-weight: 400;
   font-size: 1.45rem;
-  line-height: 1.5;
+  line-height: 1.8;
   color: var(--color-heading);
   margin-bottom: 12px;
+  display: inline;
+  background: rgba(255,255,255,0.75);
+  padding: 4px 10px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 
 .hero-quote-dark {
@@ -55,11 +59,16 @@
 }
 
 .hero-quote-name {
+  display: inline;
   font-family: var(--font-ui);
   font-size: 0.85rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   opacity: 0.85;
+  background: rgba(255,255,255,0.75);
+  padding: 3px 8px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 
 #hero h1 {
