@@ -201,21 +201,14 @@ header .logo {
 }
 
 .filter-btn.active {
-  background: var(--color-heading);
-  border-color: var(--color-heading);
-  color: #fff;
+  border-color: var(--color-brand);
+  color: var(--color-brand);
   font-weight: 600;
 }
 
 .filter-btn:hover {
   border-color: var(--color-brand);
   color: var(--color-brand);
-}
-
-.filter-btn.active:hover {
-  background: var(--color-heading);
-  border-color: var(--color-heading);
-  color: #fff;
 }
 
 .filter-btn:focus {
