@@ -393,6 +393,16 @@ a.interest-tag:hover {
   margin-bottom: 60px;
 }
 
+.manman-subtitle {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-brand);
+  margin-top: -4px;
+  margin-bottom: 8px;
+}
+
 .manman-photo {
   display: inline-block;
   margin: 4px;
