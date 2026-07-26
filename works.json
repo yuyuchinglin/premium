@@ -16,8 +16,7 @@
       "researchOrder": 1,
       "designOrder": 3,
       "strategyOrder": 1,
-      "allOrder": 2,
-      "password": true
+      "allOrder": 2
     },
     {
       "title": "IoT Device Management",
@@ -51,8 +50,7 @@
       "color": "#e4eefc",
       "researchOrder": 3,
       "designOrder": 2,
-      "allOrder": 3,
-      "password": true
+      "allOrder": 3
     },
     {
       "title": "1828 WLJ Tea App",

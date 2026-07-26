@@ -810,18 +810,6 @@
 	</div>
 
 
-	<section id="pw-gate">
-		<div id="pw-box">
-			<div class="pw-icon">🔒</div>
-			<p class="pw-title">This case study is password protected</p>
-			<p class="pw-desc">Please enter the password to view the full research process and design decisions.</p>
-			<div id="pw-input-wrap">
-				<input type="password" id="pw-input" placeholder="Password">
-				<button id="pw-submit">Unlock</button>
-			</div>
-			<p id="pw-error">Incorrect password — please try again.</p>
-		</div>
-	</section>
 
 
 	<section id="others">
@@ -1040,43 +1028,6 @@
 
 	<script>
 	(function () {
-		var PW = 'ux'; // ← change this to your password
-		var KEY = 'portfolio_pw';
-
-		function unlock() {
-			document.body.classList.remove('locked');
-			try { sessionStorage.setItem(KEY, PW); } catch(e) {}
-		}
-
-		function check() {
-			var val = document.getElementById('pw-input').value.trim();
-			if (val === PW) {
-				unlock();
-			} else {
-				var err = document.getElementById('pw-error');
-				if (err) err.style.display = 'block';
-			}
-		}
-
-		// Auto-unlock from sessionStorage or ?pw= param
-		var stored = '';
-		try { stored = sessionStorage.getItem(KEY) || ''; } catch(e) {}
-		var urlPw = new URLSearchParams(window.location.search).get('pw') || '';
-
-		if (stored !== PW && urlPw !== PW) {
-			// Lock immediately (before paint) to avoid flash
-			document.documentElement.classList.add('js-locking');
-			document.addEventListener('DOMContentLoaded', function () {
-				document.body.classList.add('locked');
-				document.documentElement.classList.remove('js-locking');
-				var btn = document.getElementById('pw-submit');
-				var inp = document.getElementById('pw-input');
-				if (btn) btn.addEventListener('click', check);
-				if (inp) inp.addEventListener('keydown', function (e) {
-					if (e.key === 'Enter') check();
-				});
-			});
-		}
 	})();
 	</script>
 </body>
